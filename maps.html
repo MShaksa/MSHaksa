@@ -1,0 +1,655 @@
+<!--
+=========================================================
+* Argon Dashboard - v1.2.0
+=========================================================
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+
+
+* Copyright  Creative Tim (http://www.creative-tim.com)
+* Coded by www.creative-tim.com
+
+
+
+=========================================================
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>naamuib - reusemap</title>
+
+ 
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="https://samuelgalaxys.github.io/reusemapvendors/vendors/iconfonts/mdi/css/materialdesignicons.css">
+
+  <!-- Page plugins -->
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="assets/css/argon.css?v=1.2.0" type="text/css">
+</head>
+
+<body>
+
+
+
+
+
+<!-- Sidenav -->
+<nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+  <div class="scrollbar-inner">
+    <!-- Brand -->
+    <div class="sidenav-header  align-items-center">
+      <a class="navbar-brand" href="javascript:void(0)">
+        <img src="assets/img/brand/logo.png" class="navbar-brand-img" alt="...">
+      </a>
+    </div>
+    <div class="navbar-inner">
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+        <!-- Nav items -->
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="mdi mdi-nature text-green"></i>
+              <span class="nav-link-text">가든</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="maps.html">
+              <i class="ni ni-pin-3 text-primary"></i>
+              <span class="nav-link-text">리유즈맵</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="pages/howtogreen.html">
+              <i class="mdi mdi-information text-yellow"></i>
+              <span class="nav-link-text">분리배출</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="pages/board.html">
+              <i class="mdi mdi-book text-orange"></i>
+              <span class="nav-link-text">쓸생일지</span>
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="pages/tables.html">
+              <i class="ni ni-bullet-list-67 text-default"></i>
+              <span class="nav-link-text">Tables</span>
+            </a>
+          </li>
+
+
+           
+
+
+
+
+        </ul>
+        <!-- Divider -->
+        <hr class="my-3">
+        <!-- Heading -->
+        <h6 class="navbar-heading p-0 text-muted">
+          <span class="docs-normal">Green area</span>
+        </h6>
+        <!-- Navigation -->
+        <ul class="navbar-nav mb-md-3">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">
+              <i class="ni ni-circle-08 text-pink"></i>
+              <span class="nav-link-text">로그인</span>
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="upgrade.html">
+              <i class="ni ni-send text-dark"></i>
+              <span class="nav-link-text">planter 지원하기</span>
+            </a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+
+
+
+    <!-- Topnav -->
+    <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Search form -->
+          <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+            <div class="form-group mb-0">
+              <div class="input-group input-group-alternative input-group-merge">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+                <input class="form-control" placeholder="Search" type="text">
+              </div>
+            </div>
+            <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </form>
+          <!-- Navbar links -->
+          <ul class="navbar-nav align-items-center  ml-md-auto ">
+             
+            <li class="nav-item d-sm-none">
+              <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+                <i class="ni ni-zoom-split-in"></i>
+              </a>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ni ni-world"></i>
+              </a>
+
+
+
+
+              <div class="dropdown-menu dropdown-menu-xl  dropdown-menu-right  py-0 overflow-hidden">
+                <!-- Dropdown header -->
+                <div class="px-3 py-3">
+                  <h6 class="text-sm text-muted m-0"><strong class="text-primary">Language</strong> </h6>
+                </div>
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+
+
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="assets/img/theme/languages/korea.png" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">한국어</h4>
+                          </div>
+                          
+                        </div>
+                        <p class="text-sm mb-0">Korean</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="assets/img/theme/languages/usa.png" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">English</h4>
+                          </div>
+                          
+                        </div>
+                        <p class="text-sm mb-0">United States</p>
+                      </div>
+                    </div>
+                  </a>
+                  
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="assets/img/theme/languages/china.png" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">简体中文</h4>
+                          </div>
+                          
+                        </div>
+                        <p class="text-sm mb-0">Chinese(simpled)</p>
+                      </div>
+                    </div>
+                  </a>
+
+                </div>
+                <!-- View all -->
+                
+                <!----
+                <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
+                -->
+              </div>
+            </li>
+
+
+            
+ 
+          </ul>
+          <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+
+
+            <li class="nav-item d-xl-none">
+              <!-- Sidenav toggler -->
+              <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </div>
+            </li>
+
+
+            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="media align-items-center">
+                <span class="avatar avatar-sm rounded-circle">
+                  <img alt="Image placeholder" src="assets/img/theme/users.jpg">
+                </span>
+                <div class="media-body  ml-2  d-none d-lg-block">
+                  <span id="joinmenu" class="mb-0 text-sm  font-weight-bold">로그인</span>
+                </div>
+              </div>
+            </a>
+  
+            <div class="dropdown-menu  dropdown-menu-right ">
+              <div class="dropdown-header noti-title">
+                <h6 class="text-overflow m-0">Welcome!</h6>
+              </div>
+              <a href="#!" class="dropdown-item">
+                <i class="ni ni-single-02"></i>
+                <span id="myprofile">로그인 필요</span>
+              </a>
+                
+              <a href="#!" class="dropdown-item">
+                <i class="ni ni-support-16"></i>
+                <span>문의하기</span>
+              </a>
+  
+              <a href="#!" class="dropdown-item">
+                <i class="ni ni-settings-gear-65"></i>
+                <span>설정</span>
+              </a>
+  
+              <div class="dropdown-divider"></div>
+              <a href="loginform.html" class="dropdown-item">
+                <i class="ni ni-user-run"></i>
+                <span id="loginmenu">로그인/가입</span>
+              </a>
+            </div>
+  
+
+
+
+
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header bg-primary pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+
+
+          <!----
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <h6 class="h2 text-white d-inline-block mb-0">Google maps</h6>
+              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                  <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="#">Maps</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Google maps</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-lg-6 col-5 text-right">
+              <a href="#" class="btn btn-sm btn-neutral">New</a>
+              <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+            </div>
+          </div>
+
+        -->
+          
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+      <div class="row">
+        <div class="col">
+          <div class="card border-0">
+            <div id="map-default" class="map-canvas" data-lat="40.748817" data-lng="-73.985428" style="height: 600px;"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      
+      
+
+      <footer class="footer pt-0">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6">
+            <div class="copyright text-center  text-lg-left  text-muted">
+              &copy; 2021 <a href="#" class="font-weight-bold ml-1" target="_blank">Kihoon,Yebeen. All rights reserved.</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+      
+              
+              
+              <li class="nav-item">
+                <a href="_____" class="nav-link" target="_blank">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="_____" class="nav-link" target="_blank">개인정보처리방침</a>
+              </li>
+              <li class="nav-item">
+                <a href="_____" class="nav-link" target="_blank">오픈소스 라이선스</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+  <!-- Argon Scripts -->
+  <!-- Core -->
+
+
+
+  
+  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <!-- Optional JS -->
+  <script src="https://maps.google.com/maps/api/js?key=AIzaSyCnu4KRV0PC9g-HEbSdWIVbx6NgfsyTNRk&callback=initMap&region=kr" type="text/javascript" async defer></script>
+  <!-- Argon JS -->
+  <script src="assets/js/argon.js?v=1.2.0"></script>
+  <script src="maps.js"></script>
+
+  <script src="assets/js/time.js"></script>
+  <!--login유무 session js 파일 -->
+  <script src="assets/js/sessionCheck.js"></script>
+  <!--스크립트 부분. 자신의 스크립트 코드로 변경하세요! -->
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script>
+    
+    
+      //2초후 실행
+      setTimeout(function() {
+      //	var element = document.getElementById("scrollz");
+      //    element.scrollTop = element.scrollHeight;  //스크롤 내리기
+      $("#modalUpdateN").modal('show');
+  
+      }, 1000);
+  
+       
+  
+      //스크롤 자동으로 내리기
+      //setInterval(updateScroll,1000);   
+  
+    function updateScroll(){
+      var element = document.getElementById("scrollz");
+      element.scrollTop = element.scrollHeight;
+      }
+   
+   
+  
+  
+  
+  
+    var firebaseEmailAuth; //파이어베이스 email 인증 모듈 전역변수
+    var firebaseDatabase; //파이어베이스 db 모듈 전역변수
+    var name; //유저 이름
+    var loginUserKey; //로그인한 유저의 부모 key
+    var userInfo; //로그인한 유저의 정보 object type
+  
+  
+  
+  
+  
+  
+    //파이어 베이스 초기화 코드
+    var config = {
+      apiKey: "AIzaSyDQLUtjdMgOLDIZlPusi5YPKBiuQduD9Go",
+      databaseURL: "https://mhazone-mha-default-rtdb.firebaseio.com/",
+          authDomain: "mhazone-mha.firebaseapp.com",
+          projectId: "mhazone-mha",
+          storageBucket: "mhazone-mha.appspot.com",
+          messagingSenderId: "967342331429",
+          appId: "1:967342331429:web:8a5689ea4c254f037951cc",
+          measurementId: "G-Z33QJ15H02"
+     
+    };
+    //파이어베이스 초기화
+    firebase.initializeApp(config);
+    //인증모듈 객체 가져오기
+    firebaseEmailAuth = firebase.auth();
+    //데이터베이스 모듈객체 가져오기
+    firebaseDatabase = firebase.database();
+  
+    //세션 체크 함수
+    userSessionCheck();
+  
+  
+  
+    $(document).ready(function () {
+  
+      //메인화면 쓰기버튼 눌렀을 때
+      $(document).on('click', '.write', function () {
+  
+        //네비게이션 메뉴의 text값 가져오기 - 자바스크립트 dom 방식으로 가져왔다.
+        var seseionCheck = document.getElementById("loginmenu").textContent;
+  
+        //텍스트 필드에 있는 내용 가져오기!!!!
+        comment = $('#comment').val();
+        subject = $('#subject').val();
+  
+        if (seseionCheck == "로그아웃") {
+          //저장하기
+          saveThanks();
+        } else {
+          alert("로그인이 필요한 서비스 입니다.")
+        }
+      });
+  
+  
+      $(document).on('click', '.create', function () {
+  
+        var seseionCheck = document.getElementById("loginmenu").textContent;
+  
+         if (seseionCheck == "로그아웃") {
+          window.location.href = "create.html"
+  
+        } else {
+          alert("로그인이 필요한 서비스 입니다.")
+          window.location.href = "loginform.html"
+  
+        }
+        
+  
+  
+      });
+  
+  
+    });
+  
+  
+  
+    //쓰기 버튼 눌렀을 때 호출 되는 함수
+    function saveThanks() {
+  
+      //thanks 라는 테이블을 만들고 하위 데이터에 유저 아이디를 넣어준다. 그곳에 push로 가상의 키를 넣고, 객체를 넣어준다.!!!!
+      var thankRef = firebaseDatabase.ref("boards");
+  
+      // 해당 객체의 key 값이 자동으로 생성된다.
+      var thank = thankRef.push(); // 해당 객체의 key 값이 자동으로 생성된다.
+  
+  
+  
+  
+      //로그인한 유저의 pk값,이름,내용,시간 데이터
+      var obj = {
+        name: name,
+        userkey: loginUserKey,
+        comment: comment,
+        subject: subject,
+        createtime: currentTime
+      };
+      //위에서 thankRef.push()로 만들어진 key아래 위치에 저장해준다.
+      thank.set(obj);
+    
+      
+      alert("글이 업로드 되었습니다");
+  
+      $('#comment').val("");
+      $('#subject').val("");
+  
+    }
+  
+  
+  
+    //글 목록가져와서 뿌려주기
+    function boardList() {
+      //alert("보드 로드 완료")
+  
+      //로그인한 유저라면
+      if (loginUserKey) {
+        //alert(loginUserKey)
+        //글이 저장된 레퍼런스 값 가져오기
+        var thanksRef = firebaseDatabase.ref('boards');
+        //on 함수로 글 목록가져오기
+        thanksRef.on('child_added', on_thanks_list)
+        var thanksRef = firebaseDatabase.ref('notice');
+        thanksRef.on('child_added', on_notice_list)
+  
+      } else {
+        //로그인 아니어도 글 보이게
+        //alert(loginUserKey)
+        //글이 저장된 레퍼런스 값 가져오기
+        var thanksRef = firebaseDatabase.ref('boards');
+        thanksRef.on('child_added', on_thanks_list)
+  
+        var thanksRef = firebaseDatabase.ref('notice');
+        thanksRef.on('child_added', on_notice_list)
+      }
+  
+    }
+  
+    //게시판 리스트 thanks 테이블의 thanks 키 들을 연속적으로 가져옴...ㅋㅋㅋㅋㅋ
+    function on_thanks_list(data) {
+      console.log("on_thanks_list() 함수안으로 들어왔습니다 리스트를 가져오겠습니다")
+      var key = data.key;
+  
+      var Data = data.val();
+      var comment = Data.comment;
+      var createtime = Data.createtime;
+      var name = Data.name;
+      var subject = Data.subject;
+      var userkey = Data.userkey;
+  
+      //무슨값이 넘어오는지 찍어보세요
+      //alert(comment +"/"+ createtime + "/"+name +"/"+userkey);
+  
+  
+  
+  
+      
+      //리스트 동적으로 붙이기
+      var html =
+  
+   
+  
+      
+                  "<div class=\"card\" id='" + userkey + "' onclick=\"show_user_page(this.id)\">" +
+                  "<div class=\"card-header bg-transparent\">" + "<div class=\"row align-items-center\">" + "<div class=\"col\">" +
+                  "<h5 style=\"font-size: 20px\" class=\"h3 mb-0\">" + "<a href=\"http://google.com\">" + subject +"</a></h5>" +
+                  "<h6 class=\"text-uppercase text-muted ls-1 mb-1\">" + name + " :: " + createtime + "</h6>" +
+                  "</br>" +
+                  "<a>" + comment + "</a>" +
+                  "</div></div></div></div>";
+  
+           //   $(".thanksList").append(html);   //아래로 붙이기
+              $(".boardList").prepend(html);   //위로 붙이기
+  
+   
+  
+    }
+  
+  
+  
+  
+    function on_notice_list(data) {
+      console.log("on_thanks_list() 함수안으로 들어왔습니다 리스트를 가져오겠습니다")
+      var key = data.key;
+  
+      var Data = data.val();
+      var comment = Data.comment;
+      var createtime = Data.createtime;
+      var name = Data.name;
+      var subject = Data.subject;
+      var userkey = Data.userkey;
+  
+      //무슨값이 넘어오는지 찍어보세요
+      //alert(comment +"/"+ createtime + "/"+name +"/"+userkey);
+  
+  
+      //리스트 동적으로 붙이기
+      var html =
+                  "<div class=\"card\" id='" + userkey + "' onclick=\"show_user_page(this.id)\">" +
+                  "<div class=\"card-header\">" +
+                  "<h4 class=\"media-heading\"><strong STYLE=\"color: #424242; font-size: 16pt\">" + subject + "</strong>" +
+                  " <span STYLE=\"color: black; font-size: 11pt\">" + "</br>" + comment + "</span></h4>" +
+                  "<p STYLE=\"color: black; font-size: 8pt\">" + name + " :: " + createtime + "</p></div></div>";
+  
+              $(".noticelist").prepend(html);
+  
+   
+  
+    }
+  
+  </script>
+
+  
+  <script>
+    includeHTML();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>리유스맵 - 당신의 재활용 지도</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="https://samuelgalaxys.github.io/reusemapvendors/vendors/iconfonts/mdi/css/materialdesignicons.css">
+    <link rel="stylesheet" href="https://samuelgalaxys.github.io/reusemapvendors/vendors/css/vendor.addons.css">
+    <!-- endinject -->
+    <!-- vendor css for this page -->
+    <!-- End vendor css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="data/css/shared/style.css">
+    <!-- endinject -->
+    
+        <script src="data/js/includeHTML.js"></script>
+
+    
+    <!-- Layout style -->
+    <link rel="stylesheet" href="data/css/style.css">
+    
+ 		<link rel="stylesheet" type="text/css" href="data/css/anim/default.css" />
+		<link rel="stylesheet" type="text/css" href="data/css/anim/style.css" />
+    <!-- Layout style -->
+    <link rel="shortcut icon" href="data/images/favicon.ico" />
+
+  </head>
+  <body class="header-fixed">
+    
+    
+     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+     <script src="data/js/database.js"></script>
+
+
+
+
+
+<!-- partial:partials/_header.html -->
+<nav class="t-header">
+  <div class="t-header-brand-wrapper">
+    <a href="index.html">
+      <img class="logo" src="textlogo.png" alt="">
+      <img class="logo-mini" src="reusemapappicon.png" alt="">
+    </a>
+  </div>
+  <div class="t-header-content-wrapper">
+    <div class="t-header-content">
+      <button class="t-header-toggler t-header-mobile-toggler d-block d-lg-none">
+        <i class="mdi mdi-menu"></i>
+      </button>
+      <form action="#" class="t-header-search-box">
+        <div class="input-group">
+          
+          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search" autocomplete="off">
+          <button class="btn btn-primary" type="submit"><i class="mdi mdi-arrow-right-thick"></i></button>
+        </div>
+      </form>
+
+
+
+      <ul class="nav ml-auto">
+        <li class="nav-item dropdown">
+
+
+          <a class="nav-link" href="#" id="gpslocation" data-toggle="dropdown" aria-expanded="false">
+            <i class="mdi mdi-crosshairs-gps mdi-1x"></i>
+            <span class="notification-indicator notification-indicator-primary notification-indicator-ripple"></span>
+
+          </a>
+           
+
+
+
+
+        </li>
+
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="messageDropdown" data-toggle="dropdown" aria-expanded="false">
+            <i class="mdi mdi-leaf mdi-1x"></i>
+
+          </a>
+          <div class="dropdown-menu navbar-dropdown dropdown-menu-right" aria-labelledby="messageDropdown">
+            <div class="dropdown-header">
+              <h6 class="dropdown-title">더 보기</h6>
+              <p class="dropdown-title-text">여기에 뭘 할꺼</p>
+            </div>
+
+
+            <div class="dropdown-body">
+
+
+              <div class="dropdown-list">
+                <div class="image-wrapper">
+                  <img class="profile-img" src="https://pbs.twimg.com/profile_images/1047209106635780096/4nSrQ9If.jpg" alt="profile image">
+                  <div class="status-indicator rounded-indicator bg-success"></div>
+                </div>
+                <div class="content-wrapper">
+
+                  <small class="content-text">test</small>
+                </div>
+              </div>
+
+              <div class="dropdown-list">
+                <div class="image-wrapper">
+                  <img class="profile-img" src="https://yt3.ggpht.com/ytc/AAUvwnjM4NExAs6u1bupY1SQVQ-YPW3AODzJepIZymFf=s900-c-k-c0x00ffffff-no-rj" alt="profile image">
+                  <div class="status-indicator rounded-indicator bg-warning"></div>
+                </div>
+                <div class="content-wrapper">
+
+                  <small class="content-text">zzzz.</small>
+                </div>
+              </div>
+
+
+               
+
+            </div>
+
+
+            <div class="dropdown-footer">
+              <a href="#">View All</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="appsDropdown" data-toggle="dropdown" aria-expanded="false">
+            <i class="mdi mdi-apps mdi-1x"></i>
+          </a>
+          <div class="dropdown-menu navbar-dropdown dropdown-menu-right" aria-labelledby="appsDropdown">
+            <div class="dropdown-header">
+              <h6 class="dropdown-title">Apps</h6>
+              <p class="dropdown-title-text mt-2">Authentication required for 3 apps</p>
+            </div>
+            <div class="dropdown-body border-top pt-0">
+              <a class="dropdown-grid">
+                <i class="grid-icon mdi mdi-jira mdi-2x"></i>
+                <span class="grid-tittle">1번</span>
+              </a>
+              <a class="dropdown-grid">
+                <i class="grid-icon mdi mdi-trello mdi-2x"></i>
+                <span class="grid-tittle">스캔</span>
+              </a>
+             
+		    
+		    
+              <a class="dropdown-grid">
+                <i class="grid-icon mdi mdi-bitbucket mdi-2x"></i>
+                <span class="grid-tittle">음</span>
+              </a>
+            </div>
+            <div class="dropdown-footer">
+              <a href="#">View All</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- partial -->
+<div class="page-body">
+    
+  
+  
+  <!--============사이드바 부분이야=============-->
+  <sidebar include-html="nav.html"></sidebar>
+
+
+
+  
+    <!-- partial -->
+      
+      <!-- partial -->
+      <div class="page-content-wrapper">
+        <div class="page-content-wrapper-inner">
+          
+          
+
+          <div class="content-viewport">
+            <div class="row">
+
+
+              <div class="col-lg-12">
+                <div class="grid">
+
+			<div class="grid-body">
+                    <div class="item-wrapper">
+                      <div class="row mb-3">
+			      
+			      
+                        <div class="col-md-8 mx-auto">
+                        </br></br>
+                          <div class="card-title" style="text-align: center;"> 
+                        
+                          <strong><p style="font-size: 28px; color: rgb(29, 29, 29);" margin="center" id="leaf">Leafs</p></strong>
+
+                          플라스틱을 재활용하고, 나무를 심어주세요.
+                         </div>
+
+                                
+                            
+                            
+                        		<div class="main clearfix">
+			                         	<div class="drop"></div>
+		                       	</div>
+
+                          </br>
+                             <div class="card-title" style="text-align: center;"> 
+
+                             <button class="btn btn-primary" type="submit"><i class="mdi mdi-arrow-right-thick" style="font-style: normal; font-size: 16px;">지금, 재활용하기</i></button>
+                            </div>
+
+                          </br></br></br>
+                            
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+ 
+
+
+
+            </div>
+          </div>
+        </div>
+        <!-- content viewport ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="row">
+            <div class="col-sm-6 text-center text-sm-right order-sm-1">
+              <ul class="text-gray">
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 text-center text-sm-left mt-3 mt-sm-0">
+              <small class="text-muted d-block">Copyright © 2021 <a href="http://www.uxcandy.co" target="_blank">hoon&been</a>. All rights reserved</small>
+
+            </div>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- page content ends -->
+    </div>
+    <!-- page content ends -->
+  
+	  
+         <script src="data/js/sessionCheck.js"></script>
+
+	  <script>
+        var firebaseEmailAuth; //파이어베이스 email 인증 모듈 전역변수
+        var firebaseDatabase; //파이어베이스 db 모듈 전역변수
+        var name; //유저 이름
+        var loginUserKey; //로그인한 유저의 부모 key
+        var userInfo; //로그인한 유저의 정보 object type
+	      var leaf;
+
+		  
+        //파이어 베이스 초기화 코드
+        var config = {
+            apiKey: "AIzaSyBwOqfjqsnDHYBx0H90ob4J_ZosWF2MdLg",
+            databaseURL: "https://seedgreendata-default-rtdb.firebaseio.com",
+            authDomain: "seedgreendata.firebaseapp.com",
+            projectId: "seedgreendata",
+            storageBucket: "seedgreendata.appspot.com",
+            messagingSenderId: "327441750186",
+            appId: "1:327441750186:web:5d81abb5e75e821ca658d3",
+            measurementId: "G-XD6C0TDX2D"
+        };
+        //파이어베이스 초기화
+        firebase.initializeApp(config);
+        //인증모듈 객체 가져오기
+        firebaseEmailAuth = firebase.auth();
+        //데이터베이스 모듈객체 가져오기
+        firebaseDatabase = firebase.database();
+
+        //세션 체크 함수
+        userSessionCheck();
+	  
+		  
+	
+		  
+            console.log("on_thanks_list() 함수안으로 들어왔습니다 리스트를 가져오겠습니다")
+            var key = data.key;
+
+            var Data = data.val();
+            var comment = Data.comment;
+            var createtime = Data.createtime;
+            var name = Data.name;
+            var userkey = Data.userkey;
+            var leaf = Data.leaf;
+
+		  
+ 
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+	  </script>
+
+      <!--page body ends -->
+    <!-- SCRIPT LOADING START FORM HERE /////////////-->
+    <!-- plugins:js -->
+    <script src="https://samuelgalaxys.github.io/reusemapvendors/vendors/js/core.js"></script>
+    <!-- endinject -->
+    <!-- Vendor Js For This Page Ends-->
+    <script src="https://samuelgalaxys.github.io/reusemapvendors/vendors/apexcharts/apexcharts.min.js"></script>
+    <script src="https://samuelgalaxys.github.io/reusemapvendors/vendors/chartjs/Chart.min.js"></script>
+    <script src="https://samuelgalaxys.github.io/reusemapvendors/js/charts/chartjs.addon.js"></script>
+    <!-- Vendor Js For This Page Ends-->
+    <!-- build:js -->
+     <script src="data/js/template.js"></script> 
+    <script src="data/js/dashboard.js"></script>
+
+    <script>
+        includeHTML();
+    </script>    <!-- endbuild -->
+  </body>
+</html>
