@@ -11,7 +11,7 @@ var spriteExplosion = new Image();
 sprite.src = 'pixels.png';
 
 window.onload = function() {
-    spriteExplosion.src = 'https://res.cloudinary.com/dc4stsmlc/image/upload/v1570612478/Codepen/explosion_g9ncyg.png';
+    spriteExplosion.src = 'https://static.vecteezy.com/system/resources/previews/008/202/202/original/explosion-with-pixel-art-illustration-free-vector.jpg';
 };
 
 //Game
@@ -138,6 +138,8 @@ function game() {
         }
     }
 
+
+    // 총알 설정 부분
     function fire() {
         var distance;
 
@@ -154,9 +156,9 @@ function game() {
                     50,
                     75,
                     bullets[i].x,
-                    bullets[i].y -= 20,
-                    19,
-                    30
+                    bullets[i].y -= 20, //총알 속도
+                    19,  //텍스쳐 면적
+                    30  //텍스쳐 면적
                 );
 
                 ctx.restore();
@@ -179,7 +181,7 @@ function game() {
                         if (distance < (((asteroids[j].width/asteroids[j].size) / 2) - 4) + ((19 / 2) - 4)) {
                             destroyed += 1;
                             asteroids[j].destroyed = true;
-                            bullets[i].destroyed   = true;
+                            bullets[i].destroyed   = true; //총알 파괴여부
                             explosions.push(asteroids[j]);
                         }
                     }
