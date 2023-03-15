@@ -1,0 +1,120 @@
+﻿<html>
+<head>
+    <title>mhaZone 로그인</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="stylelogin.css" />
+</head>
+<body>
+
+
+    
+
+
+
+    <div id="login_div" class="main">
+        <p class="sign" align="center">mhaZone</p>
+        <form class="form1">
+
+
+            <input class="un " type="email" align="center" placeholder="Email" id="email">
+            <input class="pass" type="password" align="center" placeholder="Password" id="pwd">
+
+            <a type="button" onclick="login()" class="submit btn btn-default login" align="center"><strong>로그인</strong></a>
+            <p class="forgot" align="center"><a href="loginfb.html">Facebook을 이용하여 마한아존 계정 생성하기</a></p>  <!--자주적이고 신기한 자체 로그인 시스템-->
+
+        </form>
+    </div>
+
+
+
+
+    <!--로그인 폼을 담담하는 UI야!-->
+     
+
+    <div id="user_div" class="loggedin-div">
+        <h3 style="text-align:center;">로그아웃 할까요?</h3>
+        <p id="user_para" style="text-align:center;">Welcome to Firebase web login Example. You're currently logged in.</p>
+        <button onclick="logout()">로그아웃</button>
+    </div>
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script>
+        var firebaseEmailAuth; //파이어베이스 email 인증 모듈 전역변수
+        var firebaseDatabase; //파이어베이스 db 모듈 전역변수
+        var userInfo; //가입한 유저의 정보. object 타입
+        //파이어 베이스 초기화 코드
+        var config = {
+            apiKey: "AIzaSyDQLUtjdMgOLDIZlPusi5YPKBiuQduD9Go",
+		    databaseURL: "https://mhazone-mha-default-rtdb.firebaseio.com/",
+            authDomain: "mhazone-mha.firebaseapp.com",
+            projectId: "mhazone-mha",
+            storageBucket: "mhazone-mha.appspot.com",
+            messagingSenderId: "967342331429",
+            appId: "1:967342331429:web:8a5689ea4c254f037951cc",
+            measurementId: "G-Z33QJ15H02"
+        };
+        firebase.initializeApp(config);
+
+        firebaseEmailAuth = firebase.auth(); //파이어베이스 인증 객체
+        firebaseDatabase = firebase.database(); //파이어베이스 데이터베이스 객체
+
+
+
+        //제이쿼리를 사용한다.
+        $(document).ready(function () {
+
+            //가입버튼 눌렀을 때
+            $(document).on('click', '.login', function () {
+
+                //제이쿼리 선택자와 val() 함수를 이용해서 이메일,비밀번호 값을 가져온다.
+                var email = $('#email').val();
+                var password = $('#pwd').val();
+                alert("로그인 중...:" + email + ":" + password);
+
+                //파이어베이스 이메일 로그인 함수
+                firebaseEmailAuth.signInWithEmailAndPassword(email, password)
+                    .then(function (firebaseUser) {
+
+                        //성공하면 firebaseUser에 유저 정보 값이 담겨 넘어온다.
+                        loginSuccess(firebaseUser);
+
+                    })
+                    .catch(function (error) {
+                        // 실패했을 때 에러 처리
+                        alert(error);
+                        alert("로그인 실패");
+                    });
+
+            });
+        });
+
+        //로그인 성공했을 때
+        function loginSuccess(firebaseUser) {
+            alert("로그인 성공");
+
+            //로그인 성공한 유저 id 확인해 보기 - firebase database에 접근해서 데이터 조회 하는 함수
+            firebaseDatabase.ref("users/" + firebaseUser.uid).once('value').then(function (snapshot) {
+                //alert(snapshot.val().name)
+            });
+
+            //메인 페이지로 이동
+            window.location.href = "index.html"
+        }
+
+
+    </script>
+
+    <script src="loginform.js"></script>
+    <script src="ipbanned.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,854 @@
+ <!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>명성장학</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="https://samuelgalaxys.github.io/reusemapvendors/vendors/iconfonts/mdi/css/materialdesignicons.css">
+
+
+  <script src="../assets/js/includeHTML.js"></script>
+
+  <!-- Page plugins -->
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
+</head>
+
+<body>
+  
+   
+  <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <div class="sidenav-header  align-items-center">
+        <a class="navbar-brand" href="javascript:void(0)">
+          <img src="../assets/img/brand/logo.png" class="navbar-brand-img" alt="...">
+        </a>
+      </div>
+      <div class="navbar-inner">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Nav items -->
+         
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link" href="000000.html">
+                <i class="mdi mdi-nature text-green"></i>
+                <span class="nav-link-text">홈</span>
+              </a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="scboard.html">
+                <i class="ni ni-circle-08 text-blue"></i>
+                <span class="nav-link-text">익명이존</span>
+              </a>
+            </li>
+
+            <div class="btnz"></div>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="food.html">
+                <i class="ni ni-badge text-blue"></i>
+                <span class="nav-link-text">오늘의 식사</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="0000000.html">
+                <i class="ni ni-user-run text-blue"></i>
+                <span class="nav-link-text">청소구역</span>
+              </a>
+            </li>
+
+
+            
+            <li class="nav-item">
+              <a class="nav-link" href="RoomsChk.html">
+                <i class="ni ni-zoom-split-in text-blue"></i>
+                <span class="nav-link-text">방보고</span>
+              </a>
+            </li>
+
+
+
+
+ 
+    
+
+          </ul>
+          <!-- Divider -->
+          <hr class="my-3">
+          <!-- Heading -->
+
+ 
+          
+ 
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+<!-- Main content -->
+  <div class="main-content" id="panel">
+<!-- Topnav -->
+  <nav class="navbar navbar-top navbar-expand navbar-dark border-bottom" style="background-color: #505050;">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Search form -->
+        <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+          <div class="form-group mb-0">
+
+
+
+ 
+
+
+
+
+          </div>
+          <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </form>
+        <!-- Navbar links -->
+        <ul class="navbar-nav align-items-center  ml-md-auto ">
+         
+          <li class="nav-item d-sm-none">
+            <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+              <i class="ni ni-zoom-split-in"></i>
+            </a>
+          </li>
+  
+  
+           
+  
+  
+          
+  
+        </ul>
+        <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+  
+  
+          <li class="nav-item d-xl-none">
+            <!-- Sidenav toggler -->
+            <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+              <div class="sidenav-toggler-inner">
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+              </div>
+            </div>
+          </li>
+  
+  
+          <li class="nav-item dropdown">
+            
+            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="media align-items-center">
+                <span class="avatar avatar-sm rounded-circle">
+                  <img alt="Image placeholder" src="../assets/img/theme/users.jpg">
+                </span>
+                <div class="media-body  ml-2  d-none d-lg-block">
+                  <span id="joinmenu" class="mb-0 text-sm  font-weight-bold">로그인</span>
+                </div>
+              </div>
+            </a>
+  
+            <div class="dropdown-menu  dropdown-menu-right ">
+              <div class="dropdown-header noti-title">
+                <h6 class="text-overflow m-0">Welcome!</h6>
+              </div>
+               
+              <div class="dropdown-divider"></div>
+              <a href="loginform.html" class="dropdown-item">
+                <i class="ni ni-user-run"></i>
+                <span id="loginmenu">로그인/가입</span>
+              </a>
+            </div>
+  
+  
+  
+  
+  
+  
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Header -->
+
+
+    <!-- Header -->
+
+
+
+
+
+
+    <!-- Header -->
+    <div class="header pb-6" style="background-color: #505050;">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <h6 class="h2 text-white d-inline-block mb-0">명성장학 익명게시판 📜 </h6>
+              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+          
+                
+              </nav>
+            </div>
+             
+          </div>
+          <!-- Card stats -->
+           
+
+
+
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+      
+      
+      
+      <div class="row">
+ 
+        <div class="col-xl-7">
+
+ 
+
+          
+ 
+
+
+  
+         <div class="card">
+
+          <div class="board"></div>
+
+            <div class="card-body">
+               <textarea style="font-size: 14px;" class="form-control w-100" rows="4" name="comment" id="comment" cols="30" placeholder="익명 댓글 추가 ..."></textarea>
+
+               <div class="card-sub">		
+
+               </br>
+                <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write" id="write" name="write" style="float: right; width: 30%; font-size: 12px; background-color: #505050;">댓글달기</button> 
+               </div>
+          </div>
+         </div>
+
+
+
+
+         <div class="card">
+
+          <div class="comments"></div>
+
+
+         </div>
+           
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="col-xl-4 scrollh" id="scrollz" style="overflow:scroll;width:auto; height:1000px;">
+
+ 
+
+
+
+          <div class="card" style="background-color: #1900ff;">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h5 style="color: #ffffff; font-size: 22px" class="h3 mb-0">익명이존에 온것을 환영합니다.</h5>
+                  <h6 class="text-light text-uppercase ls-1 mb-1">Overview</h6>
+                </div>
+
+                <div class="col">
+                  <ul class="nav nav-pills justify-content-end">
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a style="color: white;">명성장학생 학생에게만 표시되는 게시판입니다.
+                대놓고는 말 할수 없었던 것,
+                또는 자유로운 질문으로 이용해주세요! </br> 완전한 익명성이 보장되며 관리자도 정상적인 경로로 익명을 확인할 수 없습니다.</a>
+            </div>
+          </div>
+
+
+          <div class="card" style="background-color: #00ff80;">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h5 style="color: #000000; font-size: 22px" class="h3 mb-0">여기는 광고 또는 공지판!.</h5>
+                  <h6 class="text-light text-uppercase ls-1 mb-1">Overview</h6>
+                </div>
+
+                <div class="col">
+                  <ul class="nav nav-pills justify-content-end">
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a style="color: rgb(0, 0, 0);">명성장학 학생에게만 표시되는 게시판입니다.
+                대놓고는 말 할수 없었던 것,
+                또는 자유로운 질문으로 이용해주세요! </br> 완전한 익명성이 보장되며 관리자도 정상적인 경로로 익명을 확인할 수 없습니다.</a>
+            </div>
+          </div>
+
+
+
+
+
+
+          
+        </div>
+
+         
+
+ 
+
+
+        
+      </div>
+      <div class="row">
+
+
+
+
+
+
+
+        
+         
+      </div>
+      <!-- Footer -->
+
+      <footer class="footer pt-0">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6">
+            <div class="copyright text-center  text-lg-left  text-muted">
+              &copy; 2021 <a href="#" class="font-weight-bold ml-1" target="_blank">COMON:mhaZone All rights reserved.</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+      
+              
+              
+              <li class="nav-item">
+                <a id="doact" href="https://www.google.com" class="nav-link" target="_blank">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.google.com" class="nav-link" target="_blank">개인정보처리방침</a>
+
+
+
+                <input id="cmtcountin" style="color: gray; font-size: 1px; float: right;"></input>
+
+
+
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+       
+    </div>
+  </div>
+
+
+
+
+
+<!-- Modal -->
+ 
+
+
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="modalUpdateN" tabindex="-1" role="dialog" aria-labelledby="modalUpdatePro" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color: #ffd900;">
+				<h6 class="modal-title"><i class="la la-info-circle"></i> 공지</h6>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body text-center">									
+				<div id="scrollmodal" class="card" style="overflow:scroll;width:auto; height:400px;">
+					 
+					<div class="card-body">
+						<div class="card-sub">
+							공지가 여기에 표시됩니다. 
+						</div>
+						<div class="noticelist"></div>
+
+						
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Core -->
+ <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+ <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+ <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+ <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+ <!-- Optional JS -->
+ <script src="../assets/vendor/chart.js/dist/Chart.min.js"></script>
+ <script src="../assets/vendor/chart.js/dist/Chart.extension.js"></script>
+ <!-- Argon JS -->
+ <script src="../assets/js/argon.js?v=1.2.0"></script>
+
+<script src="../assets/js/time.js"></script>
+<!--login유무 session js 파일 -->
+<script src="../assets/js/sessionCheck.js"></script>
+<!--스크립트 부분. 자신의 스크립트 코드로 변경하세요! -->
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
+<script src="../modal.js"></script>
+<script>
+
+
+
+$('#cmtcountin').hide(); //댓글갯수컨트롤 숨기기
+
+
+
+
+  var firebaseEmailAuth; //파이어베이스 email 인증 모듈 전역변수
+var firebaseDatabase; //파이어베이스 db 모듈 전역변수
+var userInfo; //가입한 유저의 정보. object 타입
+//파이어 베이스 초기화 코드
+var config = {
+  apiKey: "AIzaSyAC3N6RCdv7sQMOZ6_cPE1guR62h_am-tA",
+    databaseURL: "https://ms-haksa-default-rtdb.firebaseio.com/",
+    authDomain: "ms-haksa.firebaseapp.com",
+    projectId: "ms-haksa",
+    storageBucket: "ms-haksa.appspot.com",
+    messagingSenderId: "669674701477",
+    appId: "1:669674701477:web:4c988804396ff9e6ac434c",
+    measurementId: "G-B5PMZS32Q4"
+};
+firebase.initializeApp(config);
+
+firebaseEmailAuth = firebase.auth(); //파이어베이스 인증 객체
+firebaseDatabase = firebase.database(); //파이어베이스 데이터베이스 객체
+
+
+
+
+userSessionCheck();
+
+
+
+//페이지로부터 넘긴 값 받기
+
+
+function Request() {
+
+    var requestParam = "";
+
+    this.getParameter = function(param) {
+
+        var url = unescape(location.href); //현재 주소를 decoding
+
+        var paramArr = (url.substring(url.indexOf("?") + 1, url.length)).split("&"); //파라미터만 자르고, 다시 &그분자를 잘라서 배열에 넣는다. 
+
+
+
+        for (var i = 0; i < paramArr.length; i++) {
+
+            var temp = paramArr[i].split("="); //파라미터 변수명을 담음
+
+
+
+            if (temp[0].toUpperCase() == param.toUpperCase()) {
+
+                requestParam = paramArr[i].split("=")[1]; // 변수명과 일치할 경우 데이터 삽입
+
+                break;
+
+            }
+
+        }
+
+        return requestParam;
+
+    };
+
+}
+
+
+//제이쿼리를 사용한다.
+
+
+temp = location.href.split("?");
+data = temp[1].split("/");
+boardids = data[0];
+
+
+var boardid = "anounymous/" + boardids;
+
+
+var thanksRef = firebaseDatabase.ref(boardid);
+thanksRef.on('value', dotgeul)
+
+
+
+
+function dotgeul(data) {
+
+
+
+    //  if (loginUserKey == data.val().userkey) {
+
+
+
+    //제이쿼리 선택자와 val() 함수를 이용해서 이메일,비밀번호 값을 가져온다.
+    var request = new Request();
+
+    var key = data.key;
+
+    //  var key = request.getParameter('key');
+    var Data = data.val(); // 데이터 가져오기
+
+
+    var comment = Data.comment;
+    var createtime = Data.createtime;
+    var cmtcountz = Data.cmtcount;
+    var name = Data.Name;
+    var subject = Data.subject;
+    //   alert("로그인 중...:" + subject);
+
+
+
+    document.getElementById('cmtcountin').value = cmtcountz;
+
+
+
+
+    console.log(comment, createtime, name, subject);
+
+    //감사리스트 동적으로 붙이기
+    var id =
+        "<div style=\"background-color : white;\" class=\"car_d\">" +
+        "<div class=\"card-header bg-transparent\">" + "<div class=\"row align-items-center\">" + "<div class=\"col\">" +
+        "<h5 style=\"font-size: 20px\" class=\"h3 mb-0\">" + "<a onclick=\"gotoComments(this.id)\">" + subject + "</a></h5>" +
+        "<h6 class=\"text-uppercase text-muted ls-1 mb-1\">" + "익명이x" + " :: " + createtime + "</h6>" +
+        "</br>" +
+        "<a>" + comment + "</a>" + "</br></br>" + "<a id=\"cmtcount\" style=\"color: gray; font-size: 12px; float: right;\">" + "<i class=\"mdi mdi-chat text-blue\"></i>" + " " + cmtcountz + "</a>" +
+        "</div></div></div></div>";
+    $(".board").append(id);
+
+
+
+    //     }
+
+
+
+}
+
+
+
+
+$(document).ready(function() {
+
+    //메인화면 쓰기버튼 눌렀을 때
+    $(document).on('click', '.write', function() {
+
+        //네비게이션 메뉴의 text값 가져오기 - 자바스크립트 dom 방식으로 가져왔다.
+        var seseionCheck = document.getElementById("loginmenu").textContent;
+
+        //텍스트 필드에 있는 내용 가져오기!!!!
+        comment = $('#comment').val();
+        subject = $('#subject').val();
+        cmtcounts = $('#cmtcount').val();
+
+        if (seseionCheck == "로그아웃") {
+            //저장하기
+            saveThanks();
+            
+           
+
+        } else {
+            alert("비 로그인 이용자는 익명 게시판을 이용할 수 없습니다.")
+            window.location.href = "loginform.html"
+
+        }
+    });
+
+
+    $(document).on('click', '.create', function() {
+
+        var seseionCheck = document.getElementById("loginmenu").textContent;
+
+        if (seseionCheck == "로그아웃") {
+            window.location.href = "create.html"
+
+        } else {
+            alert("비 로그인 이용자는 마한아 익명 게시판을 이용할 수 없습니다.")
+            window.location.href = "loginform.html"
+
+        }
+
+
+
+    });
+
+
+});
+
+
+
+//쓰기 버튼 눌렀을 때 호출 되는 함수
+function saveThanks() {
+
+    
+ 
+ 
+
+
+ 
+
+
+    temp = location.href.split("?");
+    data = temp[1].split("/");
+    boardids = data[0];
+
+
+
+ 
+
+    cmtcounts = $('#cmtcountin').val();
+
+    
+
+
+
+    
+    //============댓글 개수 저장하는 영역============
+    var boardinfo = "anounymous/" + boardids;
+    var cmcount = firebaseDatabase.ref(boardinfo);
+    var objc = {
+       cmtcount:  parseInt(cmtcounts) +  parseInt(1),
+    };
+    cmcount.update(objc);
+
+
+
+
+
+   //============댓글 업로드하는 영역============
+    var boardid = "anounymous/" + boardids + "/comments";  //댓글
+    var thankRef = firebaseDatabase.ref(boardid);
+    var thank = thankRef.push(); // 해당 객체의 key 값이 자동으로 생성된다.
+    var boardno = thank.key; //이 보드의 키값
+
+
+
+
+
+    //로그인한 유저의 pk값,이름,내용,시간 데이터
+    var obj = {
+        name: name,
+        userkey: loginUserKey,
+        comment: comment,
+
+        boardno: boardno, //이 보드의 키값
+        createtime: currentTime
+    };
+    //위에서 thankRef.push()로 만들어진 key아래 위치에 저장해준다.
+    thank.set(obj);
+
+
+    window.location.reload();
+
+    $('#comment').val("");
+    $('#subject').val("");
+
+ 
+
+ 
+
+}
+
+
+
+
+//글 목록가져와서 뿌려주기
+function boardList() {
+    //alert("보드 로드 완료")
+
+    //로그인한 유저라면
+    if (loginUserKey) {
+        //alert(loginUserKey)
+        //글이 저장된 레퍼런스 값 가져오기
+
+
+        temp = location.href.split("?");
+        data = temp[1].split("/");
+        boardids = data[0];
+
+
+        var boardid = "anounymous/" + boardids + "/comments";
+
+
+        var thanksRef = firebaseDatabase.ref(boardid);
+
+        //on 함수로 글 목록가져오기
+        thanksRef.on('child_added', dotgeul_list)
+
+
+
+        var thanksRef = firebaseDatabase.ref('notice');
+        thanksRef.on('child_added', on_notice_list)
+
+    } else {
+        alert("비 로그인 유저에게는 게시물이 표시되지 않습니다. ");
+        window.location.href = "loginform.html"
+
+    }
+
+}
+
+//게시판 리스트 thanks 테이블의 thanks 키 들을 연속적으로 가져옴...ㅋㅋㅋㅋㅋ
+function dotgeul_list(data) {
+
+
+
+
+    //제이쿼리 선택자와 val() 함수를 이용해서 이메일,비밀번호 값을 가져온다.
+    var request = new Request();
+
+    var key = data.key;
+
+    //  var key = request.getParameter('key');
+    var Data = data.val(); // 데이터 가져오기
+
+
+    var comment = Data.comment;
+    var createtime = Data.createtime;
+    var name = Data.Name;
+    var cmtcountz = Data.cmtcount;
+    var subject = Data.subject;
+    //   alert("로그인 중...:" + subject);
+
+
+
+ 
+    console.log(comment, createtime, name, subject);
+
+    //감사리스트 동적으로 붙이기
+    var id =
+        "<div class=\"c\">" +
+        "<div class=\"card-header bg-transparent\">" + "<div class=\"row align-items-center\">" + "<div class=\"col\">" +
+        "<h5 style=\"font-size: 20px\" class=\"h3 mb-0\">" + "<a onclick=\"gotoComments(this.id)\">" + "</a></h5>" +
+        "<h6 class=\"text-uppercase text-muted ls-1 mb-1\">" + "익명이x" + " :: " + createtime + "</h6>" +
+        "<a>" + comment + "</a>" +
+        "</div></div></div></div>";
+    $(".comments").append(id);
+
+
+
+
+}
+
+
+
+
+function show_board_page(key) {
+    location.href = "comment.html?" + key;
+
+}
+
+
+
+
+   var firebaseEmailAuth; //파이어베이스 email 인증 모듈 전역변수
+   var firebaseDatabase; //파이어베이스 db 모듈 전역변수
+   var name; //유저 이름
+   var loginUserKey; //로그인한 유저의 부모 key
+   var userInfo; //로그인한 유저의 정보 object type
+   var brdno;
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+ 
+<script>
+  includeHTML();
+</script>
+ 
+
+   
+</body>
+
+</html>

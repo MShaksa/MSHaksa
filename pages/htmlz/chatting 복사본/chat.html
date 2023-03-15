@@ -1,0 +1,151 @@
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+
+<link rel="stylesheet" href="css/normalize.css">
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+
+
+
+var firebaseEmailAuth; //파이어베이스 email 인증 모듈 전역변수
+	var firebaseDatabase; //파이어베이스 db 모듈 전역변수
+	var name; //유저 이름
+	var loginUserKey; //로그인한 유저의 부모 key
+	var userInfo; //로그인한 유저의 정보 object type
+  var brdno;
+
+
+
+
+
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+		apiKey: "AIzaSyDQLUtjdMgOLDIZlPusi5YPKBiuQduD9Go",
+		databaseURL: "https://mhazone-mha-default-rtdb.firebaseio.com/",
+        authDomain: "mhazone-mha.firebaseapp.com",
+        projectId: "mhazone-mha",
+        storageBucket: "mhazone-mha.appspot.com",
+        messagingSenderId: "967342331429",
+        appId: "1:967342331429:web:8a5689ea4c254f037951cc",
+        measurementId: "G-Z33QJ15H02"
+  };
+ 
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ 	//인증모듈 객체 가져오기
+ 	//데이터베이스 모듈객체 가져오기
+ 
+
+
+  
+
+
+  firebase.database().ref("messages").on("child_removed", function (snapshot) {
+    document.getElementById("message-" + snapshot.key).innerHTML = "This message has been deleted";
+  });
+
+  function deleteMessage(self) {
+    var messageId = self.getAttribute("data-id");
+    firebase.database().ref("messages").child(messageId).remove();
+  }
+
+  function sendMessage() {
+
+        //냘짜 함수
+        var d = new Date();
+    var year = d.getFullYear().toString();
+    var month = (d.getMonth() + 1).toString();
+    var day = d.getDate().toString();
+    var hours = d.getHours().toString();
+    var min = d.getMinutes().toString();
+    var sec = d.getSeconds().toString();
+    var currentTime = year + "년" + month + "월" + day+ "일" + hours + ":" + min;
+
+
+
+    var message = document.getElementById("message").value;
+    firebase.database().ref("messages").push().set({
+      "message": message,
+      "sender": myName,
+      "name": name,
+      "msgtime": currentTime
+      
+    });
+    return false;
+  }
+</script>
+
+<style>
+  figure.avatar {
+    bottom: 0px !important;
+  }
+  .btn-delete {
+    background: red;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+</style>
+
+
+
+
+
+
+
+<div class="chat">
+  <div class="chat-title">
+    <h1 style="font-size: 13px;">익명이들</h1>
+    <h2 style="font-size: 8px;">마한아존 전체채팅</h2>
+    <figure class="avatar">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" /></figure>
+  </div>
+  <div class="messages">
+    <div class="messages-content"></div>
+  </div>
+  <div class="message-box">
+    <textarea type="text" class="message-input" id="message" placeholder="메시지를 입력해주세요..."></textarea>
+    <button type="submit" class="message-submit">보내기</button>
+  </div>
+
+</div>
+<div class="bg"></div>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
+
+        <script src="js/chat.js?v=<?= time(); ?>"></script>
+        <script>
+
+ 
+
+
+
+        </script>
+
+<style>
+    .fixed-bottom {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(121, 255, 248);
+        color: white;
+        text-align: center;
+        padding: 25px;
+        font-size: 20px;
+    }
+</style>
+ 

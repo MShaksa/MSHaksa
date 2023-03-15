@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>mhaZone - 로그인</title>
+  <!-- Favicon -->
+
+  <link rel="stylesheet" href="register.css" />
+  <link rel="stylesheet" href="stylelogin.css" />
+
+
+  <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-default">
+  <!-- Navbar -->
+  <nav id="navbar-main" class="navbar navbar-horizontal navbar-transparent navbar-main navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="dashboard.html">
+        <img src="../assets/img/brand/white.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse navbar-custom-collapse collapse" id="navbar-collapse">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="dashboard.html">
+                <img src="../assets/img/brand/blue.png">
+              </a>
+            </div>
+            <div class="col-6 collapse-close">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" style="color: black;">
+              <span class="nav-link-inner--text">홈</span>
+            </a>
+          </li>
+
+        </ul>
+        <hr class="d-lg-none" />
+        <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+
+
+          <!----
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" data-original-title="Like us on Facebook">
+              <i class="fab fa-facebook-square"></i>
+              <span class="nav-link-inner--text d-lg-none">Facebook</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" data-original-title="Follow us on Instagram">
+              <i class="fab fa-instagram"></i>
+              <span class="nav-link-inner--text d-lg-none">Instagram</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" data-toggle="tooltip" data-original-title="Follow us on Twitter">
+              <i class="fab fa-twitter-square"></i>
+              <span class="nav-link-inner--text d-lg-none">Twitter</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial" target="_blank" data-toggle="tooltip" data-original-title="Star us on Github">
+              <i class="fab fa-github"></i>
+              <span class="nav-link-inner--text d-lg-none">Github</span>
+            </a>
+          </li>        -->
+
+
+          <!--
+          <li class="nav-item d-none d-lg-block ml-lg-4">
+            <a href="https://www.creative-tim.com/product/argon-dashboard-pro?ref=ad_upgrade_pro" target="_blank" class="btn btn-neutral btn-icon">
+              <span class="btn-inner--icon">
+                <i class="fas fa-pen mr-2"></i>
+              </span>
+              <span class="nav-link-inner--text">Upgrade to PRO</span>
+            </a>
+          </li>
+
+        -->
+
+ 
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main content -->
+  <div id="login_div" class="main-content">
+    <!-- Header -->
+    <div class="header bg-gradient-primary py-7 py-lg-8 pt-lg-9">
+      <div class="container">
+        <div class="header-body text-center mb-7">
+          <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-6 col-md-8 px-5">
+              <h1 class="text-black">로그인</h1>
+              <p class="text-lead text-black">마한아존에 로그인하여 많은 추천 기능들을 이용해보세요.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="separator separator-bottom separator-skew zindex-100">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container mt--8 pb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7">
+          <div class="card bg-secondary border-0 mb-0">
+            <div class="card-header bg-transparent pb-5">
+              <div class="text-muted text-center mt-2 mb-3"><small>계정 만들기 : Create Account</small></div>
+              <div class="btn-wrapper text-center">
+
+
+
+
+                <a href="loginfb.html" class="btn btn-neutral btn-icon">
+                  <span class="btn-inner--icon"><img src="data:image/png;base64,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"></span>
+                  <span class="btn-inner--text">facebook(으)로 계속하기</span>
+                </a>
+
+              </br>              </br>
+
+
+                <a href="googlekr.html" class="btn btn-neutral btn-icon">
+                  <span class="btn-inner--icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/600px-Google_%22G%22_Logo.svg.png"></span>
+                  <span class="btn-inner--text">Continue with Google</span>
+                </a>
+
+
+
+
+                
+              </div>
+            </div>
+            <div class="card-body px-lg-5 py-lg-5">
+              <div class="text-center text-muted mb-4">
+                <small>또는 로그인하기</small> </br>
+                <small>or Login</small>
+
+              </div>
+              <form role="form">
+                <div class="form-group mb-3">
+                  <div class="input-group input-group-merge input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                    </div>
+
+                    <!--이메일주소입력하는곳-->
+                    <input class="form-control" placeholder="Email" type="email" id="email">
+
+
+
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group-merge input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                    </div>
+                                      
+                    <!--패스워드입력하는곳-->
+                    <input class="form-control" placeholder="Password" type="password" id="pwd">
+
+
+                  </div>
+                </div>
+                <!----
+                <div class="custom-control custom-control-alternative custom-checkbox">
+                  <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
+                  <label class="custom-control-label" for=" customCheckLogin">
+                    <span class="text-muted">Remember me</span>
+                  </label>
+                </div>
+              -->
+                <div class="text-center">
+
+
+
+                   <a type="button" onclick="login()" style="width: 200px;" class="submit btn btn-default login" align="center"><strong>Login 로그인</strong></a>
+
+
+
+
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-6">
+              <a href="https://developers.facebook.com/docs/facebook-login/web?locale=ko_KR" class="text-light"><small>Facebook Login API 4.3.3</small></a>
+            </div>
+            <div class="col-6 text-right">
+              <a href="privacy.html" class="text-light"><small>개인정보처리방침</small></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+   
+
+  <div id="user_div" class="loggedin-div">
+    <h3 style="text-align:center;">로그아웃 할까요?</h3>
+    <p id="user_para" style="text-align:center;">언제든 다시 로그인할 수 있습니다.</p>
+    <button onclick="logout()">로그아웃</button>
+</div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="py-5" id="footer-main">
+    <div class="container">
+      <div class="row align-items-center justify-content-xl-between">
+        <div class="col-xl-6">
+          <div class="copyright text-center text-xl-left text-muted">
+            &copy; 2021 <a href="http://www.mhazone.bu.to" class="font-weight-bold ml-1" target="_blank">mhaZone</a>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+            <li class="nav-item">
+              <a href="https://developers.facebook.com/docs/facebook-login/web?locale=ko_KR" class="nav-link" target="_blank">Facebook API 정보</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://www.mhazone.bu.to" class="nav-link" target="_blank">About Us</a>
+            </li>
+            
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ 
+
+  <!-- Argon Scripts -->
+  <!-- Core -->
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <!-- Argon JS -->
+  <script src="../assets/js/argon.js?v=1.2.0"></script>
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script>
+      var firebaseEmailAuth; //파이어베이스 email 인증 모듈 전역변수
+      var firebaseDatabase; //파이어베이스 db 모듈 전역변수
+      var userInfo; //가입한 유저의 정보. object 타입
+      //파이어 베이스 초기화 코드
+      var config = {
+          apiKey: "AIzaSyDQLUtjdMgOLDIZlPusi5YPKBiuQduD9Go",
+      databaseURL: "https://mhazone-mha-default-rtdb.firebaseio.com/",
+          authDomain: "mhazone-mha.firebaseapp.com",
+          projectId: "mhazone-mha",
+          storageBucket: "mhazone-mha.appspot.com",
+          messagingSenderId: "967342331429",
+          appId: "1:967342331429:web:8a5689ea4c254f037951cc",
+          measurementId: "G-Z33QJ15H02"
+      };
+      firebase.initializeApp(config);
+
+      firebaseEmailAuth = firebase.auth(); //파이어베이스 인증 객체
+      firebaseDatabase = firebase.database(); //파이어베이스 데이터베이스 객체
+
+
+
+      //제이쿼리를 사용한다.
+      $(document).ready(function () {
+
+          //가입버튼 눌렀을 때
+          $(document).on('click', '.login', function () {
+
+              //제이쿼리 선택자와 val() 함수를 이용해서 이메일,비밀번호 값을 가져온다.
+              var email = $('#email').val();
+              var password = $('#pwd').val();
+              alert("로그인 중...:" + email + ":" + password);
+
+              //파이어베이스 이메일 로그인 함수
+              firebaseEmailAuth.signInWithEmailAndPassword(email, password)
+                  .then(function (firebaseUser) {
+
+                      //성공하면 firebaseUser에 유저 정보 값이 담겨 넘어온다.
+                      loginSuccess(firebaseUser);
+
+                  })
+                  .catch(function (error) {
+                      // 실패했을 때 에러 처리
+                      alert(error);
+                      alert("로그인 실패");
+                  });
+
+          });
+      });
+
+      //로그인 성공했을 때
+      function loginSuccess(firebaseUser) {
+          alert("로그인 성공");
+
+          //로그인 성공한 유저 id 확인해 보기 - firebase database에 접근해서 데이터 조회 하는 함수
+          firebaseDatabase.ref("users/" + firebaseUser.uid).once('value').then(function (snapshot) {
+              //alert(snapshot.val().name)
+          });
+
+          //메인 페이지로 이동
+          window.location.href = "index.html"
+      }
+
+
+  </script>
+
+  <script src="loginform.js"></script>
+  <script src="ipbanned.js"></script>
+
+</body>
+
+</html>

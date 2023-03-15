@@ -1,0 +1,923 @@
+<!--
+=========================================================
+* Argon Dashboard - v1.2.0
+=========================================================
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+
+
+* Copyright  Creative Tim (http://www.creative-tim.com)
+* Coded by www.creative-tim.com
+
+
+
+=========================================================
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html>
+
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+    <meta name="author" content="Kihoon Kim">
+    <title>naamuib - 재활용에 가치를</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- Icons -->
+    <link rel="stylesheet" href="../assets/anim/tree.css" type="text/css">
+    <script src="../assets/anim/tree.js"></script>
+
+
+
+    <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://samuelgalaxys.github.io/reusemapvendors/vendors/iconfonts/mdi/css/materialdesignicons.css">
+  
+    <!-- Page plugins -->
+    <!-- Argon CSS -->
+    <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
+  </head>
+
+<body>
+  <!-- Sidenav -->
+  
+  
+    <!-- Sidenav -->
+    <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+      <div class="scrollbar-inner">
+        <!-- Brand -->
+        <div class="sidenav-header  align-items-center">
+          <a class="navbar-brand" href="javascript:void(0)">
+            <img src="../assets/img/brand/logo.png" class="navbar-brand-img" alt="...">
+          </a>
+        </div>
+        <div class="navbar-inner">
+          <!-- Collapse -->
+          <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+            <!-- Nav items -->
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">
+                  <i class="mdi mdi-nature text-green"></i>
+                  <span class="nav-link-text">홈</span>
+                </a>
+              </li>
+  
+  
+              <li class="nav-item">
+                <a class="nav-link" href="scboard.html">
+                  <i class="ni ni-send text-orange"></i>
+                  <span class="nav-link-text">익명이존</span>
+                </a>
+              </li>
+  
+              <div class="btnz"></div>
+  
+   
+      
+  
+            </ul>
+            <!-- Divider -->
+            <hr class="my-3">
+            <!-- Heading -->
+  
+  
+            
+            <h6 class="navbar-heading p-0 text-muted">
+              <span class="docs-normal">For Teacher's</span>
+            </h6>
+            <ul class="navbar-nav mb-md-3">
+  
+              <li class="nav-item">
+                <a class="nav-link" href="notice.html">
+                  <i class="mdi mdi-information text-yellow"></i>
+                  <span class="nav-link-text">마한아 공지</span>
+                </a>
+              </li>
+  
+  
+              
+              <li class="nav-item">
+                <a class="nav-link" href="teacher.html">
+                  <i class="ni ni-badge text-blue"></i>
+                  <span class="nav-link-text">Class Plan</span>
+                </a>
+              </li>
+  
+  
+  
+            </ul>
+            
+  
+            <hr class="my-3">
+  
+            <h6 class="navbar-heading p-0 text-muted">
+              <span class="docs-normal">Time Tables</span>
+            </h6>
+            <!-- Navigation -->
+            <ul class="navbar-nav mb-md-3">
+            
+  
+              <li class="nav-item">
+                <a class="nav-link" href="g12.html">
+                  <i class="mdi mdi-book text-green"></i>
+                  <span class="nav-link-text">12학년</span>
+                </a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="g11.html">
+                  <i class="mdi mdi-book text-primary"></i>
+                  <span class="nav-link-text">11학년</span>
+                </a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="g10.html">
+                  <i class="mdi mdi-book text-orange"></i>
+                  <span class="nav-link-text">10학년</span>
+                </a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="g9.html">
+                  <i class="mdi mdi-book text-yellow"></i>
+                  <span class="nav-link-text">9학년</span>
+                </a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="g8.html">
+                  <i class="mdi mdi-book text-purple"></i>
+                  <span class="nav-link-text">8학년</span>
+                </a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="g7.html">
+                  <i class="mdi mdi-book text-pink"></i>
+                  <span class="nav-link-text">7학년</span>
+                </a>
+              </li>
+  
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+  
+
+
+
+
+
+    
+
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    <!-- Topnav -->
+        <!-- Topnav -->
+        <nav class="navbar navbar-top navbar-expand navbar-dark border-bottom" style="background-color: #25204d;">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Search form -->
+              <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+                <div class="form-group mb-0">
+      
+      
+      
+       
+      
+      
+      
+      
+                </div>
+                <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </form>
+              <!-- Navbar links -->
+              <ul class="navbar-nav align-items-center  ml-md-auto ">
+             
+                <li class="nav-item d-sm-none">
+                  <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+                    <i class="ni ni-zoom-split-in"></i>
+                  </a>
+                </li>
+        
+        
+                 
+        
+        
+                
+        
+              </ul>
+              <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+        
+        
+                <li class="nav-item d-xl-none">
+                  <!-- Sidenav toggler -->
+                  <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                    <div class="sidenav-toggler-inner">
+                      <i class="sidenav-toggler-line"></i>
+                      <i class="sidenav-toggler-line"></i>
+                      <i class="sidenav-toggler-line"></i>
+                    </div>
+                  </div>
+                </li>
+        
+        
+                <li class="nav-item dropdown">
+                  
+                  <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="media align-items-center">
+                      <span class="avatar avatar-sm rounded-circle">
+                        <img alt="Image placeholder" src="../assets/img/theme/users.jpg">
+                      </span>
+                      <div class="media-body  ml-2  d-none d-lg-block">
+                        <span id="joinmenu" class="mb-0 text-sm  font-weight-bold">로그인</span>
+                      </div>
+                    </div>
+                  </a>
+        
+                  <div class="dropdown-menu  dropdown-menu-right ">
+                    <div class="dropdown-header noti-title">
+                      <h6 class="text-overflow m-0">Welcome!</h6>
+                    </div>
+                     
+                    <div class="dropdown-divider"></div>
+                    <a href="loginform.html" class="dropdown-item">
+                      <i class="ni ni-user-run"></i>
+                      <span id="loginmenu">로그인/가입</span>
+                    </a>
+                  </div>
+        
+        
+        
+        
+        
+        
+                </li>
+              </ul>
+      
+            </div>
+          </div>
+        </nav>
+    <!-- Header -->
+
+
+
+
+
+
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header pb-6 d-flex align-items-center" style="min-height: 500px; background-image: url(https://lh5.googleusercontent.com/p/AF1QipMazcOsj-X8l10bufMzIHbPCgoGdfbP40TJW_eO=w1080-k-no); background-size: cover; background-position: center top;">
+      <!-- Mask -->
+      <span class="mask bg-gradient-default opacity-8"></span>
+      <!-- Header container -->
+      <div class="container-fluid d-flex align-items-center">
+        <div class="row">
+          <div class="col-lg-7 col-md-10">
+            <h1 id="nicname" class="display-2 text-white"><a id="hello">안녕하세요, username님!</a></h1>
+
+
+
+            <p class="text-white mt-0 mb-5">이곳에서 프로필, 게시물을 관리하고 내가 쓴 글을 관리할 수 있습니다.</p>
+            <!-- <a href="#!" class="btn btn-neutral">프로필 편집</a> -->
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+      <div class="row">
+        <div class="col-xl-4 order-xl-2">
+          <div class="card card-profile">
+
+
+
+
+            <img src="https://res.allmacwallpaper.com/get/macbook-air-wallpapers/material-design-flow-blue-green-8k/23077-720.jpg" alt="Image placeholder" class="card-img-top">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 order-lg-2">
+                <div class="card-profile-image">
+                  <a href="#">
+                    <img id="myimage" style="background: rgb(255, 255, 255);" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/ManilHankuk.png/300px-ManilHankuk.png" class="rounded-circle">
+                    <div id="showfile"></div>
+
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+              <div class="d-flex justify-content-between">
+
+                
+              </div>
+            </div>
+
+
+
+
+            <div class="card-body pt-0">
+              <div class="row">
+                <div class="col">
+                  <div class="card-profile-stats d-flex justify-content-center">
+                    
+                    
+                    
+                    <div>
+                      <span class="heading"><a style="font-size: 20px;" id="noticeTK">0</a></span>
+                      <span class="description">공지쿠키</span>
+                    </div>
+                    <div>
+                      <span class="heading"><a style="font-size: 20px;" id="storeTK">0</a></span>
+                      <span class="description">매점티켓</span>
+                    </div>
+                    <div>
+                      <span class="heading"><a style="font-size: 20px;" id="inf3">3</a></span>
+                      <span class="description">내기여도</span>
+                    </div> 
+                    
+
+
+
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <h5 class="h3">
+                  <a id="namesz"></a>
+                </h5>
+              </br> 
+                <div class="h5 font-weight-300">
+                  <i class="ni location_pin mr-2"></i><a id="gradez"></a>
+                </br>
+                  <!-- <i class="ni location_pin mr-2"></i><a id="personalid"></a> -->
+
+                </div>
+                <div class="h5 mt-4">
+                  <i class="ni business_briefcase-24 mr-2"></i><a id="namewrite">MANILA HANKUK ACADEMY</a>
+                </div>
+                <div>
+                  <i class="ni education_hat mr-2"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8 order-xl-1">
+          <div class="card">
+            <div class="card-header">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h3 class="mb-0">information </h3>
+                </div>
+
+
+
+                <div class="col-4 text-right">
+                  <!-- <a href="#!" id="changeBtn" class="btn btn-sm btn-primary">수정하기</a> -->
+                </div>
+
+
+                
+              </div>
+            </div>
+            <div class="card-body">
+              <form>
+
+                <h6 class="heading-small text-muted mb-4">내가 쓴 공지</h6>
+
+
+
+
+
+                <div class="pl-lg-4">
+                  <div class="row">
+                   
+                  </div>
+
+
+ 
+
+
+                  
+
+                </div>
+
+                <div class="pl-lg-4">
+                  <div class="form-group">
+
+                    
+
+                    <div class="noticeList scrollh"  style="overflow:scroll;width:auto; height: 200px;;"></div>
+
+
+                    <div id="statetxtP">
+                      <p id="statetxt"></p>
+                    </div>
+  
+                    </div>
+                    
+                </div>
+                
+
+                <hr class="my-4" />
+                <!-- Address -->
+                <h6 class="heading-small text-muted mb-4">내가 쓴 글들</h6>
+
+                <label class="form-control-label">-</label>
+
+                
+                  <div class="boardList scrollh"  style="overflow:scroll;width:auto; height: 800px;;"></div>
+
+                <!--내가 쓴 게시물들 불러오는 부분임.-->
+
+
+                <hr class="my-4" />
+                <!-- Description -->
+                
+
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+     
+      <footer class="footer pt-0">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6">
+            <div class="copyright text-center  text-lg-left  text-muted">
+              &copy; 2021 <a href="#" class="font-weight-bold ml-1" target="_blank">mhaZone (reusemap HB), All rights reserved.</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+      
+              
+              
+              <li class="nav-item">
+                <a href="http://mha.or.kr" class="nav-link" target="_blank">마닐라한국아카데미</a>
+              </li>
+              <li class="nav-item">
+                <a href="personaldata.html" class="nav-link" target="_blank">개인정보처리방침</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+  <!-- Argon Scripts -->
+  <!-- Core -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Core -->
+ <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+ <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+ <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+ <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+ <!-- Optional JS -->
+ <script src="../assets/vendor/chart.js/dist/Chart.min.js"></script>
+ <script src="../assets/vendor/chart.js/dist/Chart.extension.js"></script>
+ <!-- Argon JS -->
+ <script src="../assets/js/argon.js?v=1.2.0"></script>
+
+<script src="../assets/js/time.js"></script>
+<!--login유무 session js 파일 -->
+<script src="../assets/js/sessionCheck.js"></script>
+
+
+
+
+
+ <!--스크립트 부분. 자신의 스크립트 코드로 변경하세요! -->
+ <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+ <script>
+
+   var firebaseEmailAuth; //파이어베이스 email 인증 모듈 전역변수
+   var firebaseDatabase; //파이어베이스 db 모듈 전역변수
+   
+   //var currentTime; // 현재 시간 가져오는 함수, time.js 파일에 따로 빼놓았다.
+
+   var name; //유저 이름
+   var loginUserKey; //로그인한 유저의 부모 key
+   var userInfo; //로그인한 유저의 정보 object type
+   var comment; //유저가 쓴글 내용 저장
+   var url; //사진이 저장될 url
+
+
+ 
+
+	//파이어 베이스 초기화 코드
+	var config = {
+		apiKey: "AIzaSyDQLUtjdMgOLDIZlPusi5YPKBiuQduD9Go",
+		databaseURL: "https://mhazone-mha-default-rtdb.firebaseio.com/",
+        authDomain: "mhazone-mha.firebaseapp.com",
+        projectId: "mhazone-mha",
+        storageBucket: "mhazone-mha.appspot.com",
+        messagingSenderId: "967342331429",
+        appId: "1:967342331429:web:8a5689ea4c254f037951cc",
+        measurementId: "G-Z33QJ15H02"
+	 
+	};
+	//파이어베이스 초기화
+	firebase.initializeApp(config);
+	//인증모듈 객체 가져오기
+	firebaseEmailAuth = firebase.auth();
+	//데이터베이스 모듈객체 가져오기
+	firebaseDatabase = firebase.database();
+
+   </script>
+
+  <script>
+    $(document).ready(function () {
+        //세션체크 함수먼저 호출!
+        userSessionCheck();
+        setTimeout(function() {
+            //내가쓴 글만 가져오는 함수
+            boardLists();
+        }, 1000);
+
+
+    });
+    
+    //수정 버튼이 click 되기를 대기하고 있는 이벤트 함수
+    $(document).on('click', '#changeBtn', function () {
+            changeButtonAction();
+    });
+
+    //수정, 저장하기 버튼 눌렀을 때 작동하는 함수
+    function changeButtonAction(){
+        console.log("버튼이 눌렀습니다");
+        var changeBtn = document.getElementById("changeBtn");
+        var changeBtnText = changeBtn.textContent; //버튼의 text제목을 가져온다.
+        
+        //버튼이 수정하기 버튼이면
+        if (changeBtnText == "수정하기") {
+            console.log("수정하기 버튼 - input file 나타나고 - p 태그 대신 input text 태그로 변경시키기 - 저장버튼 활성화 작업을 시작합니다");
+
+            //input file 붙여주기 - id가 fileButton 인 filetpye의 엘리먼트를 붙여주었다.
+
+
+
+            var html = "<input type=\"file\" id=\"fileButton\" class\"btn-default\"/>";
+            $("#showfile").append(html);
+            console.log("input file 붙여주기 완료");
+
+            //기존에 한줄 메시지 없애주고, 새로운 input text 붙여주기
+            var parent = document.getElementById("statetxtP");
+            var child = document.getElementById("statetxt");
+            parent.removeChild(child);
+            console.log("한줄 메시지가 들어있는 p 태그 삭제 완료");
+
+            //한줄 메시지 적을 textarea 창 활성화
+            var newTextarea = "<textarea class=\"form-control\" rows=\"3\" id=\"comment\"></textarea>";
+            $("#statetxtP").prepend(newTextarea);
+            console.log("한줄 메시지 적을 textarea 창 활성화 완료");
+
+            //저장하기 버튼 활성화
+            changeBtn.textContent = "저장하기"
+            changeBtn.className = "btn btn-success"; //bootstrap 클래스 속성 변경해주기
+        } else {
+
+                console.log("저장 버튼 - input file 사라지게 input text태그 사라지고 p 태그에 넣고 저장버튼 비활성화 수정버튼 활성화를 시작합니다");
+
+                //저장하기 함수 호출
+                console.log("저장하기 함수 호출");
+                var saveChack = imageStateMsgAllSave();
+
+                if (saveChack) {
+                    //활성화된 input file 객체 삭제                    
+                    var parent = document.getElementById("showfile");
+                    var child = document.getElementById("fileButton");
+                    parent.removeChild(child);
+                    console.log("활성화된 input file 객체 삭제 완료");
+
+                    //input text area 객체 삭제해주기
+                    var parentTwo = document.getElementById("statetxtP");
+                    var childTwo = document.getElementById("comment");
+                    parentTwo.removeChild(childTwo);
+                    console.log("활성화된 input text area 객체 삭제 완료");
+
+
+                    //p태그에 수정한 한줄 메시지 넣어주기
+                    var htmlThree = "<p id=\"statetxt\">" + comment + "</p>";
+                    $("#statetxtP").prepend(htmlThree);
+                    console.log("할줄메시지가 들어있는 p 태그 활성화");
+
+                    changeBtn.textContent = "수정하기"
+                    changeBtn.className = "btn btn-default";
+
+                    console.log("저장되었습니다");
+                }          
+
+        }
+    }
+
+
+    //이미지와 한줄글 최종 저장하는 함수!
+    function imageStateMsgAllSave() {
+        console.log("imageStateMsgAllSave로 들어왔습니다");
+
+        //파일을 파이어 베이스 스토리지에 저장하는 로직
+        var fileButton = document.getElementById("fileButton");
+        comment = document.getElementById("comment").value;
+        alert(comment);
+        //수정 버튼을 눌러서 fileButton 객체가 생기면~! 작동
+        if (fileButton) {
+            //fileButton.addEventListener('change', function (e) {
+            console.log("fileButton.addEventListener('change', function(e){ 함수 호출 - 들어왔습니다");
+            var file = fileButton.files[0];
+            //현재 유저 키를 파일이름으로 지정
+            var storageRef = firebase.storage().ref(loginUserKey);
+            var task = storageRef.put(file);
+            // #.핵심
+            //이곳에서 파이어베이스 스토리지에도 저장해주고, 데이터베이스에도 저장해줘야 함.
+            //유저키(부모키)를 레퍼런스로 잡고 url 추가해줌 userSessionCheck() 먼저 실행
+            //사진을 업데이트 하고 현재 상태글 업데이트 하고, 다시 불러오기
+            //비동기 방식으로 움직임
+            //최종완료되었을때 이곳에서 끝난다
+            task.then(function (snapshot) {
+                url = snapshot.downloadURL;
+                console.log("파이어베이스 스토리지에 저장된 주소 =  " + url);
+                //파이어베이스에 이미지를 저장한후 그 url을 바로 가져와서 img 태그에 적용해줌
+                document.querySelector('#myimage').src = url;
+
+                //여기에 user 레퍼런스에 사진 url 저장
+                //선택된 키가 있으면 수정
+                userRef = firebaseDatabase.ref('users/' + loginUserKey);
+                userRef.update({
+                    createtime: currentTime,
+                    name: name,
+                    imgURl: url,
+                    comment: comment
+                });
+                console.log("파이어베이스 데이터베이스 user 레퍼런스에 성공적으로 저장 완료");
+                alert("성공적으로 변경되었습니다.")
+
+            })
+                .catch(function (error) {
+                    console.error(error);
+                    return;
+                });
+
+            //});
+
+        }
+        return true;
+    }
+
+ //감사리스트 가져오기
+ function boardLists() {
+        console.log("땡스 리스트 함수안으로 들어왔습니다")
+
+        var thanksRef = firebaseDatabase.ref('anounymous');
+        thanksRef.on('child_added', on_thanks_list)
+
+
+        var thanksRefz = firebaseDatabase.ref('users');
+        thanksRefz.on('child_added', on_profile_list)
+
+
+        var thanksRefm = firebaseDatabase.ref('notice');
+        thanksRefm.on('child_added', on_notice_list)
+
+    }
+
+
+    function on_profile_list(data) {
+
+
+      if (loginUserKey == data.val().userkey) {
+
+      var key = data.key;
+            var Data = data.val();
+            var comment = Data.comment;
+            var createtime = Data.createtime;
+            var grade = Data.grd;
+            var name = Data.name;
+            var subject = Data.subject;
+		        var userkey = Data.userkey;
+           
+      
+
+            //  <a> 코듭분에 텍스트 표시하기
+            document.getElementById('gradez').innerText = grade + '학년';
+            document.getElementById('hello').innerText = '안녕하세요, ' + name + '님!';
+            document.getElementById('namesz').innerText = name;
+          //  document.getElementById('personalid').innerText = userkey;
+
+
+      }
+
+    }
+
+
+    function on_notice_list(data) {
+        console.log("on_thanks_list() 함수안으로 들어왔습니다 리스트를 가져오겠습니다")
+        //글 게수만큼 반복된다.
+        //alert(loginUserKey);
+       // alert(data.val().userkey);
+        //헌재 로그인한 유저의 key와 감사리스트 객체의 user key가 일치하는 것 만 가져오기
+        if (loginUserKey == data.val().userkey) {
+            var key = data.key;
+            var Data = data.val();
+            var comment = Data.comment;
+            var createtime = Data.createtime;
+            var name = Data.name;
+            var brdnm = Data.boardno;
+            var subject = Data.subject;
+		        var userkey = Data.userkey;
+            var cmtcount = Data.cmtcount;
+
+  
+
+            var mod_btn_key = key + "mod_btn"
+
+            //감사리스트 동적으로 붙이기
+            var html =
+
+            "<div class=\"card\" id='" + brdnm + "' onclick=\"show_board_page(this.id)\">" +
+                "<div class=\"card-header bg-transparent\">" + "<div class=\"row align-items-center\">" + "<div class=\"col\">" +
+                "<h5 style=\"font-size: 20px\" class=\"h3 mb-0\">" + "<a>" + subject +"</a></h5>" +
+                "<h6 class=\"text-uppercase text-muted ls-1 mb-1\">" + name + " :: " + createtime + "</h6>" +
+                "</br>" +
+                "<a style=\"font-size: 17px\">" + comment + "</a></br></br>" + "<a style=\"color: gray; font-size: 12px; float: left;\">" + "<i class=\"mdi mdi-chat text-blue\"></i>" + " " + cmtcount + "</a>" +
+                "<div align=\"right\" id='" + mod_btn_key + "'>" +
+
+                  " " +
+                "<button type=\"button\" class=\"btn btn-danger\" onclick=\"btn_deletez('" + key + "')\">삭제</button>" +
+                "</div></div>" +
+                "<hr>";
+
+
+            $(".noticeList").prepend(html);
+        }
+
+
+        
+        function show_board_page(key) {
+          location.href="noticecom.html?"+ key;
+        }
+
+
+    }
+
+ 
+
+ 
+        //삭제하기 버튼
+        function btn_deletez(thankKey) {
+            var check = confirm("이 공지를 삭제하시겠습니까?")
+
+            if (check) {
+                removeThankz = firebaseDatabase.ref("notice/" + thankKey);
+
+                removeThankz.remove()
+                    .then(function() {
+                        console.log("Remove succeeded.")
+
+                    })
+                    .catch(function(error) {
+                        console.log("Remove failed: " + error.message)
+                    });
+            }
+
+            window.location.reload();
+        }
+
+
+
+
+
+
+
+
+//땡스리스트 thanks 테이블의 thanks 키 들을 연속적으로 가져온다.
+function on_thanks_list(data) {
+        console.log("on_thanks_list() 함수안으로 들어왔습니다 리스트를 가져오겠습니다")
+        //글 게수만큼 반복된다.
+        //alert(loginUserKey);
+       // alert(data.val().userkey);
+        //헌재 로그인한 유저의 key와 감사리스트 객체의 user key가 일치하는 것 만 가져오기
+        if (loginUserKey == data.val().userkey) {
+            var key = data.key;
+            var Data = data.val();
+            var comment = Data.comment;
+            var createtime = Data.createtime;
+            var name = Data.name;
+            var brdnm = Data.boardno;
+            var subject = Data.subject;
+		        var userkey = Data.userkey;
+            var cmtcount = Data.cmtcount;
+
+  
+
+            var mod_btn_key = key + "mod_btn"
+
+            //감사리스트 동적으로 붙이기
+            var html =
+
+            "<div class=\"card\" id='" + brdnm + "' onclick=\"show_board_page(this.id)\">" +
+                "<div class=\"card-header bg-transparent\">" + "<div class=\"row align-items-center\">" + "<div class=\"col\">" +
+                "<h5 style=\"font-size: 20px\" class=\"h3 mb-0\">" + "<a>" + subject +"</a></h5>" +
+                "<h6 class=\"text-uppercase text-muted ls-1 mb-1\">" + name + " :: " + createtime + "</h6>" +
+                "</br>" +
+                "<a style=\"font-size: 17px\">" + comment + "</a></br></br>" + "<a style=\"color: gray; font-size: 12px; float: left;\">" + "<i class=\"mdi mdi-chat text-blue\"></i>" + " " + cmtcount + "</a>" +
+                "<div align=\"right\" id='" + mod_btn_key + "'>" +
+
+                  " " +
+                "<button type=\"button\" class=\"btn btn-danger\" onclick=\"btn_delete('" + key + "')\">삭제</button>" +
+                "</div></div>" +
+                "<hr>";
+
+
+            $(".boardList").prepend(html);
+        }
+
+
+        
+        
+
+
+  
+        function show_board_page(key) {
+       
+          location.href="comments.html?"+ key;
+          
+
+        }
+
+
+
+
+
+    }
+
+ 
+
+ 
+        //삭제하기 버튼
+        function btn_delete(thankKey) {
+            var check = confirm("이 글을 삭제하시겠습니까?")
+
+            if (check) {
+                removeThank = firebaseDatabase.ref("anounymous/" + thankKey);
+
+                removeThank.remove()
+                    .then(function() {
+                        console.log("Remove succeeded.")
+
+                    })
+                    .catch(function(error) {
+                        console.log("Remove failed: " + error.message)
+                    });
+            }
+
+            window.location.reload();
+        }
+
+</script>
+
+
+
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <!-- Argon JS -->
+  <script src="../assets/js/argon.js?v=1.2.0"></script>
+</body>
+
+</html>

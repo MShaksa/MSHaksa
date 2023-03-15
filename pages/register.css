@@ -1,0 +1,232 @@
+와ㅌㅌㅌ
+디자인 힘들다ㅋㅋㅋㅋ
+
+body {
+    background-color: #F3EBF6;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 550px;
+    margin: 3em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+
+
+.mainlogin {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 400px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+
+
+
+.sign {
+    padding-top: 40px;
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.un {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-left: 46px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.antiauto {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 8px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-left: 46px;
+    text-align: left;
+    margin-bottom: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.year {
+    width: 25%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 44px;
+
+    text-align: left;
+    margin-bottom: 8px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.date {
+    width: 22%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 10px;
+    text-align: left;
+    margin-bottom: 8px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+form.form1 {
+    padding-top: 40px;
+}
+
+.pass {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+
+    margin-left: 46px;
+    text-align: left;
+    margin-bottom: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.passlogin {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-left: 46px;
+    text-align: left;
+    margin-bottom: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+    .un:focus, .pass:focus {
+        border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    }
+
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #3d3d3d;
+    background: linear-gradient(to right, #00fffb, #40ff8c);
+    border: 0;
+    padding-left: 123px;
+    padding-right: 123px;
+    padding-bottom: 12px;
+    padding-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 46px;
+    font-size: 15px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+    text-shadow: 0px 0px 3px rgba(136, 126, 126, 0.04);
+    color: #333536;
+    padding-top: 10px;
+}
+
+
+
+.smalltext {
+    text-shadow: 0px 0px 3px rgba(136, 126, 126, 0.04);
+    color: #333536;
+    padding-top: 1px;
+}
+
+
+
+
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #212121;
+    text-decoration: none
+}
+
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+    }
+
+
+
+
+
+
+    Resources1× 0.5× 0.25×Rerun

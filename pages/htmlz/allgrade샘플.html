@@ -1,0 +1,2023 @@
+<!--
+=========================================================
+* Argon Dashboard - v1.2.0
+=========================================================
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+
+
+* Copyright  Creative Tim (http://www.creative-tim.com)
+* Coded by www.creative-tim.com
+
+
+
+=========================================================
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html>
+
+
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+    <meta name="author" content="Creative Tim">
+    <title>마한아존 - 마닐라한국아카데미 커뮤니티</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/anim/tree.css" type="text/css">
+    <script src="assets/anim/tree.js"></script>
+
+    <style>
+      table, th, td {
+        border: 2px solid;
+        color : #262626;
+        border-collapse: collapse;
+        text-align: center;
+        width : 80px;
+        height: 10px;
+      }
+      th, td {
+        padding: 10px;
+      }
+      th {
+        text-align: center;
+      }
+      </style>
+       
+       <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+      </style>
+
+
+
+    <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://samuelgalaxys.github.io/reusemapvendors/vendors/iconfonts/mdi/css/materialdesignicons.css">
+  
+    <!-- Page plugins -->
+    <!-- Argon CSS -->
+    <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
+  </head>
+
+
+  <style>
+    .buttonb {
+      background-color: #1c87c9;
+      -webkit-border-radius: 12px;
+      border-radius: 12px;
+      border: none;
+      color: #eeeeee;
+      cursor: pointer;
+      display: inline-block;
+      font-style: Bold;
+      font-size: 15px;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+    }
+    @keyframes glowing {
+      0% {
+        background-color: #ffffff;
+        box-shadow: 0 0 5px #ffffff;
+        
+      }
+      50% {
+        background-color: #00ff80;
+        box-shadow: 0 0 20px #0fe43d;
+        color: #313131;
+
+        
+      }
+      100% {
+        background-color: #fffb00;
+        box-shadow: 0 0 5px #5f00db;
+
+        
+      }
+    }
+    .buttonb {
+      animation: glowing 1000ms infinite;
+    }
+  </style>
+  
+  <body>
+  
+  
+
+
+    
+    <!-- Sidenav -->
+   
+    
+  <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <div class="sidenav-header  align-items-center">
+        <a class="navbar-brand" href="javascript:void(0)">
+          <img src="../assets/img/brand/logo.png" class="navbar-brand-img" alt="...">
+        </a>
+      </div>
+      <div class="navbar-inner">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Nav items -->
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="mdi mdi-nature text-green"></i>
+                <span class="nav-link-text">홈</span>
+              </a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="scboard.html">
+                <i class="ni ni-send text-orange"></i>
+                <span class="nav-link-text">익명이존</span>
+              </a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="mhaboard.html">
+                <i class="ni ni-pin-3 text-blue"></i>
+                <span class="nav-link-text">일반게시판</span>
+              </a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="notice.html">
+                <i class="mdi mdi-information text-dark"></i>
+                <span class="nav-link-text">마한아 공지</span>
+              </a>
+            </li>
+
+
+
+ 
+             
+
+
+
+
+          </ul>
+          <!-- Divider -->
+          <hr class="my-3">
+          <!-- Heading -->
+          <h6 class="navbar-heading p-0 text-muted">
+            <span class="docs-normal">Time Tables</span>
+          </h6>
+          <!-- Navigation -->
+          <ul class="navbar-nav mb-md-3">
+          
+
+            <li class="nav-item">
+              <a class="nav-link" href="g12.html">
+                <i class="mdi mdi-book text-green"></i>
+                <span class="nav-link-text">12학년</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="g11.html">
+                <i class="mdi mdi-book text-primary"></i>
+                <span class="nav-link-text">11학년</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="g10.html">
+                <i class="mdi mdi-book text-orange"></i>
+                <span class="nav-link-text">10학년</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="g9.html">
+                <i class="mdi mdi-book text-yellow"></i>
+                <span class="nav-link-text">9학년</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="g8.html">
+                <i class="mdi mdi-book text-purple"></i>
+                <span class="nav-link-text">8학년</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="g7.html">
+                <i class="mdi mdi-book text-pink"></i>
+                <span class="nav-link-text">7학년</span>
+              </a>
+            </li>
+
+             
+            
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    <!-- Topnav -->
+    <nav class="navbar navbar-top navbar-expand navbar-dark border-bottom" style="background-color: #7C83FD;">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Search form -->
+          <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+            <div class="form-group mb-0">
+
+
+
+              <button id="classnow" onclick="classnow_click();" class="btn btn-primary" margin="right" style="background-color: rgb(78, 255, 166); color: black;">바로가기 :: 현재 수업이 없습니다.</button>
+              <a class="btn btn-primary" margin="right" style="background-color: rgba(255, 208, 0, 0); color: rgb(255, 255, 255); ">수업 시간이 떄 자동 알림을 받으려면 이곳을 눌러주세요. </a>
+
+
+
+
+
+            </div>
+            <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </form>
+          <!-- Navbar links -->
+          <ul class="navbar-nav align-items-center  ml-md-auto ">
+         
+            <li class="nav-item d-sm-none">
+              <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+                <i class="ni ni-zoom-split-in"></i>
+              </a>
+            </li>
+    
+    
+             
+    
+    
+            
+    
+          </ul>
+          <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+    
+    
+            <li class="nav-item d-xl-none">
+              <!-- Sidenav toggler -->
+              <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </div>
+            </li>
+    
+    
+            <li class="nav-item dropdown">
+              
+              <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media align-items-center">
+                  <span class="avatar avatar-sm rounded-circle">
+                    <img alt="Image placeholder" src="../assets/img/theme/users.jpg">
+                  </span>
+                  <div class="media-body  ml-2  d-none d-lg-block">
+                    <span id="joinmenu" class="mb-0 text-sm  font-weight-bold">로그인</span>
+                  </div>
+                </div>
+              </a>
+    
+              <div class="dropdown-menu  dropdown-menu-right ">
+                <div class="dropdown-header noti-title">
+                  <h6 class="text-overflow m-0">Welcome!</h6>
+                </div>
+                 
+                <div class="dropdown-divider"></div>
+                <a href="loginform.html" class="dropdown-item">
+                  <i class="ni ni-user-run"></i>
+                  <span id="loginmenu">로그인/가입</span>
+                </a>
+              </div>
+    
+    
+    
+    
+    
+    
+            </li>
+          </ul>
+  
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+
+
+
+
+
+    <!-- Header -->
+    <div class="header pb-6" style="background-color:#7C83FD;">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+      <div class="row justify-content-center">
+        <div class=" col ">
+          <div class="card">
+            
+             
+
+            <div class="card-body">
+              
+              
+              <table style="width:100%" margin="center">
+ 										   
+                <tr>
+                  <th> 
+                </body></th>
+                  <th style = "background : #d9c6a7  ;">월요일</th>
+                  <th style = "background : #d9c6a7  ;">화요일</th>
+                  <th style = "background : #d9c6a7  ;">수요일</th>
+                  <th style = "background : #d9c6a7  ;">목요일</th>
+                  <th style = "background : #d9c6a7  ;">금요일</th>
+                </tr>
+                  <tr>
+                  <th style = "background : #d9c6a7  ;">0교시 <br>(8:15-8:45) </br></th>
+                  <td style = "background : White"><a href="zzzzz" style="font-family: 'Jua', sans-serif;">한국어QT</a></td>
+                  <td style = "background : White ;">개인QT</td>
+                  <td style = "background : #36e364;" rowspan="3"><a href="zzzzz">수요 예배</a></td>
+                  <td style = "background : White ;">개인QT</td>
+                  <td style = "background : White ;"><a href="나도 아직 링크 없어ㅋㅋㅋㅋ">영어QT</a></td>
+                 </tr>
+
+
+
+
+                 
+                  <tr>
+                  <th style = "background : #d9c6a7  ;">1교시 <br>(9:00-9:45) </br></th>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                 
+                  </tr>
+                  <tr>
+                  <th style = "background : #d9c6a7  ;">2교시 <br>(9:55-10:40) </br></th>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                 </tr>
+                 <tr>
+                  <th style = "background : #d9c6a7  ;">3교시 <br>(10:50-11:35) </br></th>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                </tr>
+                 <tr>
+                  <th style = "background : #d9c6a7  ;">4교시 <br>(11:45-12:30)</br></th>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                </tr>
+                 <tr>
+                  <th style = "background : #d9c6a7  ;">5교시 <br>(13:20-14:05) </br></th>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                </tr>
+                 <tr>
+                  <th style = "background : #d9c6a7  ;">6교시 <br>(14:15-15:00)</br></th>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                </tr>
+                <tr>
+                  <th style = "background : #d9c6a7  ;">7교시 <br>(15:10-15:55) </br></th>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                </tr>
+                
+                  <tr>
+                  <th style = "background : #d9c6a7  ;">8교시 <br>(16:05-16:50)</br></th>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                  <td style = "background : #ffffff  ;"><a href="zzzzz">aaaaaa</a></td>
+                </tr>
+                  
+                <tr>
+                  <th style = "background : #d9c6a7  ;">9교시 <br>(17:00-17:45)</br></th>
+                  <td style = "background : white  ;">--</td>
+                  <td style = "background : #ffffff  ;">--</td>
+                  <td style = "background : White  ;"><a href="https://classroom.google.com/u/0/c/Mzc3NTcxNzQ2OTM1">Skill Builder</a></td>
+                  <td style = "background : rgb(255, 255, 255)  ;">--</td>
+                  <td style = "background : White  ;">--</td>
+                </tr>
+
+
+
+                </table>
+
+
+
+
+            </div>
+            
+
+
+
+            
+            
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      
+      <footer class="footer pt-0">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6">
+            <div class="copyright text-center  text-lg-left  text-muted">
+              &copy; 2021 <a href="#" class="font-weight-bold ml-1" target="_blank">mhaZone COMON, All rights reserved.</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+      
+              
+              
+              <li class="nav-item">
+                <a href="_____" class="nav-link" target="_blank">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="_____" class="nav-link" target="_blank">개인정보처리방침</a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+  <!-- Argon Scripts -->
+  <!-- Core -->
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <!-- Optional JS -->
+  <script src="../assets/vendor/clipboard/dist/clipboard.min.js"></script>
+  <!-- Argon JS -->
+  <script src="../assets/js/argon.js?v=1.2.0"></script>
+  <script src="../assets/anim/tree.js"></script>
+
+
+
+
+<script src="../assets/js/time.js"></script>
+<!--login유무 session js 파일 -->
+<script src="../assets/js/sessionCheck.js"></script>
+<!--스크립트 부분. 자신의 스크립트 코드로 변경하세요! -->
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+	
+	
+    //2초후 실행
+    setTimeout(function() {
+    //	var element = document.getElementById("scrollz");
+    //    element.scrollTop = element.scrollHeight;  //스크롤 내리기
+		$("#modalUpdateN").modal('show');
+
+    }, 1000);
+
+     
+
+    //스크롤 자동으로 내리기
+    //setInterval(updateScroll,1000);   
+
+	function updateScroll(){
+    var element = document.getElementById("scrollz");
+    element.scrollTop = element.scrollHeight;
+    }
+ 
+ 
+
+
+
+
+	var firebaseEmailAuth; //파이어베이스 email 인증 모듈 전역변수
+	var firebaseDatabase; //파이어베이스 db 모듈 전역변수
+	var name; //유저 이름
+	var loginUserKey; //로그인한 유저의 부모 key
+	var userInfo; //로그인한 유저의 정보 object type
+
+
+
+
+
+
+	//파이어 베이스 초기화 코드
+	var config = {
+		apiKey: "AIzaSyDQLUtjdMgOLDIZlPusi5YPKBiuQduD9Go",
+		databaseURL: "https://mhazone-mha-default-rtdb.firebaseio.com/",
+        authDomain: "mhazone-mha.firebaseapp.com",
+        projectId: "mhazone-mha",
+        storageBucket: "mhazone-mha.appspot.com",
+        messagingSenderId: "967342331429",
+        appId: "1:967342331429:web:8a5689ea4c254f037951cc",
+        measurementId: "G-Z33QJ15H02"
+	 
+	};
+	//파이어베이스 초기화
+	firebase.initializeApp(config);
+	//인증모듈 객체 가져오기
+	firebaseEmailAuth = firebase.auth();
+	//데이터베이스 모듈객체 가져오기
+	firebaseDatabase = firebase.database();
+
+	//세션 체크 함수
+	userSessionCheck();
+
+
+
+	$(document).ready(function () {
+
+		//메인화면 쓰기버튼 눌렀을 때
+		$(document).on('click', '.write', function () {
+
+			//네비게이션 메뉴의 text값 가져오기 - 자바스크립트 dom 방식으로 가져왔다.
+			var seseionCheck = document.getElementById("loginmenu").textContent;
+
+			//텍스트 필드에 있는 내용 가져오기!!!!
+			comment = $('#comment').val();
+			subject = $('#subject').val();
+
+			if (seseionCheck == "로그아웃") {
+				//저장하기
+				saveThanks();
+			} else {
+				alert("로그인이 필요한 서비스 입니다.")
+			}
+		});
+
+
+		$(document).on('click', '.create', function () {
+
+			var seseionCheck = document.getElementById("loginmenu").textContent;
+
+ 			if (seseionCheck == "로그아웃") {
+				window.location.href = "create.html"
+
+			} else {
+				alert("로그인이 필요한 서비스 입니다.")
+				window.location.href = "loginform.html"
+
+			}
+			
+
+
+		});
+
+
+	});
+
+
+
+	//쓰기 버튼 눌렀을 때 호출 되는 함수
+	function saveThanks() {
+
+		//thanks 라는 테이블을 만들고 하위 데이터에 유저 아이디를 넣어준다. 그곳에 push로 가상의 키를 넣고, 객체를 넣어준다.!!!!
+		var thankRef = firebaseDatabase.ref("boards");
+
+		// 해당 객체의 key 값이 자동으로 생성된다.
+		var thank = thankRef.push(); // 해당 객체의 key 값이 자동으로 생성된다.
+
+
+
+
+		//로그인한 유저의 pk값,이름,내용,시간 데이터
+		var obj = {
+			name: name,
+			userkey: loginUserKey,
+			comment: comment,
+			subject: subject,
+			createtime: currentTime
+		};
+		//위에서 thankRef.push()로 만들어진 key아래 위치에 저장해준다.
+		thank.set(obj);
+  
+		
+		alert("글이 업로드 되었습니다");
+
+		$('#comment').val("");
+		$('#subject').val("");
+
+	}
+
+
+
+	//글 목록가져와서 뿌려주기
+	function boardList() {
+		//alert("보드 로드 완료")
+
+		//로그인한 유저라면
+		if (loginUserKey) {
+			//alert(loginUserKey)
+			//글이 저장된 레퍼런스 값 가져오기
+			var thanksRef = firebaseDatabase.ref('boards');
+			//on 함수로 글 목록가져오기
+			thanksRef.on('child_added', on_thanks_list)
+			var thanksRef = firebaseDatabase.ref('notice');
+			thanksRef.on('child_added', on_notice_list)
+
+		} else {
+			//로그인 아니어도 글 보이게
+			//alert(loginUserKey)
+			//글이 저장된 레퍼런스 값 가져오기
+			var thanksRef = firebaseDatabase.ref('boards');
+			thanksRef.on('child_added', on_thanks_list)
+
+			var thanksRef = firebaseDatabase.ref('notice');
+			thanksRef.on('child_added', on_notice_list)
+		}
+
+	}
+
+	//게시판 리스트 thanks 테이블의 thanks 키 들을 연속적으로 가져옴...ㅋㅋㅋㅋㅋ
+	function on_thanks_list(data) {
+		console.log("on_thanks_list() 함수안으로 들어왔습니다 리스트를 가져오겠습니다")
+		var key = data.key;
+
+		var Data = data.val();
+		var comment = Data.comment;
+		var createtime = Data.createtime;
+		var name = Data.name;
+		var subject = Data.subject;
+		var userkey = Data.userkey;
+
+		//무슨값이 넘어오는지 찍어보세요
+		//alert(comment +"/"+ createtime + "/"+name +"/"+userkey);
+
+
+
+
+    
+		//리스트 동적으로 붙이기
+		var html =
+
+ 
+
+    
+                "<div class=\"card\" id='" + userkey + "' onclick=\"show_user_page(this.id)\">" +
+                "<div class=\"card-header bg-transparent\">" + "<div class=\"row align-items-center\">" + "<div class=\"col\">" +
+                "<h5 style=\"font-size: 20px\" class=\"h3 mb-0\">" + "<a href=\"http://google.com\">" + subject +"</a></h5>" +
+                "<h6 class=\"text-uppercase text-muted ls-1 mb-1\">" + name + " :: " + createtime + "</h6>" +
+                "</br>" +
+                "<a>" + comment + "</a>" +
+                "</div></div></div></div>";
+
+         //   $(".thanksList").append(html);   //아래로 붙이기
+            $(".boardList").prepend(html);   //위로 붙이기
+
+ 
+
+	}
+
+
+
+
+	function on_notice_list(data) {
+		console.log("on_thanks_list() 함수안으로 들어왔습니다 리스트를 가져오겠습니다")
+		var key = data.key;
+
+		var Data = data.val();
+		var comment = Data.comment;
+		var createtime = Data.createtime;
+		var name = Data.name;
+		var subject = Data.subject;
+		var userkey = Data.userkey;
+
+		//무슨값이 넘어오는지 찍어보세요
+		//alert(comment +"/"+ createtime + "/"+name +"/"+userkey);
+
+
+		//리스트 동적으로 붙이기
+		var html =
+                "<div class=\"card\" id='" + userkey + "' onclick=\"show_user_page(this.id)\">" +
+                "<div class=\"card-header\">" +
+                "<h4 class=\"media-heading\"><strong STYLE=\"color: #424242; font-size: 16pt\">" + subject + "</strong>" +
+                " <span STYLE=\"color: black; font-size: 11pt\">" + "</br>" + comment + "</span></h4>" +
+                "<p STYLE=\"color: black; font-size: 8pt\">" + name + " :: " + createtime + "</p></div></div>";
+
+            $(".noticelist").prepend(html);
+
+ 
+
+	}
+
+</script>
+
+
+
+
+<script>
+	
+	$(document).ready(function () {
+			//$("#modalUpdate").modal('show');
+			
+	
+		});
+	
+		//alert("-서버 점검 안내- \n \n 일시 : 오늘 오후 6시~9시 \n mhaZone으로 새롭게 찾아옵니다. \n \n git@github.com:SamuelGalaxys/GreenNewdeal.git \nAccessible Github users: SamuelGalaxys, Esther03-web \n Virsion 0.2");
+	 
+	
+	
+		
+	
+		
+		$('#displayNotif').on('click', function(){
+			var placementFrom = $('#notify_placement_from option:selected').val();
+			var placementAlign = $('#notify_placement_align option:selected').val();
+			var state = $('#notify_state option:selected').val();
+			var style = $('#notify_style option:selected').val();
+			var content = {};
+	
+			content.message = 'Turning standard Bootstrap alerts into "notify" like notifications';
+			content.title = 'Bootstrap notify';
+			if (style == "withicon") {
+				content.icon = 'la la-bell';
+			} else {
+				content.icon = 'none';
+			}
+			content.url = 'index.html';
+			content.target = '_blank';
+	
+			$.notify(content,{
+				type: state,
+				placement: {
+					from: placementFrom,
+					align: placementAlign
+				},
+				time: 1000,
+			});
+		});
+	</script>
+
+
+<script>
+
+
+const btnElement = document.getElementById('classnow');
+
+ 
+var audio = new Audio('학교종소리.mp3'); //오디오 재생 추가하기
+//  new Notification("✅실시간 수업이 있습니다.", {body:'12학년::피직스'});
+//  audio.play();
+
+
+ 
+playAlert = setInterval(function() {  //계속반복 루핑하기 Loop Loop
+
+var now = new Date();
+var week = new Array('SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT');
+var hours = now.getHours();
+var mins = now.getMinutes();
+var secs = now.getSeconds();
+
+ 
+ 
+
+
+if (week[now.getDay()] == "MON") { //월요일     월요일     월요일
+   //alert('오늘 요일: ' + week[d.getDay()] + '요s일');
+
+
+
+   
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 개인QT
+   if(hours >= "8" & hours <= "8" & mins >= "10" & mins <= "45"){
+	   btnElement.innerText = '개인QT중';
+     btnElement.className = 'buttonb';    //버튼 반짝반짝
+     btnElement.className = 'btn btn-primary';    //버튼 다시 원래대로
+
+
+     }
+
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 1교시 1교시 11111111111111111
+   if(hours >= "8" & hours <= "8" & mins >= "45" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "9" & hours <= "9" & mins >= "00" & mins <= "45"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 2교시 2교시 2222222222222222
+   if(hours >= "9" & hours <= "9" & mins >= "50" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "10" & hours <= "10" & mins >= "55" & mins <= "40"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 3교시 3교시 3333333333333333
+   if(hours >= "10" & hours <= "10" & mins >= "45" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+   if(hours >= "11" & hours <= "11" & mins >= "00" & mins <= "35"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 4교시 4교시 4444444444444
+   if(hours >= "11" & hours <= "11" & mins >= "40" & mins <= "59"){
+	  btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "12" & hours <= "12" & mins >= "00" & mins <= "30"){
+   	btnElement.innerText = '바로가기 :: 없음';
+    }
+
+	   //   시간시작  -  시간끝           분시작  -  분끝   점심점심점심점심점심점심점심점심점심점심점심점심
+     if(hours >= "12" & hours <= "12" & mins >= "30" & mins <= "59"){
+	  btnElement.innerText = '현재는 점심시간🥘';}
+
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 5교시 5교시 5555555555555
+   if(hours >= "13" & hours <= "13" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+    btnElement.style.cssFloat = "buttonb";
+    
+
+    }
+   if(hours >= "14" & hours <= "14" & mins >= "00" & mins <= "05"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 6교시 6교시 66666666666666
+   if(hours >= "14" & hours <= "14" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+
+    }
+   if(hours >= "15" & hours <= "15" & mins >= "00" & mins <= "01"){
+	btnElement.innerText = '바로가기 :: 없음';
+
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 7교시 7교시 777777777777
+   if(hours >= "15" & hours <= "15" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+ 
+
+    }
+ 
+    
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 8교시 8교시 8888888888888
+   if(hours >= "16" & hours <= "16" & mins >= "00" & mins <= "50"){
+	btnElement.innerText = '바로가기 :: 없음';
+
+    }
+
+
+
+
+
+
+
+   ///=====================알림가게하는부분임===============
+    ///=====================알림가게하는부분임===============
+     //   시간시작  -  시간끝           분시작  -  분끝             :: 1교시 1교시 11111111111111111
+     if(hours >= "8" & hours <= "8" & mins == "55" & secs <= 05){
+
+}
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 2교시 2교시 2222222222222222
+ if(hours >= "9" & hours <= "9" & mins >= "50" & secs <= 05){
+
+}
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 3교시 3교시 3333333333333333
+ if(hours >= "10" & hours <= "10" & mins == "45" & secs <= 05){
+
+}
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 4교시 4교시 4444444444444
+ if(hours >= "11" & hours <= "11" & mins == "40" & secs <= 05){
+
+}
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 5교시 5교시 5555555555555
+ if(hours >= "13" & hours <= "13" & mins == "15" & secs <= 05){
+  
+  }
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 6교시 6교시 66666666666666
+ if(hours >= "14" & hours <= "14" & mins == "10" & secs <= 05){
+
+  }
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 7교시 7교시 777777777777
+ if(hours >= "15" & hours <= "15" & mins == "05" & secs <= 05){
+
+  }
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 8교시 8교시 8888888888888
+ if(hours >= "16" & hours <= "16" & mins == "00" & secs <= 05){
+
+  }
+
+
+
+    
+
+}
+	
+
+
+
+
+
+
+
+
+if (week[now.getDay()] == "TUE") { //화요일========화요일=======화요일=================
+   //alert('오늘 요일: ' + week[d.getDay()] + '요s일');
+
+ //alert('오늘 요일: ' + week[d.getDay()] + '요s일');
+
+
+
+   
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 개인QT
+   if(hours >= "8" & hours <= "8" & mins >= "10" & mins <= "45"){
+	   btnElement.innerText = '개인QT중';
+     btnElement.className = 'buttonb';
+
+     }
+
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 1교시 1교시 11111111111111111
+   if(hours >= "8" & hours <= "8" & mins >= "45" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "9" & hours <= "9" & mins >= "00" & mins <= "45"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 2교시 2교시 2222222222222222
+   if(hours >= "9" & hours <= "9" & mins >= "50" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "10" & hours <= "10" & mins >= "55" & mins <= "40"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 3교시 3교시 3333333333333333
+   if(hours >= "10" & hours <= "10" & mins >= "45" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+   if(hours >= "11" & hours <= "11" & mins >= "00" & mins <= "35"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 4교시 4교시 4444444444444
+   if(hours >= "11" & hours <= "11" & mins >= "40" & mins <= "59"){
+	  btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "12" & hours <= "12" & mins >= "00" & mins <= "30"){
+   	btnElement.innerText = '바로가기 :: 없음';
+    }
+
+	   //   시간시작  -  시간끝           분시작  -  분끝   점심점심점심점심점심점심점심점심점심점심점심점심
+     if(hours >= "12" & hours <= "12" & mins >= "30" & mins <= "59"){
+	  btnElement.innerText = '현재는 점심시간🥘';}
+
+    
+
+	
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 5교시 5교시 5555555555555
+   if(hours >= "13" & hours <= "13" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+     
+
+    }
+   if(hours >= "14" & hours <= "14" & mins >= "00" & mins <= "05"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 6교시 6교시 66666666666666
+   if(hours >= "14" & hours <= "14" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+
+    }
+   if(hours >= "15" & hours <= "15" & mins >= "00" & mins <= "01"){
+	btnElement.innerText = '바로가기 :: 없음';
+
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 7교시 7교시 777777777777
+   if(hours >= "15" & hours <= "15" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+ 
+
+    }
+ 
+    
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 8교시 8교시 8888888888888
+   if(hours >= "16" & hours <= "16" & mins >= "00" & mins <= "50"){
+	btnElement.innerText = '바로가기 :: 없음';
+
+    }
+    
+
+    
+     ///=====================알림가게하는부분임===============
+    ///=====================알림가게하는부분임===============
+     //   시간시작  -  시간끝           분시작  -  분끝             :: 1교시 1교시 11111111111111111
+     if(hours >= "8" & hours <= "8" & mins == "55" & secs <= 05){
+
+}
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 2교시 2교시 2222222222222222
+ if(hours >= "9" & hours <= "9" & mins >= "50" & secs <= 05){
+
+}
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 3교시 3교시 3333333333333333
+ if(hours >= "10" & hours <= "10" & mins == "45" & secs <= 05){
+
+}
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 4교시 4교시 4444444444444
+ if(hours >= "11" & hours <= "11" & mins == "40" & secs <= 05){
+
+}
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 5교시 5교시 5555555555555
+ if(hours >= "13" & hours <= "13" & mins == "15" & secs <= 05){
+  
+  }
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 6교시 6교시 66666666666666
+ if(hours >= "14" & hours <= "14" & mins == "10" & secs <= 05){
+
+  }
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 7교시 7교시 777777777777
+ if(hours >= "15" & hours <= "15" & mins == "05" & secs <= 05){
+
+  }
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 8교시 8교시 8888888888888
+ if(hours >= "16" & hours <= "16" & mins == "00" & secs <= 05){
+
+  }
+
+
+
+
+}
+	
+
+
+if (week[now.getDay()] == "WED") {  //========================수요일===============
+   //alert('오늘 요일: ' + hours[d.getHours()] + '요s일');
+
+
+ //alert('오늘 요일: ' + week[d.getDay()] + '요s일');
+
+
+
+   
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 개인QT
+   if(hours >= "8" & hours <= "8" & mins >= "10" & mins <= "45"){
+	   btnElement.innerText = '개인QT중';
+     btnElement.className = 'buttonb';
+
+     }
+
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 1교시 1교시 11111111111111111
+   if(hours >= "8" & hours <= "8" & mins >= "45" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "9" & hours <= "9" & mins >= "00" & mins <= "45"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 2교시 2교시 2222222222222222
+   if(hours >= "9" & hours <= "9" & mins >= "50" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "10" & hours <= "10" & mins >= "55" & mins <= "40"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 3교시 3교시 3333333333333333
+   if(hours >= "10" & hours <= "10" & mins >= "45" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+   if(hours >= "11" & hours <= "11" & mins >= "00" & mins <= "35"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 4교시 4교시 4444444444444
+   if(hours >= "11" & hours <= "11" & mins >= "40" & mins <= "59"){
+	  btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "12" & hours <= "12" & mins >= "00" & mins <= "30"){
+   	btnElement.innerText = '바로가기 :: 없음';
+    }
+
+	
+	   //   시간시작  -  시간끝           분시작  -  분끝   점심점심점심점심점심점심점심점심점심점심점심점심
+     if(hours >= "12" & hours <= "12" & mins >= "30" & mins <= "59"){
+	  btnElement.innerText = '현재는 점심시간🥘';}
+
+    
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 5교시 5교시 5555555555555
+   if(hours >= "13" & hours <= "13" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+     
+
+    }
+   if(hours >= "14" & hours <= "14" & mins >= "00" & mins <= "05"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 6교시 6교시 66666666666666
+   if(hours >= "14" & hours <= "14" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+
+    }
+   if(hours >= "15" & hours <= "15" & mins >= "00" & mins <= "01"){
+	btnElement.innerText = '바로가기 :: 없음';
+
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 7교시 7교시 777777777777
+   if(hours >= "15" & hours <= "15" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+ 
+
+    }
+ 
+    
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 8교시 8교시 8888888888888
+   if(hours >= "16" & hours <= "16" & mins >= "00" & mins <= "50"){
+	btnElement.innerText = '바로가기 :: 없음';
+
+    }
+    
+
+    
+     ///=====================알림가게하는부분임===============
+    ///=====================알림가게하는부분임===============
+     //   시간시작  -  시간끝           분시작  -  분끝             :: 1교시 1교시 11111111111111111
+     if(hours >= "8" & hours <= "8" & mins == "55" & secs <= 05){
+
+}
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 2교시 2교시 2222222222222222
+ if(hours >= "9" & hours <= "9" & mins >= "50" & secs <= 05){
+
+}
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 3교시 3교시 3333333333333333
+ if(hours >= "10" & hours <= "10" & mins == "45" & secs <= 05){
+
+}
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 4교시 4교시 4444444444444
+ if(hours >= "11" & hours <= "11" & mins == "40" & secs <= 05){
+
+}
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 5교시 5교시 5555555555555
+ if(hours >= "13" & hours <= "13" & mins == "15" & secs <= 05){
+  
+  }
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 6교시 6교시 66666666666666
+ if(hours >= "14" & hours <= "14" & mins == "10" & secs <= 05){
+
+  }
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 7교시 7교시 777777777777
+ if(hours >= "15" & hours <= "15" & mins == "05" & secs <= 05){
+
+  }
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 8교시 8교시 8888888888888
+ if(hours >= "16" & hours <= "16" & mins == "00" & secs <= 05){
+
+  }
+
+}
+	
+
+
+if (week[now.getDay()] == "THU") { //========================목요일===============
+ 
+   //alert('오늘 요일: ' + week[d.getDay()] + '요s일');
+
+
+
+   
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 개인QT
+   if(hours >= "8" & hours <= "8" & mins >= "10" & mins <= "45"){
+	   btnElement.innerText = '개인QT중';
+     btnElement.className = 'buttonb';
+
+     }
+
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 1교시 1교시 11111111111111111
+   if(hours >= "8" & hours <= "8" & mins >= "45" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "9" & hours <= "9" & mins >= "00" & mins <= "45"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 2교시 2교시 2222222222222222
+   if(hours >= "9" & hours <= "9" & mins >= "50" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "10" & hours <= "10" & mins >= "55" & mins <= "40"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 3교시 3교시 3333333333333333
+   if(hours >= "10" & hours <= "10" & mins >= "45" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+   if(hours >= "11" & hours <= "11" & mins >= "00" & mins <= "35"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 4교시 4교시 4444444444444
+   if(hours >= "11" & hours <= "11" & mins >= "40" & mins <= "59"){
+	  btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "12" & hours <= "12" & mins >= "00" & mins <= "30"){
+   	btnElement.innerText = '바로가기 :: 없음';
+    }
+
+	
+	   //   시간시작  -  시간끝           분시작  -  분끝   점심점심점심점심점심점심점심점심점심점심점심점심
+     if(hours >= "12" & hours <= "12" & mins >= "30" & mins <= "59"){
+	  btnElement.innerText = '현재는 점심시간🥘';}
+
+    
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 5교시 5교시 5555555555555
+   if(hours >= "13" & hours <= "13" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+     
+
+    }
+   if(hours >= "14" & hours <= "14" & mins >= "00" & mins <= "05"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 6교시 6교시 66666666666666
+   if(hours >= "14" & hours <= "14" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+
+    }
+   if(hours >= "15" & hours <= "15" & mins >= "00" & mins <= "01"){
+	btnElement.innerText = '바로가기 :: 없음';
+
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 7교시 7교시 777777777777
+   if(hours >= "15" & hours <= "15" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+ 
+
+    }
+ 
+    
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 8교시 8교시 8888888888888
+   if(hours >= "16" & hours <= "16" & mins >= "00" & mins <= "50"){
+	btnElement.innerText = '바로가기 :: 없음';
+
+    }
+    
+ 
+ 
+     
+    ///=====================알림가게하는부분임===============
+    ///=====================알림가게하는부분임===============
+     //   시간시작  -  시간끝           분시작  -  분끝             :: 1교시 1교시 11111111111111111
+     if(hours >= "8" & hours <= "8" & mins == "55" & secs <= 05){
+
+}
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 2교시 2교시 2222222222222222
+ if(hours >= "9" & hours <= "9" & mins >= "50" & secs <= 05){
+
+}
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 3교시 3교시 3333333333333333
+ if(hours >= "10" & hours <= "10" & mins == "45" & secs <= 05){
+
+}
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 4교시 4교시 4444444444444
+ if(hours >= "11" & hours <= "11" & mins == "40" & secs <= 05){
+
+}
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 5교시 5교시 5555555555555
+ if(hours >= "13" & hours <= "13" & mins == "15" & secs <= 05){
+  
+  }
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 6교시 6교시 66666666666666
+ if(hours >= "14" & hours <= "14" & mins == "10" & secs <= 05){
+
+  }
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 7교시 7교시 777777777777
+ if(hours >= "15" & hours <= "15" & mins == "05" & secs <= 05){
+
+  }
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 8교시 8교시 8888888888888
+ if(hours >= "16" & hours <= "16" & mins == "00" & secs <= 05){
+
+  }
+
+ 
+	  
+}
+	
+
+
+if (week[now.getDay()] == "FRI") { //========================금요일===============
+ //alert('오늘 요일: ' + week[d.getDay()] + '요s일');
+
+
+
+   
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 개인QT
+   if(hours >= "8" & hours <= "8" & mins >= "10" & mins <= "45"){
+	   btnElement.innerText = '개인QT중';
+     btnElement.className = 'buttonb';
+
+     }
+
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 1교시 1교시 11111111111111111
+   if(hours >= "8" & hours <= "8" & mins >= "45" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "9" & hours <= "9" & mins >= "00" & mins <= "45"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 2교시 2교시 2222222222222222
+   if(hours >= "9" & hours <= "9" & mins >= "50" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "10" & hours <= "10" & mins >= "55" & mins <= "40"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 3교시 3교시 3333333333333333
+   if(hours >= "10" & hours <= "10" & mins >= "45" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+   if(hours >= "11" & hours <= "11" & mins >= "00" & mins <= "35"){
+    btnElement.innerText = '바로가기 :: 없음 ';
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 4교시 4교시 4444444444444
+   if(hours >= "11" & hours <= "11" & mins >= "40" & mins <= "59"){
+	  btnElement.innerText = '바로가기 :: 없음';
+    }
+   if(hours >= "12" & hours <= "12" & mins >= "00" & mins <= "30"){
+   	btnElement.innerText = '바로가기 :: 없음';
+    }
+
+	
+	   //   시간시작  -  시간끝           분시작  -  분끝   점심점심점심점심점심점심점심점심점심점심점심점심
+     if(hours >= "12" & hours <= "12" & mins >= "30" & mins <= "59"){
+	  btnElement.innerText = '현재는 점심시간🥘';}
+
+    
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 5교시 5교시 5555555555555
+   if(hours >= "13" & hours <= "13" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+     
+
+    }
+   if(hours >= "14" & hours <= "14" & mins >= "00" & mins <= "05"){
+    btnElement.innerText = '바로가기 :: 없음';
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 6교시 6교시 66666666666666
+   if(hours >= "14" & hours <= "14" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+
+    }
+   if(hours >= "15" & hours <= "15" & mins >= "00" & mins <= "01"){
+	btnElement.innerText = '바로가기 :: 없음';
+
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 7교시 7교시 777777777777
+   if(hours >= "15" & hours <= "15" & mins >= "10" & mins <= "59"){
+    btnElement.innerText = '바로가기 :: 없음';
+ 
+
+    }
+ 
+    
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 8교시 8교시 8888888888888
+   if(hours >= "16" & hours <= "16" & mins >= "00" & mins <= "50"){
+	btnElement.innerText = '바로가기 :: 없음';
+
+    }
+    
+    
+
+
+
+    ///=====================알림가게하는부분임===============
+    ///=====================알림가게하는부분임===============
+     //   시간시작  -  시간끝           분시작  -  분끝             :: 1교시 1교시 11111111111111111
+     if(hours >= "8" & hours <= "8" & mins == "55" & secs <= 05){
+
+}
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 2교시 2교시 2222222222222222
+ if(hours >= "9" & hours <= "9" & mins >= "50" & secs <= 05){
+
+}
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 3교시 3교시 3333333333333333
+ if(hours >= "10" & hours <= "10" & mins == "45" & secs <= 05){
+
+}
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 4교시 4교시 4444444444444
+ if(hours >= "11" & hours <= "11" & mins == "40" & secs <= 05){
+
+}
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 5교시 5교시 5555555555555
+ if(hours >= "13" & hours <= "13" & mins == "15" & secs <= 05){
+  
+  }
+ 
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 6교시 6교시 66666666666666
+ if(hours >= "14" & hours <= "14" & mins == "10" & secs <= 05){
+
+  }
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 7교시 7교시 777777777777
+ if(hours >= "15" & hours <= "15" & mins == "05" & secs <= 05){
+
+  }
+
+ //   시간시작  -  시간끝           분시작  -  분끝             :: 8교시 8교시 8888888888888
+ if(hours >= "16" & hours <= "16" & mins == "00" & secs <= 05){
+
+  }
+
+
+
+}
+
+
+
+
+}, 2000);
+
+
+
+ 
+function classnow_click() {
+
+ 
+	 
+if (week[now.getDay()] == "MON") {
+  // alert('오늘 요일: ' + week[d.getDay()] + '요s일');
+
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 한국어QT
+   if(hours >= "8" & hours <= "8" & mins >= "10" & mins <= "45"){
+	window.open('https://us02web.zoom.us/j/6555235437?pwd=TkoxRVNsOWpxdmIrN2JtbytTVU1oZz09#success', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 수학
+   if(hours >= "8" & hours <= "8" & mins >= "50" & mins <= "59"){
+	window.open('https://us02web.zoom.us/j/6555235437?pwd=TkoxRVNsOWpxdmIrN2JtbytTVU1oZz09#success', '_blank'); 
+    }
+   if(hours >= "9" & hours <= "9" & mins >= "00" & mins <= "45"){
+	window.open('https://us02web.zoom.us/j/6555235437?pwd=TkoxRVNsOWpxdmIrN2JtbytTVU1oZz09#success', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 진로와 직업
+   if(hours >= "9" & hours <= "9" & mins >= "50" & mins <= "59"){
+	window.open('https://us02web.zoom.us/j/6555235437?pwd=TkoxRVNsOWpxdmIrN2JtbytTVU1oZz09#success', '_blank'); 
+    }
+   if(hours >= "10" & hours <= "10" & mins >= "55" & mins <= "40"){
+	window.open('https://us02web.zoom.us/j/6555235437?pwd=TkoxRVNsOWpxdmIrN2JtbytTVU1oZz09#success', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 체육
+   if(hours >= "10" & hours <= "10" & mins >= "45" & mins <= "59"){
+	window.open('https://us05web.zoom.us/j/2321692413?pwd=TDREaC9CN0FEYXdzejFoMTFEMVZxZz09#success', '_blank'); 
+    }
+   if(hours >= "11" & hours <= "11" & mins >= "00" & mins <= "35"){
+	window.open('https://us05web.zoom.us/j/2321692413?pwd=TDREaC9CN0FEYXdzejFoMTFEMVZxZz09#success', '_blank'); 
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 국어
+   if(hours >= "11" & hours <= "11" & mins >= "40" & mins <= "59"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+   if(hours >= "12" & hours <= "12" & mins >= "00" & mins <= "30"){
+	  
+    }
+
+	
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 피식스
+   if(hours >= "13" & hours <= "13" & mins >= "10" & mins <= "59"){
+	window.open('https://us02web.zoom.us/j/81752030114?pwd=VE5wV3hmZGNuSm1TaWZGT3dxZkVLZz09#success', '_blank'); 
+    }
+   if(hours >= "14" & hours <= "14" & mins >= "00" & mins <= "05"){
+	window.open('https://us02web.zoom.us/j/81752030114?pwd=VE5wV3hmZGNuSm1TaWZGT3dxZkVLZz09#success', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 6교시
+   if(hours >= "14" & hours <= "14" & mins >= "10" & mins <= "59"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+   if(hours >= "15" & hours <= "15" & mins >= "00" & mins <= "01"){
+	  
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 7교시
+   if(hours >= "15" & hours <= "15" & mins >= "10" & mins <= "59"){
+	window.open('https://us02web.zoom.us/j/7955892462?pwd=QzQ3Smk5Z1lTODhJaWRoWTduL1QwZz09#success', '_blank'); 
+    }
+    
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 8교시
+   if(hours >= "16" & hours <= "16" & mins >= "00" & mins <= "50"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+    
+
+
+
+}
+	
+
+
+if (week[now.getDay()] == "TUE") {
+
+	
+
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 개인QT
+   if(hours >= "8" & hours <= "8" & mins >= "10" & mins <= "45"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 트리고
+   if(hours >= "8" & hours <= "8" & mins >= "50" & mins <= "59"){
+	window.open('https://us02web.zoom.us/j/84130576448?pwd=VnRJYUVvV0pGbFNBdWN4K3V3MEgzdz09#success', '_blank'); 
+    }
+   if(hours >= "9" & hours <= "9" & mins >= "00" & mins <= "45"){
+	window.open('https://us02web.zoom.us/j/84130576448?pwd=VnRJYUVvV0pGbFNBdWN4K3V3MEgzdz09#success', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 리트
+   if(hours >= "9" & hours <= "9" & mins >= "50" & mins <= "59"){
+	window.open('https://classroom.google.com/u/1/c/Mjc3NTgwOTY4MzE5', '_blank'); 
+    }
+   if(hours >= "10" & hours <= "10" & mins >= "55" & mins <= "40"){
+	window.open('https://classroom.google.com/u/1/c/Mjc3NTgwOTY4MzE5', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 한국사
+   if(hours >= "10" & hours <= "10" & mins >= "45" & mins <= "59"){
+	window.open('https://classroom.google.com/u/1/c/Mjc3NTgwOTY4MzE5', '_blank'); 
+    }
+   if(hours >= "11" & hours <= "11" & mins >= "00" & mins <= "35"){
+	window.open('https://classroom.google.com/u/1/c/Mjc3NTgwOTY4MzE5', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 국어
+   if(hours >= "11" & hours <= "11" & mins >= "40" & mins <= "59"){
+	window.open('https://us02web.zoom.us/j/84111539137?pwd=TTlZOGhZUlVxTUFYbEVSNXRFeEdMQT09#success', '_blank'); 
+    }
+   if(hours >= "12" & hours <= "12" & mins >= "00" & mins <= "30"){
+	window.open('https://us02web.zoom.us/j/84111539137?pwd=TTlZOGhZUlVxTUFYbEVSNXRFeEdMQT09#success', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 피식스
+   if(hours >= "13" & hours <= "13" & mins >= "10" & mins <= "59"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+   if(hours >= "14" & hours <= "14" & mins >= "00" & mins <= "05"){
+	  
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 이피
+   if(hours >= "14" & hours <= "14" & mins >= "10" & mins <= "59"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+   if(hours >= "15" & hours <= "15" & mins >= "00" & mins <= "01"){
+	 
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 아이에스
+   if(hours >= "15" & hours <= "15" & mins >= "10" & mins <= "59"){
+	window.open('https://classroom.google.com/u/1/c/Mjc2Mjc1NTEwOTM1', '_blank'); 
+    }
+    
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 자율
+   if(hours >= "16" & hours <= "16" & mins >= "00" & mins <= "50"){
+	 
+    }
+    
+
+
+
+
+
+}
+	
+
+
+if (week[now.getDay()] == "WED") {
+
+	
+
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 수요예배
+   if(hours >= "8" & hours <= "8" & mins >= "10" & mins <= "45"){
+	window.open('https://us02web.zoom.us/j/4913976575?pwd=c1Q3MEsyV1RiOVBNcTRHOTdZNVRRQT09', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 수요예배
+   if(hours >= "8" & hours <= "8" & mins >= "50" & mins <= "59"){
+	window.open('https://us02web.zoom.us/j/4913976575?pwd=c1Q3MEsyV1RiOVBNcTRHOTdZNVRRQT09', '_blank'); 
+    }
+   if(hours >= "9" & hours <= "9" & mins >= "00" & mins <= "45"){
+	window.open('https://us02web.zoom.us/j/4913976575?pwd=c1Q3MEsyV1RiOVBNcTRHOTdZNVRRQT09', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 컴퓨터
+   if(hours >= "9" & hours <= "9" & mins >= "50" & mins <= "59"){
+	window.open('https://us04web.zoom.us/j/75101275557?pwd=OU9yWlZoLzNGOGZGSWx6SWZoeDVHdz09', '_blank'); 
+    }
+   if(hours >= "10" & hours <= "10" & mins >= "55" & mins <= "40"){
+	window.open('https://us04web.zoom.us/j/75101275557?pwd=OU9yWlZoLzNGOGZGSWx6SWZoeDVHdz09', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 수학
+   if(hours >= "10" & hours <= "10" & mins >= "45" & mins <= "59"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+   if(hours >= "11" & hours <= "11" & mins >= "00" & mins <= "35"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 이피
+   if(hours >= "11" & hours <= "11" & mins >= "40" & mins <= "59"){
+	window.open('https://classroom.google.com/u/1/c/Mjc3NTczOTkwNTcy', '_blank'); 
+    }
+   if(hours >= "12" & hours <= "12" & mins >= "00" & mins <= "30"){
+	window.open('https://classroom.google.com/u/1/c/Mjc3NTczOTkwNTcy', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 이피
+   if(hours >= "13" & hours <= "13" & mins >= "10" & mins <= "59"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+   if(hours >= "14" & hours <= "14" & mins >= "00" & mins <= "05"){
+	  
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 토플
+   if(hours >= "14" & hours <= "14" & mins >= "10" & mins <= "59"){
+	window.open('https://us02web.zoom.us/j/84056392706?pwd=NXI0YXVNTHVEZVhpaU81dTlUYnVzZz09#success', '_blank'); 
+    }
+   if(hours >= "15" & hours <= "15" & mins >= "00" & mins <= "01"){
+	window.open('https://us02web.zoom.us/j/84056392706?pwd=NXI0YXVNTHVEZVhpaU81dTlUYnVzZz09#success', '_blank'); 
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 아이에스
+   if(hours >= "15" & hours <= "15" & mins >= "10" & mins <= "59"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+    
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 피식스
+   if(hours >= "16" & hours <= "16" & mins >= "00" & mins <= "50"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+    
+
+
+}
+	
+
+
+if (week[now.getDay()] == "THU") {
+ 
+  
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 개인QT
+   if(hours >= "8" & hours <= "8" & mins >= "10" & mins <= "45"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 한국사
+   if(hours >= "8" & hours <= "8" & mins >= "50" & mins <= "59"){
+	 
+    }
+   if(hours >= "9" & hours <= "9" & mins >= "00" & mins <= "45"){
+	 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 국어
+   if(hours >= "9" & hours <= "9" & mins >= "50" & mins <= "59"){
+	alert("국어는 카톡방 확인");
+
+    }
+   if(hours >= "10" & hours <= "10" & mins >= "55" & mins <= "40"){
+	 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 성경
+   if(hours >= "10" & hours <= "10" & mins >= "45" & mins <= "59"){
+	window.open('https://us02web.zoom.us/j/87276081538?pwd=REx6bFRJeCtRbitMNlF1VWRrS2pxUT09#success', '_blank'); 
+    }
+   if(hours >= "11" & hours <= "11" & mins >= "00" & mins <= "35"){
+	window.open('https://us02web.zoom.us/j/87276081538?pwd=REx6bFRJeCtRbitMNlF1VWRrS2pxUT09#success', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 수학
+   if(hours >= "11" & hours <= "11" & mins >= "40" & mins <= "59"){
+	window.open('https://us02web.zoom.us/j/6555235437?pwd=TkoxRVNsOWpxdmIrN2JtbytTVU1oZz09#success', '_blank'); 
+    }
+   if(hours >= "12" & hours <= "12" & mins >= "00" & mins <= "30"){
+	window.open('https://us02web.zoom.us/j/6555235437?pwd=TkoxRVNsOWpxdmIrN2JtbytTVU1oZz09#success', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 아이에스
+   if(hours >= "13" & hours <= "13" & mins >= "10" & mins <= "59"){
+	window.open('https://classroom.google.com/u/1/c/Mjc2Mjc1NTEwOTM1', '_blank'); 
+    }
+   if(hours >= "14" & hours <= "14" & mins >= "00" & mins <= "05"){
+	window.open('https://classroom.google.com/u/1/c/Mjc2Mjc1NTEwOTM1', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 트리고
+   if(hours >= "14" & hours <= "14" & mins >= "10" & mins <= "59"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+   if(hours >= "15" & hours <= "15" & mins >= "00" & mins <= "01"){
+	  
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 리트
+   if(hours >= "15" & hours <= "15" & mins >= "10" & mins <= "59"){
+	window.open('https://classroom.google.com/u/1/c/Mjc3NTgwOTY4MzE5', '_blank'); 
+    }
+    
+ 
+ 
+
+ 
+	  
+}
+	
+
+
+if (week[now.getDay()] == "FRI") {
+
+	
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 영어QT
+   if(hours >= "8" & hours <= "8" & mins >= "10" & mins <= "45"){
+
+	
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 국어
+   if(hours >= "8" & hours <= "8" & mins >= "50" & mins <= "59"){
+	window.open('https://us02web.zoom.us/j/84111539137?pwd=TTlZOGhZUlVxTUFYbEVSNXRFeEdMQT09#success', '_blank'); 
+    }
+   if(hours >= "9" & hours <= "9" & mins >= "00" & mins <= "45"){
+	window.open('https://us02web.zoom.us/j/84111539137?pwd=TTlZOGhZUlVxTUFYbEVSNXRFeEdMQT09#success', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 수학
+   if(hours >= "9" & hours <= "9" & mins >= "50" & mins <= "59"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+   if(hours >= "10" & hours <= "10" & mins >= "55" & mins <= "40"){
+	 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 리트
+   if(hours >= "10" & hours <= "10" & mins >= "45" & mins <= "59"){
+	  
+    }
+   if(hours >= "11" & hours <= "11" & mins >= "00" & mins <= "35"){
+	  
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 피식스
+   if(hours >= "11" & hours <= "11" & mins >= "40" & mins <= "59"){
+	window.open('https://us02web.zoom.us/j/81752030114?pwd=VE5wV3hmZGNuSm1TaWZGT3dxZkVLZz09#success', '_blank'); 
+    }
+   if(hours >= "12" & hours <= "12" & mins >= "00" & mins <= "30"){
+	window.open('https://us02web.zoom.us/j/81752030114?pwd=VE5wV3hmZGNuSm1TaWZGT3dxZkVLZz09#success', '_blank'); 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 토플
+   if(hours >= "13" & hours <= "13" & mins >= "10" & mins <= "59"){
+	 
+    }
+   if(hours >= "14" & hours <= "14" & mins >= "00" & mins <= "05"){
+	 
+    }
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 이피
+   if(hours >= "14" & hours <= "14" & mins >= "10" & mins <= "59"){
+	window.open('https://classroom.google.com/u/1/c/Mjc3NTczOTkwNTcy', '_blank'); 
+    }
+   if(hours >= "15" & hours <= "15" & mins >= "00" & mins <= "01"){
+	window.open('https://classroom.google.com/u/1/c/Mjc3NTczOTkwNTcy', '_blank'); 
+    }
+
+
+   //   시간시작  -  시간끝           분시작  -  분끝             :: 씨에이
+   if(hours >= "15" & hours <= "15" & mins >= "10" & mins <= "59"){
+	alert("현재 줌 수업이 없거나 링크가 없습니다.");
+
+    }
+    
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+$(document).ready(function () {
+      //  $("#modalUpdate").modal('show');
+        
+
+    });
+
+	//alert("-서버 점검 안내- \n \n 일시 : 오늘 오후 6시~9시 \n mhaZone으로 새롭게 찾아옵니다. \n \n git@github.com:SamuelGalaxys/GreenNewdeal.git \nAccessible Github users: SamuelGalaxys, Esther03-web \n Virsion 0.2");
+ 
+
+
+	
+
+	
+	$('#displayNotif').on('click', function(){
+		var placementFrom = $('#notify_placement_from option:selected').val();
+		var placementAlign = $('#notify_placement_align option:selected').val();
+		var state = $('#notify_state option:selected').val();
+		var style = $('#notify_style option:selected').val();
+		var content = {};
+
+		content.message = 'Turning standard Bootstrap alerts into "notify" like notifications';
+		content.title = 'Bootstrap notify';
+		if (style == "withicon") {
+			content.icon = 'la la-bell';
+		} else {
+			content.icon = 'none';
+		}
+		content.url = 'index.html';
+		content.target = '_blank';
+
+		$.notify(content,{
+			type: state,
+			placement: {
+				from: placementFrom,
+				align: placementAlign
+			},
+			time: 1000,
+		});
+	});
+</script>
+
+
+
+
+</body>
+
+</html>

