@@ -17,59 +17,39 @@
  
 
                
-              if(snapshot.val().grd == "TCHR"){
+              if(snapshot.val().sex == "boy"){
 
                 document.getElementById("doact").textContent = snapshot.val().grd + "학년 바로가기"; //Span은 innerhtml로 a 는 textContent로
-                document.getElementById("doact").href = "teacher.html";
-                window.location.href = "teacher.html"
+                document.getElementById("doact").href = "CenterCoreBoy.html";
+                window.location.href = "CenterCoreBoy.html"
 
               }
               
-              if(snapshot.val().grd == "12"){
+              if(snapshot.val().sex == "girl"){
 
                 document.getElementById("doact").textContent = snapshot.val().grd + "학년 바로가기"; //Span은 innerhtml로 a 는 textContent로
-                document.getElementById("doact").href = "g12.html";
-                window.location.href = "g12.html"
+                document.getElementById("doact").href = "CenterCoreGirl.html";
+                window.location.href = "CenterCoreGirl.html"
 
               }
 
-              if(snapshot.val().grd == "11"){
+              if(snapshot.val().name == "Haksa" | "이선희"){
 
                 document.getElementById("doact").textContent = snapshot.val().grd + "학년 바로가기"; //Span은 innerhtml로 a 는 textContent로
-                document.getElementById("doact").href = "g11.html";
-                window.location.href = "g11.html"
+                document.getElementById("doact").href = "Admin.html";
+                window.location.href = "Admin.html"
               }
 
-              if(snapshot.val().grd == "10"){
+              if(snapshot.val().grd == "KIHOON" | "김기훈"){
 
                 document.getElementById("doact").textContent = snapshot.val().grd + "학년 바로가기"; //Span은 innerhtml로 a 는 textContent로
-                document.getElementById("doact").href = "g12.html";
-                window.location.href = "g10.html"
-
-              }
-
-              if(snapshot.val().grd == "9"){
-
-                document.getElementById("doact").textContent = snapshot.val().grd + "학년 바로가기"; //Span은 innerhtml로 a 는 textContent로
-                document.getElementById("doact").href = "g9.html";
-                window.location.href = "g9.html"
-                alert("준비중입니다.")
-
-
+                document.getElementById("doact").href = "Admin.html";
+                window.location.href = "Admin.html"
+                
 
               }
 
-              if(snapshot.val().grd == "8"){
-
-                document.getElementById("doact").textContent = snapshot.val().grd + "학년 바로가기"; //Span은 innerhtml로 a 는 textContent로
-                document.getElementById("doact").href = "g8.html";
-                window.location.href = "g8.html"
-                alert("준비중입니다.")
-
-
-              }
-
-
+              
 
 
   

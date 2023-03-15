@@ -5,7 +5,7 @@
  <html>
 
  <head>
-     <title>mhaZone</title>
+     <title>학사존</title>
 
 
 
@@ -17,14 +17,17 @@
   </head>
 
  <body>
-     <div class="main">
-         <p class="sign" align="center">추가 정보 입력</p>
+     <div class="main" style="height: 80%;">
+        <p class="sign" align="center">명성장학관 정보등록시스템</p>
          <form class="form1">
 
+            <input class="un " type="text" align="center" style="color: brown;" placeholder="이메일 주소" id="email">
+            <input class="un " type="text" align="center" style="color: brown;" placeholder="사용할 비밀번호" id="pwd">
 
-             <input class="un " type="text" align="center" placeholder="이름 (ex: 김명성)" id="name">
-             <input class="un " type="text" align="center" placeholder="학교명 및 학과 (ex : 장로회신학대학교 신학과)" id="school">
-             <input class="un " type="text" align="center" placeholder="학년 (ex:1,2,3,4 중에 숫자만)" id="grade">
+
+             <input class="un " type="text" align="center" placeholder="이름 (예: 김명성)" id="name">
+             <input class="un " type="text" align="center" placeholder="학교 (예 : 장로회신학대학교 신학과)" id="school">
+             <input class="un " type="text" align="center" placeholder="학번 (예:2023 ,숫자만 입력)" id="grade">
 
           <!----  <input class="un " type="email" align="center" placeholder="Email" id="email">
              <input class="pass" type="password" align="center" placeholder="Password" id="pwd">  -->
@@ -48,12 +51,14 @@
 
               
 
+              <!----
               
 
              <p class="smalltext" style="font-size : 12px;" align="center" id="ips">joinCODE: <a id="client-ip"></a></p>
              <input class="antiauto" type="text" align="center" placeholder="joinCODE (안뜨면 HAKSA 입력)" id="greenip">
+              -->
 
-
+              <br>
 
              <a type="button" class="submit btn btn-default join" align="center"><strong>등록하기!</strong></a>
              <!-- <p class="forgot" align="center"><a href="loginform.html"> 로그인</a></p> -->
@@ -75,7 +80,7 @@
 
          // 콜백 함수가 호출된다
          function callback(data) {
-             document.getElementById('client-ip').textContent = data.ip;
+             //document.getElementById('client-ip').textContent = data.ip;
          }
      </script>
 
@@ -149,21 +154,21 @@
                
 
   
-
-
+ 
 
                  //jquery를 이용해서 입력된 값을 가져온다.
-                 var email = fbemail;
-                 var password = fbpwd;
-                 var gradeuniv = $('#grade').val();
-                 var univ = $('#school').val();
+                 email = $('#email').val();
+                 password = $('#pwd').val();
+
+                 gradeuniv = $('#grade').val();
+                 univ = $('#school').val();
 
                  name = $('#name').val();
                  years = $('#select_year').val();
                  months = $('#select_month').val();
                  days = $('#select_day').val();
 
-                 var ipip = $('#client-ip').val();
+               //  var ipip = $('#client-ip').val();
 
 
                  //  var valuenm = prompt('name');  이건 프롬프트 띄우는거
@@ -175,8 +180,7 @@
                      var json = JSON.parse(this.responseText);
 
 
-                     if (json.ip == ipip & gradeuniv == "1","2","3","4" | ipip == "HAKSA") {
-
+ 
                          // alert("당신은 접속이 허용되었습니다.")
 
 
@@ -227,7 +231,7 @@
                                  univ : univ,
                                  sex: "boy",
                                 // birthday: years + "." + months + "." + days,
-                                 ip: ipip,
+                                // ip: ipip,
                                  userkey: userInfo.uid
                              };
 
@@ -244,7 +248,7 @@
                                     univ : univ,
                                     sex: "girl",
                                    // birthday: years + "." + months + "." + days,
-                                    ip: ipip,
+                                 //   ip: ipip,
                                     userkey: userInfo.uid
                                 };
                                 
@@ -291,13 +295,7 @@
 
 
 
-
-
-                     } else {
-                         alert("자동등록방지를 정확히 입력해주세요.")
-
-
-                     }
+ 
                  }
                  var request = new XMLHttpRequest();
                  request.addEventListener("load", resp);
@@ -318,7 +316,7 @@
 
 
      <script>
-         var start_year = "1970";// 시작할 년도
+         var start_year = "1990";// 시작할 년도
          var today = new Date();
          var today_year = today.getFullYear();
          var index = 0;

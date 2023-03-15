@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>마한아존</title>
+  <title>학사존</title>
   <!-- Favicon -->
   <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
   <!-- Fonts -->
@@ -28,25 +28,25 @@
     
     .color-change {
       width: 90%;
-      background-color: rgb(6, 231, 92);
+      background-color: rgb(255, 255, 255);
       animation: color-change 2s infinite;
     }
     
     @keyframes color-change {
       0% {
-        background-color: rgb(255, 221, 0);
+        background-color: rgb(248, 234, 146);
       }
       25% {
-        background-color: rgb(6, 231, 92);
+        background-color: rgb(170, 251, 201);
       }
       50% {
-        background-color: rgb(24, 179, 245);
+        background-color: rgb(172, 230, 255);
       }
       75% {
-        background-color: rgb(6, 231, 92);
+        background-color: rgb(162, 247, 195);
       }
       100% {
-        background-color: rgb(255, 221, 0);
+        background-color: rgb(247, 237, 174);
       }
     }
     
@@ -82,7 +82,7 @@
           <ul class="navbar-nav">
 
             <li class="nav-item">
-              <a class="nav-link" href="000000.html">
+              <a class="nav-link" href="index.html">
                 <i class="mdi mdi-nature text-green"></i>
                 <span class="nav-link-text">홈</span>
               </a>
@@ -107,7 +107,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="0000000.html">
+              <a class="nav-link" href="dormclean.html">
                 <i class="ni ni-user-run text-blue"></i>
                 <span class="nav-link-text">청소구역</span>
               </a>
@@ -116,7 +116,7 @@
 
             
             <li class="nav-item">
-              <a class="nav-link" href="RoomsChk.html">
+              <a class="nav-link" href="index.html">
                 <i class="ni ni-zoom-split-in text-blue"></i>
                 <span class="nav-link-text">방보고</span>
               </a>
@@ -284,7 +284,7 @@
           <div class="board"></div>
 
             <div class="card-body">
-              <button type="button" class="vibrating-button color-change button button-contactForm btn_1 boxed-btn btn btn-primary gotochk" id="gotochk" onclick="location.href='RoomsChk.html'" name="gotochk" style="float: left; width: 100%; font-size: 12px; background-color: #101010; color: #000000;">== 체크하기 ==</button> 
+              <button type="button" class="vibrating-button color-change button button-contactForm btn_1 boxed-btn btn btn-primary gotochk" id="gotochk" onclick="location.href='RoomsChk.html'" name="gotochk" style="float: left; width: 100%; font-size: 12px; background-color: #101010; color: #000000;">== 보고하러 가기 ==</button> 
 
                <div class="card-sub">		
 
@@ -1054,7 +1054,7 @@ var Red = "#db3d3d"
 var Yellow = "#e88802"
 var White = "#FFFFFF"
 
-var ISHERE = " (📍재실)"
+var ISHERE = " (재실)"
 var ISOUT = " (외박)"
 var ISLATE = " (지각)"
 
@@ -1063,18 +1063,14 @@ var ISLATE = " (지각)"
 
 
 
+setInterval(function() { 
+  
 
 
 
 
 
-
-
-
-
-
-
-
+  
 
 
 
@@ -1844,6 +1840,9 @@ else if (CHK610_4 == "late") {
 
  
   
+}, 100); //=1 재실 , =2 외박 , =3 지각
+
+
   
   }
   
@@ -2251,7 +2250,7 @@ if (name4_610 == "-"){
   //채팅으로UID전달하는함수
   function chat(key){ 
   location.href="chatting/chat.html?" + key ;
-  alert(key);
+  
   }
    
   
