@@ -215,7 +215,7 @@
                          //가입 성공했을 때 호출 되는 함수 - 위의 firebase의 인증 모듈과 다른 database 모듈임을 확인하자.
                          function logUser() {
 
-
+ 
 
                             if (sex === "boy") {
 
@@ -233,9 +233,13 @@
                                 // birthday: years + "." + months + "." + days,
                                 // ip: ipip,
                                  userkey: userInfo.uid
+
                              };
 
-                            } else if (sex === "girl") {
+
+                            } 
+                            
+                            if (sex === "girl") {
                                 var ref = firebaseDatabase.ref("users/" + userInfo.uid);//저장될 곳을 users라는 부모 키를 레퍼런스로 지정.
 
                                 //저장 형식
@@ -282,7 +286,7 @@
                              alert("가입이 완료되었습니다");
 
                              //메인 페이지로 이동시키고 세션 저장시키기
-                             window.location.href = "CenterCoreBoy.html"
+                             window.location.href = "index.html"
 
 
 
