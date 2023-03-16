@@ -2735,6 +2735,37 @@ document.getElementById('chkt4-513').value = CHK513_4;
 
 
 
+// 삭제
+
+//===========================111111111111111==============================501
+
+//var name1_501 = document.getElementById("name1-501").value;
+
+name1_501 = $('#name1-501').val(); // 사용자 이름
+
+const Tbname1_501 = document.querySelector('#name1-501');
+
+Tbname1_501.addEventListener('click', function() {
+  
+    setInterval(function() { document.getElementById('name1-501').value = "here"; document.getElementById('name1chk-501').value = document.getElementById('name1-501').value + " : ✅재실 " + "(" + dayTime + ")"; }, 100); //=1 재실 , =2 외박 , =3 지각
+});
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
