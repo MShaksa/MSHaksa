@@ -2561,6 +2561,20 @@ document.getElementById('chkt4-610').value = CHK610_4;
 
 
 
+//if (confirm("Are you sure?")) {
+  // 사용자가 'Yes'를 클릭했을 때 실행되는 코드
+
+ // alert("예스")
+//} else {
+  // 사용자가 'No'를 클릭했을 때 실행되는 코드
+//  alert("사모님꼐 허락받고 와요")
+//}
+
+
+
+
+
+
 
 //===========================111111111111111==============================404
 
@@ -2583,6 +2597,9 @@ Button1Out_404.addEventListener('click', function() {
     Button1Here_404.textContent = '재실'
     Button1Out_404.textContent = '✅외박'
     Button1Late_404.textContent = '지각'
+
+ 
+
     setInterval(function() { document.getElementById('chkt1-404').value = "out"; document.getElementById('name1chk-404').value = document.getElementById('name1-404').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
 });
 
