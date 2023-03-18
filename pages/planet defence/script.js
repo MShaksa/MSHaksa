@@ -92,9 +92,9 @@ function game() {
 
 
 
-            
+         //   setInterval(function() { bullets.push(bullet);}, 100); //
 
-            bullets.push(bullet);
+         bullets.push(bullet);
         } else {
             var dist;
             if(gameOver) {
@@ -165,14 +165,14 @@ function game() {
 
                 ctx.restore();
 
-                //Real coords
+                //Real coords 실제 좌표
                 bullets[i].realX = (0) - (bullets[i].y + 10) * Math.sin(bullets[i].deg);
                 bullets[i].realY = (0) + (bullets[i].y + 10) * Math.cos(bullets[i].deg);
 
                 bullets[i].realX += cW/2;
                 bullets[i].realY += cH/2;
 
-                //Collision
+                //Collision 충돌
                 for(var j = 0; j < asteroids.length; j++) {
                     if(!asteroids[j].destroyed) {
                         distance = Math.sqrt(Math.pow(
@@ -255,7 +255,7 @@ function game() {
 
         switch(type){
             case 1:
-                coordsX = random(0, cW);
+                coordsX = random(0, "cW");
                 coordsY = 0 - 150;
                 break;
             case 2:
