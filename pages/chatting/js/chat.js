@@ -46,7 +46,7 @@ if (snapshot.val().sender == myName) {
 
   }else{
 
-  $('<div class="message message-personal"> <div style="font-size :14px" id="message-' + snapshot.key + '">' + '<a style="font-size : 10px; color:#ffffff">' + snapshot.val().nick + '</a></br>'  + snapshot.val().message + '<button class="btn-delete" data-id="' + snapshot.key + '" onclick="deleteMessage(this);">X</button></div></div>').appendTo($('.mCSB_container')).addClass('new');
+  $('<div class="message message-personal"> <div style="font-size :14px" id="message-' + snapshot.key + '">' + '<a style="font-size : 10px; color:#ffffff">' + snapshot.val().nick + '</a></br>'  + snapshot.val().message + '<button class="btn-delete" style="width:20px" data-id="' + snapshot.key + '" onclick="deleteMessage(this);">X</button></div></div>').appendTo($('.mCSB_container')).addClass('new');
  // $('<div class="message message-personal"> <figure class="avatar"><img src="https://cdn.iconscout.com/icon/free/png-256/user-1648810-1401302.png" /></figure>  <div id="message-' + snapshot.key + '">' + snapshot.val().message + '<button class="btn-delete" data-id="' + snapshot.key + '" onclick="deleteMessage(this);">X</button></div></div>').appendTo($('.mCSB_container')).addClass('new');
 
   $('.message-input').val(null);
