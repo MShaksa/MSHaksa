@@ -39,7 +39,7 @@ function game() {
         posX   : -35,
         posY   : -(100+82),
         width  : 70,
-        height : 79,
+        height : 79, // 스프라이트 자르기
         deg    : 0
     };
 
@@ -101,6 +101,7 @@ function game() {
                 dist = Math.sqrt(((e.offsetX - cW/2) * (e.offsetX - cW/2)) + ((e.offsetY - (cH/2 + 45 + 22)) * (e.offsetY - (cH/2+ 45 + 22))));
                 if (dist < 27) {
                     if(e.type == 'click') {
+
                         gameOver   = false;
                         count      = 0;
                         bullets    = [];
@@ -143,6 +144,7 @@ function game() {
     function fire() {
         var distance;
 
+        
         for(var i = 0; i < bullets.length; i++) {
             if(!bullets[i].destroyed) {
                 ctx.save();
@@ -156,7 +158,7 @@ function game() {
                     50,
                     75,
                     bullets[i].x,
-                    bullets[i].y -= 20, //총알 속도
+                    bullets[i].y -= 2, //총알 속도
                     19,  //텍스쳐 면적
                     30  //텍스쳐 면적
                 );
@@ -237,7 +239,11 @@ function game() {
         ctx.restore();
 
         if(bullets.length - destroyed && playing) {
-            fire();
+
+            
+                            fire();
+
+
         }
     }
 
@@ -301,7 +307,7 @@ function game() {
                     asteroids[i].width,
                     asteroids[i].height,
                     -(asteroids[i].width / asteroids[i].size) / 2,
-                    asteroids[i].moveY += 1/(asteroids[i].size),
+                    asteroids[i].moveY += 1/(asteroids[i].size), //운석 속도
                     asteroids[i].width / asteroids[i].size,
                     asteroids[i].height / asteroids[i].size
                 );
