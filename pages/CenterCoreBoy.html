@@ -2226,10 +2226,11 @@ if (name4_610 == "-"){
   }
   
   
-  
-  
+ 
+
+
   function buttonadd(data){
-     var key = data.key; //@Hㅁ1 없ㄴ
+    var key = data.key; //@Hㅁ1 없ㄴ
     var Data = data.val();
   
     var createtime = Data.createtime;
@@ -2245,6 +2246,8 @@ if (name4_610 == "-"){
   
   //   $(".thanksList").append(html);   //아래로 붙이기
   $(".btnz").prepend(btnside);   //위로 붙이기
+  buttonadd.executed = false;
+
   }
   buttonadd.executed = false;
 

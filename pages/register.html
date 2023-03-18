@@ -82,14 +82,14 @@
          function callback(data) {
              //document.getElementById('client-ip').textContent = data.ip;
          }
-     </script>-->
+     </script>
 
-     <script type="text/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+     <script type="text/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>-->
      <script src="../assets/js/time.js"></script>
-     <script src="ipbanned.js"></script>
 
+     
 
-
+<!----
      <script language = "javascript">
         temp = location.href.split("?");
         data=temp[1].split("/");
@@ -97,7 +97,7 @@
         fbpwd = data[1];
         
       //  document.write(fbemail + " " + fbpwd);   //페이지에 전달받은 값 띄워서 확인하기 
-    </script>
+    </script>-->
 
 
 
@@ -147,7 +147,7 @@
 
 
 
-
+ 
 
                 var sex = document.querySelector('input[name="sex"]:checked').value;
 
@@ -170,18 +170,17 @@
 
                //  var ipip = $('#client-ip').val();
 
-
+ 
                  //  var valuenm = prompt('name');  이건 프롬프트 띄우는거
 
 
 
-                 function resp() {
-                     //   var banIP1 = ['58.777.7'];  // 차단할 아이피 입력
-                     var json = JSON.parse(this.responseText);
+                      //   var banIP1 = ['58.777.7'];  // 차단할 아이피 입력
+                   //  var json = JSON.parse(this.responseText);
 
 
  
-                         // alert("당신은 접속이 허용되었습니다.")
+                          // alert("당신은 접속이 허용되었습니다.")
 
 
                          //===============================가입================================
@@ -203,6 +202,7 @@
                              var errorCode = error.code;
                              var errorMessage = error.message;
                              alert(errorMessage);
+                             alert("빈칸없이 정보를 채우고, 성별을 선택해 주세요!")
 
                          });
 
@@ -262,8 +262,7 @@
 
                             // no sex is selected
 
-                            alert("성별을 선택해 주세요.")
-
+ 
                             }
 
 
@@ -301,11 +300,11 @@
 
 
  
-                 }
-                 var request = new XMLHttpRequest();
-                 request.addEventListener("load", resp);
-                 request.open("GET", 'https://api.ipify.org?format=json');
-                 request.send();
+                 
+              //   var request = new XMLHttpRequest();
+              //   request.addEventListener("load", resp);
+              //   request.open("GET", 'https://api.ipify.org?format=json');
+              //   request.send();
 
 
 
