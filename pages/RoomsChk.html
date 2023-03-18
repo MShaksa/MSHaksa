@@ -2563,22 +2563,24 @@ document.getElementById('chkt4-610').value = CHK610_4;
 
 
 
-var outmsg = "대충 사모님꼐 확인했나요 내용. 확인했나요? "
-var outmsgwen = "확인했습니다."
-var outmsgdeny = "No"
+var outmsg = "무단 외박은 금지이며 외박 시 사감님에게 허가 밎 보고를 해야 합니다. \n 외박 여부 보고는 오후9시 이전에 하는 것을 원칙으로 합니다. \n 무단 외박에 대한 책임은 본인이 부담합니다. \n 위 내용을 숙지하셨다면 '확인했습니다.'라고 정확히 입력해 주세요. (마침표 포함)"
+var outmsgwen = "확인했습니다." //입력
 
-var nomsg = "아니오"
+var outmsgdeny = "철자에 오타가 있거나 취소하였습니다."
+var outyesok = "확인되었습니다."
  
 
 
 
 
 var outmsgq = prompt(outmsg);
-if (outmsgq === outmsgwen) {
+if (outmsgq === outmsgwen) {alert(outyesok)
 
   
 } else {
   alert(outmsgdeny);
+
+
 }
 
 
@@ -2607,11 +2609,11 @@ Button1Out_404.addEventListener('click', function() {
     
 
 var outmsgq = prompt(outmsg);
-if (outmsgq === outmsgwen) {
+if (outmsgq === outmsgwen) {alert(outyesok)
 Button1Out_404.textContent = '✅외박';
     setInterval(function() { document.getElementById('chkt1-404').value = "out"; document.getElementById('name1chk-404').value = document.getElementById('name1-404').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
 } else {
-alert(nomsg)
+alert(outmsgdeny)
   Button1Here_404.textContent = '재실'
     Button1Late_404.textContent = '지각'
 }
@@ -2648,7 +2650,7 @@ Button2Here_404.addEventListener('click', function() {
 Button2Out_404.addEventListener('click', function() {
 
   var outmsgq = prompt(outmsg);
-if (outmsgq === outmsgwen) {
+if (outmsgq === outmsgwen) {alert(outyesok)
 Button1Out_404.textContent = '✅외박';
     setInterval(function() { document.getElementById('chkt1-404').value = "out"; document.getElementById('name1chk-404').value = document.getElementById('name1-404').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
 } else {
@@ -2687,7 +2689,7 @@ Button3Here_404.addEventListener('click', function() {
 
 Button3Out_404.addEventListener('click', function() {
     var outmsgq = prompt(outmsg);
-    if (outmsgq === outmsgwen) {
+    if (outmsgq === outmsgwen) {alert(outyesok)
     Button3Out_404.textContent = '✅외박'
     setInterval(function() { document.getElementById('chkt3-404').value = "out";  document.getElementById('name3chk-404').value = document.getElementById('name3-404').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
 
@@ -2727,7 +2729,7 @@ Button4Here_404.addEventListener('click', function() {
 
 Button4Out_404.addEventListener('click', function() {
   var outmsgq = prompt(outmsg);
-    if (outmsgq === outmsgwen) {
+    if (outmsgq === outmsgwen) {alert(outyesok)
     Button4Out_404.textContent = '✅외박'
     setInterval(function() { document.getElementById('chkt4-404').value = "out";  document.getElementById('name4chk-404').value = document.getElementById('name4-404').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
 
@@ -2769,7 +2771,7 @@ Button5Here_404.addEventListener('click', function() {
 Button5Out_404.addEventListener('click', function() {
 
     var outmsgq = prompt(outmsg);
-    if (outmsgq === outmsgwen) {
+    if (outmsgq === outmsgwen) {alert(outyesok)
     Button5Out_404.textContent = '✅외박'
     setInterval(function() { document.getElementById('chkt5-404').value = "out";  document.getElementById('name5chk-404').value = document.getElementById('name5-404').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
 
@@ -2808,7 +2810,7 @@ Button6Here_404.addEventListener('click', function() {
 Button6Out_404.addEventListener('click', function() {
 
   var outmsgq = prompt(outmsg);
-    if (outmsgq === outmsgwen) {
+    if (outmsgq === outmsgwen) {alert(outyesok)
     Button6Out_404.textContent = '✅외박'
     setInterval(function() { document.getElementById('chkt6-404').value = "out";  document.getElementById('name6chk-404').value = document.getElementById('name6-404').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
 
@@ -2874,11 +2876,11 @@ Button1Out_405.addEventListener('click', function() {
   
     } else {
       alert(outmsgdeny);
-
-
-    }
     Button1Here_405.textContent = '재실'
     Button1Late_405.textContent = '지각'
+
+    }
+
 });
 
 Button1Late_405.addEventListener('click', function() {
@@ -2907,10 +2909,19 @@ Button2Here_405.addEventListener('click', function() {
 });
 
 Button2Out_405.addEventListener('click', function() {
-    Button2Here_405.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button2Out_405.textContent = '✅외박'
-    Button2Late_405.textContent = '지각'
     setInterval(function() { document.getElementById('chkt2-405').value = "out";  document.getElementById('name2chk-405').value = document.getElementById('name2-405').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button2Here_405.textContent = '재실'
+    Button2Late_405.textContent = '지각'
+  
+}
+
 });
 
 Button2Late_405.addEventListener('click', function() {
@@ -2938,10 +2949,19 @@ Button3Here_405.addEventListener('click', function() {
 });
 
 Button3Out_405.addEventListener('click', function() {
-    Button3Here_405.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button3Out_405.textContent = '✅외박'
-    Button3Late_405.textContent = '지각'
     setInterval(function() { document.getElementById('chkt3-405').value = "out";  document.getElementById('name3chk-405').value = document.getElementById('name3-405').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button3Here_405.textContent = '재실'
+    Button3Late_405.textContent = '지각'
+  
+}
+
 });
 
 Button3Late_405.addEventListener('click', function() {
@@ -2968,10 +2988,19 @@ Button4Here_405.addEventListener('click', function() {
 });
 
 Button4Out_405.addEventListener('click', function() {
-    Button4Here_405.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button4Out_405.textContent = '✅외박'
-    Button4Late_405.textContent = '지각'
     setInterval(function() { document.getElementById('chkt4-405').value = "out";  document.getElementById('name4chk-405').value = document.getElementById('name4-405').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button4Here_405.textContent = '재실'
+    Button4Late_405.textContent = '지각'
+  
+}
+
 });
 
 Button4Late_405.addEventListener('click', function() {
@@ -3007,10 +3036,19 @@ Button1Here_601.addEventListener('click', function() {
 });
 
 Button1Out_601.addEventListener('click', function() {
-    Button1Here_601.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button1Out_601.textContent = '✅외박'
-    Button1Late_601.textContent = '지각'
     setInterval(function() { document.getElementById('chkt1-601').value = "out"; document.getElementById('name1chk-601').value = document.getElementById('name1-601').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button1Here_601.textContent = '재실'
+    Button1Late_601.textContent = '지각'
+  
+}
+
 });
 
 Button1Late_601.addEventListener('click', function() {
@@ -3039,10 +3077,19 @@ Button2Here_601.addEventListener('click', function() {
 });
 
 Button2Out_601.addEventListener('click', function() {
-    Button2Here_601.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button2Out_601.textContent = '✅외박'
-    Button2Late_601.textContent = '지각'
     setInterval(function() { document.getElementById('chkt2-601').value = "out";  document.getElementById('name2chk-601').value = document.getElementById('name2-601').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button2Here_601.textContent = '재실'
+    Button2Late_601.textContent = '지각'
+  
+}
+
 });
 
 Button2Late_601.addEventListener('click', function() {
@@ -3070,10 +3117,19 @@ Button3Here_601.addEventListener('click', function() {
 });
 
 Button3Out_601.addEventListener('click', function() {
-    Button3Here_601.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button3Out_601.textContent = '✅외박'
-    Button3Late_601.textContent = '지각'
     setInterval(function() { document.getElementById('chkt3-601').value = "out";  document.getElementById('name3chk-601').value = document.getElementById('name3-601').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button3Here_601.textContent = '재실'
+    Button3Late_601.textContent = '지각'
+  
+}
+
 });
 
 Button3Late_601.addEventListener('click', function() {
@@ -3100,10 +3156,19 @@ Button4Here_601.addEventListener('click', function() {
 });
 
 Button4Out_601.addEventListener('click', function() {
-    Button4Here_601.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button4Out_601.textContent = '✅외박'
-    Button4Late_601.textContent = '지각'
     setInterval(function() { document.getElementById('chkt4-601').value = "out";  document.getElementById('name4chk-601').value = document.getElementById('name4-601').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button4Here_601.textContent = '재실'
+    Button4Late_601.textContent = '지각'
+  
+}
+
 });
 
 Button4Late_601.addEventListener('click', function() {
@@ -3138,10 +3203,19 @@ Button1Here_602.addEventListener('click', function() {
 });
 
 Button1Out_602.addEventListener('click', function() {
-    Button1Here_602.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button1Out_602.textContent = '✅외박'
-    Button1Late_602.textContent = '지각'
     setInterval(function() { document.getElementById('chkt1-602').value = "out"; document.getElementById('name1chk-602').value = document.getElementById('name1-602').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button1Here_602.textContent = '재실'
+    Button1Late_602.textContent = '지각'
+  
+}
+
 });
 
 Button1Late_602.addEventListener('click', function() {
@@ -3170,10 +3244,19 @@ Button2Here_602.addEventListener('click', function() {
 });
 
 Button2Out_602.addEventListener('click', function() {
-    Button2Here_602.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button2Out_602.textContent = '✅외박'
+
+      setInterval(function() { document.getElementById('chkt2-602').value = "out";  document.getElementById('name2chk-602').value = document.getElementById('name2-602').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+} else {
+  alert(outmsgdeny);
+    Button2Here_602.textContent = '재실'
     Button2Late_602.textContent = '지각'
-    setInterval(function() { document.getElementById('chkt2-602').value = "out";  document.getElementById('name2chk-602').value = document.getElementById('name2-602').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+  
+}
+
 });
 
 Button2Late_602.addEventListener('click', function() {
@@ -3201,10 +3284,19 @@ Button3Here_602.addEventListener('click', function() {
 });
 
 Button3Out_602.addEventListener('click', function() {
-    Button3Here_602.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button3Out_602.textContent = '✅외박'
-    Button3Late_602.textContent = '지각'
     setInterval(function() { document.getElementById('chkt3-602').value = "out";  document.getElementById('name3chk-602').value = document.getElementById('name3-602').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button3Here_602.textContent = '재실'
+    Button3Late_602.textContent = '지각'
+  
+}
+
 });
 
 Button3Late_602.addEventListener('click', function() {
@@ -3231,10 +3323,19 @@ Button4Here_602.addEventListener('click', function() {
 });
 
 Button4Out_602.addEventListener('click', function() {
-    Button4Here_602.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button4Out_602.textContent = '✅외박'
-    Button4Late_602.textContent = '지각'
     setInterval(function() { document.getElementById('chkt4-602').value = "out";  document.getElementById('name4chk-602').value = document.getElementById('name4-602').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button4Here_602.textContent = '재실'
+    Button4Late_602.textContent = '지각'
+  
+}
+
 });
 
 Button4Late_602.addEventListener('click', function() {
@@ -3269,10 +3370,19 @@ Button1Here_603.addEventListener('click', function() {
 });
 
 Button1Out_603.addEventListener('click', function() {
-    Button1Here_603.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button1Out_603.textContent = '✅외박'
-    Button1Late_603.textContent = '지각'
     setInterval(function() { document.getElementById('chkt1-603').value = "out"; document.getElementById('name1chk-603').value = document.getElementById('name1-603').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button1Here_603.textContent = '재실'
+    Button1Late_603.textContent = '지각'
+  
+}
+
 });
 
 Button1Late_603.addEventListener('click', function() {
@@ -3301,10 +3411,19 @@ Button2Here_603.addEventListener('click', function() {
 });
 
 Button2Out_603.addEventListener('click', function() {
-    Button2Here_603.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button2Out_603.textContent = '✅외박'
-    Button2Late_603.textContent = '지각'
     setInterval(function() { document.getElementById('chkt2-603').value = "out";  document.getElementById('name2chk-603').value = document.getElementById('name2-603').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button2Here_603.textContent = '재실'
+    Button2Late_603.textContent = '지각'
+  
+}
+
 });
 
 Button2Late_603.addEventListener('click', function() {
@@ -3332,10 +3451,18 @@ Button3Here_603.addEventListener('click', function() {
 });
 
 Button3Out_603.addEventListener('click', function() {
-    Button3Here_603.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button3Out_603.textContent = '✅외박'
+      setInterval(function() { document.getElementById('chkt3-603').value = "out";  document.getElementById('name3chk-603').value = document.getElementById('name3-603').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+} else {
+  alert(outmsgdeny);
+    Button3Here_603.textContent = '재실'
     Button3Late_603.textContent = '지각'
-    setInterval(function() { document.getElementById('chkt3-603').value = "out";  document.getElementById('name3chk-603').value = document.getElementById('name3-603').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+  
+}
+
 });
 
 Button3Late_603.addEventListener('click', function() {
@@ -3362,10 +3489,19 @@ Button4Here_603.addEventListener('click', function() {
 });
 
 Button4Out_603.addEventListener('click', function() {
-    Button4Here_603.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button4Out_603.textContent = '✅외박'
-    Button4Late_603.textContent = '지각'
     setInterval(function() { document.getElementById('chkt4-603').value = "out";  document.getElementById('name4chk-603').value = document.getElementById('name4-603').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button4Here_603.textContent = '재실'
+    Button4Late_603.textContent = '지각'
+  
+}
+
 });
 
 Button4Late_603.addEventListener('click', function() {
@@ -3399,10 +3535,19 @@ Button1Here_604.addEventListener('click', function() {
 });
 
 Button1Out_604.addEventListener('click', function() {
-    Button1Here_604.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button1Out_604.textContent = '✅외박'
-    Button1Late_604.textContent = '지각'
     setInterval(function() { document.getElementById('chkt1-604').value = "out"; document.getElementById('name1chk-604').value = document.getElementById('name1-604').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button1Here_604.textContent = '재실'
+    Button1Late_604.textContent = '지각'
+  
+}
+
 });
 
 Button1Late_604.addEventListener('click', function() {
@@ -3431,10 +3576,19 @@ Button2Here_604.addEventListener('click', function() {
 });
 
 Button2Out_604.addEventListener('click', function() {
-    Button2Here_604.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button2Out_604.textContent = '✅외박'
-    Button2Late_604.textContent = '지각'
     setInterval(function() { document.getElementById('chkt2-604').value = "out";  document.getElementById('name2chk-604').value = document.getElementById('name2-604').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button2Here_604.textContent = '재실'
+    Button2Late_604.textContent = '지각'
+  
+}
+
 });
 
 Button2Late_604.addEventListener('click', function() {
@@ -3462,10 +3616,19 @@ Button3Here_604.addEventListener('click', function() {
 });
 
 Button3Out_604.addEventListener('click', function() {
-    Button3Here_604.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button3Out_604.textContent = '✅외박'
-    Button3Late_604.textContent = '지각'
     setInterval(function() { document.getElementById('chkt3-604').value = "out";  document.getElementById('name3chk-604').value = document.getElementById('name3-604').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button3Here_604.textContent = '재실'
+    Button3Late_604.textContent = '지각'
+  
+}
+
 });
 
 Button3Late_604.addEventListener('click', function() {
@@ -3492,10 +3655,19 @@ Button4Here_604.addEventListener('click', function() {
 });
 
 Button4Out_604.addEventListener('click', function() {
-    Button4Here_604.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button4Out_604.textContent = '✅외박'
-    Button4Late_604.textContent = '지각'
     setInterval(function() { document.getElementById('chkt4-604').value = "out";  document.getElementById('name4chk-604').value = document.getElementById('name4-604').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button4Here_604.textContent = '재실'
+    Button4Late_604.textContent = '지각'
+  
+}
+
 });
 
 Button4Late_604.addEventListener('click', function() {
@@ -3527,10 +3699,19 @@ Button1Here_605.addEventListener('click', function() {
 });
 
 Button1Out_605.addEventListener('click', function() {
-    Button1Here_605.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button1Out_605.textContent = '✅외박'
-    Button1Late_605.textContent = '지각'
     setInterval(function() { document.getElementById('chkt1-605').value = "out"; document.getElementById('name1chk-605').value = document.getElementById('name1-605').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button1Here_605.textContent = '재실'
+    Button1Late_605.textContent = '지각'
+  
+}
+
 });
 
 Button1Late_605.addEventListener('click', function() {
@@ -3559,10 +3740,19 @@ Button2Here_605.addEventListener('click', function() {
 });
 
 Button2Out_605.addEventListener('click', function() {
-    Button2Here_605.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button2Out_605.textContent = '✅외박'
-    Button2Late_605.textContent = '지각'
     setInterval(function() { document.getElementById('chkt2-605').value = "out";  document.getElementById('name2chk-605').value = document.getElementById('name2-605').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button2Here_605.textContent = '재실'
+    Button2Late_605.textContent = '지각'
+  
+}
+
 });
 
 Button2Late_605.addEventListener('click', function() {
@@ -3590,10 +3780,19 @@ Button3Here_605.addEventListener('click', function() {
 });
 
 Button3Out_605.addEventListener('click', function() {
-    Button3Here_605.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button3Out_605.textContent = '✅외박'
-    Button3Late_605.textContent = '지각'
     setInterval(function() { document.getElementById('chkt3-605').value = "out";  document.getElementById('name3chk-605').value = document.getElementById('name3-605').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button3Here_605.textContent = '재실'
+    Button3Late_605.textContent = '지각'
+  
+}
+
 });
 
 Button3Late_605.addEventListener('click', function() {
@@ -3620,10 +3819,19 @@ Button4Here_605.addEventListener('click', function() {
 });
 
 Button4Out_605.addEventListener('click', function() {
-    Button4Here_605.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button4Out_605.textContent = '✅외박'
-    Button4Late_605.textContent = '지각'
     setInterval(function() { document.getElementById('chkt4-605').value = "out";  document.getElementById('name4chk-605').value = document.getElementById('name4-605').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button4Here_605.textContent = '재실'
+    Button4Late_605.textContent = '지각'
+  
+}
+
 });
 
 Button4Late_605.addEventListener('click', function() {
@@ -3655,10 +3863,19 @@ Button1Here_606.addEventListener('click', function() {
 });
 
 Button1Out_606.addEventListener('click', function() {
-    Button1Here_606.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button1Out_606.textContent = '✅외박'
-    Button1Late_606.textContent = '지각'
     setInterval(function() { document.getElementById('chkt1-606').value = "out"; document.getElementById('name1chk-606').value = document.getElementById('name1-606').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button1Here_606.textContent = '재실'
+    Button1Late_606.textContent = '지각'
+  
+}
+
 });
 
 Button1Late_606.addEventListener('click', function() {
@@ -3687,10 +3904,19 @@ Button2Here_606.addEventListener('click', function() {
 });
 
 Button2Out_606.addEventListener('click', function() {
-    Button2Here_606.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button2Out_606.textContent = '✅외박'
-    Button2Late_606.textContent = '지각'
     setInterval(function() { document.getElementById('chkt2-606').value = "out";  document.getElementById('name2chk-606').value = document.getElementById('name2-606').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button2Here_606.textContent = '재실'
+    Button2Late_606.textContent = '지각'
+  
+}
+
 });
 
 Button2Late_606.addEventListener('click', function() {
@@ -3718,10 +3944,19 @@ Button3Here_606.addEventListener('click', function() {
 });
 
 Button3Out_606.addEventListener('click', function() {
-    Button3Here_606.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button3Out_606.textContent = '✅외박'
-    Button3Late_606.textContent = '지각'
     setInterval(function() { document.getElementById('chkt3-606').value = "out";  document.getElementById('name3chk-606').value = document.getElementById('name3-606').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button3Here_606.textContent = '재실'
+    Button3Late_606.textContent = '지각'
+  
+}
+
 });
 
 Button3Late_606.addEventListener('click', function() {
@@ -3748,10 +3983,19 @@ Button4Here_606.addEventListener('click', function() {
 });
 
 Button4Out_606.addEventListener('click', function() {
-    Button4Here_606.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button4Out_606.textContent = '✅외박'
-    Button4Late_606.textContent = '지각'
     setInterval(function() { document.getElementById('chkt4-606').value = "out";  document.getElementById('name4chk-606').value = document.getElementById('name4-606').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button4Here_606.textContent = '재실'
+    Button4Late_606.textContent = '지각'
+  
+}
+
 });
 
 Button4Late_606.addEventListener('click', function() {
@@ -3785,10 +4029,19 @@ Button1Here_607.addEventListener('click', function() {
 });
 
 Button1Out_607.addEventListener('click', function() {
-    Button1Here_607.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button1Out_607.textContent = '✅외박'
-    Button1Late_607.textContent = '지각'
     setInterval(function() { document.getElementById('chkt1-607').value = "out"; document.getElementById('name1chk-607').value = document.getElementById('name1-607').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button1Here_607.textContent = '재실'
+    Button1Late_607.textContent = '지각'
+  
+}
+
 });
 
 Button1Late_607.addEventListener('click', function() {
@@ -3817,10 +4070,19 @@ Button2Here_607.addEventListener('click', function() {
 });
 
 Button2Out_607.addEventListener('click', function() {
-    Button2Here_607.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button2Out_607.textContent = '✅외박'
-    Button2Late_607.textContent = '지각'
     setInterval(function() { document.getElementById('chkt2-607').value = "out";  document.getElementById('name2chk-607').value = document.getElementById('name2-607').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button2Here_607.textContent = '재실'
+    Button2Late_607.textContent = '지각'
+  
+}
+
 });
 
 Button2Late_607.addEventListener('click', function() {
@@ -3848,10 +4110,19 @@ Button3Here_607.addEventListener('click', function() {
 });
 
 Button3Out_607.addEventListener('click', function() {
-    Button3Here_607.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button3Out_607.textContent = '✅외박'
-    Button3Late_607.textContent = '지각'
     setInterval(function() { document.getElementById('chkt3-607').value = "out";  document.getElementById('name3chk-607').value = document.getElementById('name3-607').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button3Here_607.textContent = '재실'
+    Button3Late_607.textContent = '지각'
+  
+}
+
 });
 
 Button3Late_607.addEventListener('click', function() {
@@ -3878,10 +4149,19 @@ Button4Here_607.addEventListener('click', function() {
 });
 
 Button4Out_607.addEventListener('click', function() {
-    Button4Here_607.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button4Out_607.textContent = '✅외박'
-    Button4Late_607.textContent = '지각'
     setInterval(function() { document.getElementById('chkt4-607').value = "out";  document.getElementById('name4chk-607').value = document.getElementById('name4-607').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button4Here_607.textContent = '재실'
+    Button4Late_607.textContent = '지각'
+  
+}
+
 });
 
 Button4Late_607.addEventListener('click', function() {
@@ -3915,10 +4195,19 @@ Button1Here_608.addEventListener('click', function() {
 });
 
 Button1Out_608.addEventListener('click', function() {
-    Button1Here_608.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button1Out_608.textContent = '✅외박'
-    Button1Late_608.textContent = '지각'
     setInterval(function() { document.getElementById('chkt1-608').value = "out"; document.getElementById('name1chk-608').value = document.getElementById('name1-608').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button1Here_608.textContent = '재실'
+    Button1Late_608.textContent = '지각'
+  
+}
+
 });
 
 Button1Late_608.addEventListener('click', function() {
@@ -3947,10 +4236,19 @@ Button2Here_608.addEventListener('click', function() {
 });
 
 Button2Out_608.addEventListener('click', function() {
-    Button2Here_608.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button2Out_608.textContent = '✅외박'
-    Button2Late_608.textContent = '지각'
     setInterval(function() { document.getElementById('chkt2-608').value = "out";  document.getElementById('name2chk-608').value = document.getElementById('name2-608').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button2Here_608.textContent = '재실'
+    Button2Late_608.textContent = '지각'
+  
+}
+
 });
 
 Button2Late_608.addEventListener('click', function() {
@@ -3978,10 +4276,19 @@ Button3Here_608.addEventListener('click', function() {
 });
 
 Button3Out_608.addEventListener('click', function() {
-    Button3Here_608.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button3Out_608.textContent = '✅외박'
-    Button3Late_608.textContent = '지각'
     setInterval(function() { document.getElementById('chkt3-608').value = "out";  document.getElementById('name3chk-608').value = document.getElementById('name3-608').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button3Here_608.textContent = '재실'
+    Button3Late_608.textContent = '지각'
+  
+}
+
 });
 
 Button3Late_608.addEventListener('click', function() {
@@ -4008,10 +4315,19 @@ Button4Here_608.addEventListener('click', function() {
 });
 
 Button4Out_608.addEventListener('click', function() {
-    Button4Here_608.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button4Out_608.textContent = '✅외박'
-    Button4Late_608.textContent = '지각'
     setInterval(function() { document.getElementById('chkt4-608').value = "out";  document.getElementById('name4chk-608').value = document.getElementById('name4-608').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button4Here_608.textContent = '재실'
+    Button4Late_608.textContent = '지각'
+  
+}
+
 });
 
 Button4Late_608.addEventListener('click', function() {
@@ -4046,10 +4362,19 @@ Button1Here_609.addEventListener('click', function() {
 });
 
 Button1Out_609.addEventListener('click', function() {
-    Button1Here_609.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button1Out_609.textContent = '✅외박'
-    Button1Late_609.textContent = '지각'
     setInterval(function() { document.getElementById('chkt1-609').value = "out"; document.getElementById('name1chk-609').value = document.getElementById('name1-609').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button1Here_609.textContent = '재실'
+    Button1Late_609.textContent = '지각'
+  
+}
+
 });
 
 Button1Late_609.addEventListener('click', function() {
@@ -4078,10 +4403,19 @@ Button2Here_609.addEventListener('click', function() {
 });
 
 Button2Out_609.addEventListener('click', function() {
-    Button2Here_609.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button2Out_609.textContent = '✅외박'
-    Button2Late_609.textContent = '지각'
     setInterval(function() { document.getElementById('chkt2-609').value = "out";  document.getElementById('name2chk-609').value = document.getElementById('name2-609').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button2Here_609.textContent = '재실'
+    Button2Late_609.textContent = '지각'
+  
+}
+
 });
 
 Button2Late_609.addEventListener('click', function() {
@@ -4109,10 +4443,19 @@ Button3Here_609.addEventListener('click', function() {
 });
 
 Button3Out_609.addEventListener('click', function() {
-    Button3Here_609.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button3Out_609.textContent = '✅외박'
-    Button3Late_609.textContent = '지각'
     setInterval(function() { document.getElementById('chkt3-609').value = "out";  document.getElementById('name3chk-609').value = document.getElementById('name3-609').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button3Here_609.textContent = '재실'
+    Button3Late_609.textContent = '지각'
+  
+}
+
 });
 
 Button3Late_609.addEventListener('click', function() {
@@ -4139,10 +4482,19 @@ Button4Here_609.addEventListener('click', function() {
 });
 
 Button4Out_609.addEventListener('click', function() {
-    Button4Here_609.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button4Out_609.textContent = '✅외박'
-    Button4Late_609.textContent = '지각'
     setInterval(function() { document.getElementById('chkt4-609').value = "out";  document.getElementById('name4chk-609').value = document.getElementById('name4-609').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button4Here_609.textContent = '재실'
+    Button4Late_609.textContent = '지각'
+  
+}
+
 });
 
 Button4Late_609.addEventListener('click', function() {
@@ -4175,10 +4527,19 @@ Button1Here_610.addEventListener('click', function() {
 });
 
 Button1Out_610.addEventListener('click', function() {
-    Button1Here_610.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button1Out_610.textContent = '✅외박'
-    Button1Late_610.textContent = '지각'
     setInterval(function() { document.getElementById('chkt1-610').value = "out"; document.getElementById('name1chk-610').value = document.getElementById('name1-610').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button1Here_610.textContent = '재실'
+    Button1Late_610.textContent = '지각'
+  
+}
+
 });
 
 Button1Late_610.addEventListener('click', function() {
@@ -4207,10 +4568,19 @@ Button2Here_610.addEventListener('click', function() {
 });
 
 Button2Out_610.addEventListener('click', function() {
-    Button2Here_610.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button2Out_610.textContent = '✅외박'
-    Button2Late_610.textContent = '지각'
     setInterval(function() { document.getElementById('chkt2-610').value = "out";  document.getElementById('name2chk-610').value = document.getElementById('name2-610').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button2Here_610.textContent = '재실'
+    Button2Late_610.textContent = '지각'
+  
+}
+
 });
 
 Button2Late_610.addEventListener('click', function() {
@@ -4238,10 +4608,19 @@ Button3Here_610.addEventListener('click', function() {
 });
 
 Button3Out_610.addEventListener('click', function() {
-    Button3Here_610.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button3Out_610.textContent = '✅외박'
-    Button3Late_610.textContent = '지각'
     setInterval(function() { document.getElementById('chkt3-610').value = "out";  document.getElementById('name3chk-610').value = document.getElementById('name3-610').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button3Here_610.textContent = '재실'
+    Button3Late_610.textContent = '지각'
+  
+}
+
 });
 
 Button3Late_610.addEventListener('click', function() {
@@ -4268,10 +4647,19 @@ Button4Here_610.addEventListener('click', function() {
 });
 
 Button4Out_610.addEventListener('click', function() {
-    Button4Here_610.textContent = '재실'
+  var outmsgq = prompt(outmsg);
+if (outmsgq === outmsgwen) {alert(outyesok)
     Button4Out_610.textContent = '✅외박'
-    Button4Late_610.textContent = '지각'
     setInterval(function() { document.getElementById('chkt4-610').value = "out";  document.getElementById('name4chk-610').value = document.getElementById('name4-610').value + " : 🔴외박 "+ "(" + dayTime + ")";}, 100); //=1 재실 , =2 외박 , =3 지각
+
+  
+} else {
+  alert(outmsgdeny);
+    Button4Here_610.textContent = '재실'
+    Button4Late_610.textContent = '지각'
+  
+}
+
 });
 
 Button4Late_610.addEventListener('click', function() {
