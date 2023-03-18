@@ -20,14 +20,14 @@
  
               if(snapshot.val().name == "Haksa" | "이선희"){
 
-                document.getElementById("doact").textContent = snapshot.val().grd + "학년 바로가기"; //Span은 innerhtml로 a 는 textContent로
+                document.getElementById("doact").textContent = "총관리자 바로가기"; //Span은 innerhtml로 a 는 textContent로
                 document.getElementById("doact").href = "Admin.html";
                 window.location.href = "Admin.html"
               }
 
               if(snapshot.val().grd == "KIHOON" | "김기훈"){
 
-                document.getElementById("doact").textContent = snapshot.val().grd + "학년 바로가기"; //Span은 innerhtml로 a 는 textContent로
+                document.getElementById("doact").textContent = snapshot.val().name + " KIHOON"; //Span은 innerhtml로 a 는 textContent로
                 document.getElementById("doact").href = "Admin.html";
                 window.location.href = "Admin.html"
                 
@@ -35,7 +35,7 @@
                
               if(snapshot.val().sex == "boy"){
 
-                document.getElementById("doact").textContent = snapshot.val().grd + "학년 바로가기"; //Span은 innerhtml로 a 는 textContent로
+                document.getElementById("doact").textContent = "남장 바로가기"; //Span은 innerhtml로 a 는 textContent로
                 document.getElementById("doact").href = "CenterCoreBoy.html";
                 window.location.href = "CenterCoreBoy.html"
 
@@ -43,7 +43,7 @@
               
               if(snapshot.val().sex == "girl"){
 
-                document.getElementById("doact").textContent = snapshot.val().grd + "학년 바로가기"; //Span은 innerhtml로 a 는 textContent로
+                document.getElementById("doact").textContent = "여장 바로가기"; //Span은 innerhtml로 a 는 textContent로
                 document.getElementById("doact").href = "CenterCoreGirl.html";
                 window.location.href = "CenterCoreGirl.html"
               }
