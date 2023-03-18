@@ -17,17 +17,17 @@
   </head>
 
  <body>
-     <div class="main" style="height: 80%;">
+     <div class="main" style="height: 100%;">
         <p class="sign" align="center">명성장학관 정보등록시스템</p>
          <form class="form1">
 
-            <input class="un " type="text" align="center" style="color: brown;" placeholder="이메일 주소" id="email">
-            <input class="un " type="text" align="center" style="color: brown;" placeholder="사용할 비밀번호" id="pwd">
+            <input class="un " type="text" align="center" style="color: brown; background-color: bisque;" placeholder="이메일 주소" id="email">
+            <input class="un " type="text" align="center" style="color: brown; background-color: bisque;" placeholder="비밀번호" id="pwd">
 
 
              <input class="un " type="text" align="center" placeholder="이름 (예: 김명성)" id="name">
-             <input class="un " type="text" align="center" placeholder="학교 (예 : 장로회신학대학교 신학과)" id="school">
-             <input class="un " type="text" align="center" placeholder="학번 (예:2023 ,숫자만 입력)" id="grade">
+             <input class="un " type="text" align="center" placeholder="전화번호 : (예 : 010-1234-1234)" id="grade">
+             <input class="un " type="text" align="center" placeholder="학교 및 학과 : (예 : 장로회신학대학교 신학과)" id="school">
 
           <!----  <input class="un " type="email" align="center" placeholder="Email" id="email">
              <input class="pass" type="password" align="center" placeholder="Password" id="pwd">  -->
@@ -67,7 +67,7 @@
      </div>
 
 
-     <script>
+     <!--<script>
          // HTML의 <script> 요소를 생성한다
          const se = document.createElement('script');
          // <script> 요소의 src 속성을 설정한다
@@ -82,7 +82,7 @@
          function callback(data) {
              //document.getElementById('client-ip').textContent = data.ip;
          }
-     </script>
+     </script>-->
 
      <script type="text/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
      <script src="../assets/js/time.js"></script>

@@ -269,9 +269,9 @@
                 </br></br>
                   <div class="card-title" style="text-align: center;"> 
                 
-                  <strong><p style="font-size: 28px; color: rgb(29, 29, 29);" margin="center" id="leaf">학사존</p></strong>
+                  <strong><p style="font-size: 28px; color: rgb(29, 29, 29);" margin="center" id="leaf">3초만 기다려주세요...</p></strong>
 
-                  재실 보고를 더욱 효율적으로 해보세요.</br> 곧 리디렉션 됩니다...
+                  재실 보고를 더욱 효율적으로 해보세요.</br> 곧 리디렉션 됩니다.
 
                 </div>
 
@@ -422,6 +422,27 @@
 
 	//세션 체크 함수
 	userSessionCheck();
+
+
+
+
+  			//네비게이션 메뉴의 text값 가져오기 - 자바스크립트 dom 방식으로 가져왔다.
+        var seseionCheck = document.getElementById("loginmenu").textContent;
+
+//텍스트 필드에 있는 내용 가져오기!!!!
+
+setTimeout(function() {
+  if (seseionCheck == "로그아웃") {
+  //저장하기
+
+} else {
+
+  window.location.href = "loginform.html"
+
+}}, 3000); // 3초를 밀리초 단위로 나타낸 값
+
+
+ 
 
 
 
