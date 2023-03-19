@@ -25,18 +25,18 @@
             <input class="un " type="text" align="center" style="color: brown; background-color: bisque;" placeholder="비밀번호" id="pwd">
 
 
-             <input class="un " type="text" align="center" placeholder="이름 (예: 김명성)" id="name">
-             <input class="un " type="text" align="center" placeholder="전화번호 : (예 : 010-1234-1234)" id="grade">
-             <input class="un " type="text" align="center" placeholder="학교 및 학과 : (예 : 장로회신학대학교 신학과)" id="school">
+              <input class="un " type="text" align="center" placeholder="이름 (예: 김명성)" id="name"> 
+             <input class="un " type="text" align="center" placeholder="전화번호 : (예 : 010-1234-1234)" id="grade"> 
+            <!-- <input class="un " type="text" align="center" placeholder="학교 및 학과 : (예 : 장로회신학대학교 신학과)" id="school"> -->
 
           <!----  <input class="un " type="email" align="center" placeholder="Email" id="email">
              <input class="pass" type="password" align="center" placeholder="Password" id="pwd">  -->
 
              
-             <p class="smalltext" style="font-size : 12px;" align="center">생년월일 입력</p>
+            <!---- <p class="smalltext" style="font-size : 12px;" align="center">생년월일 입력</p>
              <select class="year" id="select_year" onchange="javascript:lastday();"></select>
              <select class="date" id="select_month" onchange="javascript:lastday();"></select>
-             <select class="date" id="select_day"></select>
+             <select class="date" id="select_day"></select>-->
 
 
              <br> <br>
@@ -161,12 +161,12 @@
                  password = $('#pwd').val();
 
                  gradeuniv = $('#grade').val();
-                 univ = $('#school').val();
+                // univ = $('#school').val();
 
                  name = $('#name').val();
-                 years = $('#select_year').val();
-                 months = $('#select_month').val();
-                 days = $('#select_day').val();
+                // years = $('#select_year').val();
+                // months = $('#select_month').val();
+                // days = $('#select_day').val();
 
                //  var ipip = $('#client-ip').val();
 
@@ -228,9 +228,9 @@
                                  email: email,
                                  pwd: password,
                                  tel: gradeuniv,
-                                 univ : univ,
+                            //     univ : univ,
                                  sex: "boy",
-                                 birthday: years + "." + months + "." + days,
+                            //     birthday: years + "." + months + "." + days,
                                 // ip: ipip,
                                  userkey: userInfo.uid
 
@@ -250,10 +250,10 @@
                                     email: email,
                                     pwd: password,
                                     tel: gradeuniv,
-                                    univ : univ,
+                              //      univ : univ,
                                     sex: "girl",
                                     birthday: years + "." + months + "." + days,
-                                 //   ip: ipip,
+                                // //   ip: ipip,
                                     userkey: userInfo.uid
                                 };
                                 
