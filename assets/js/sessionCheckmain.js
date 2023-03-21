@@ -36,8 +36,8 @@
               if(snapshot.val().sex == "boy"){
 
                 document.getElementById("doact").textContent = "남장 바로가기"; //Span은 innerhtml로 a 는 textContent로
-                document.getElementById("doact").href = "CenterCoreBoy.html";
-                window.location.href = "CenterCoreBoy.html"
+                document.getElementById("doact").href = "RoomsChk.html";
+                window.location.href = "RoomsChk.html"
 
               }
               
@@ -50,6 +50,8 @@
 
 
 
+
+              document.getElementById("RoomsCheck").innerHTML = snapshot.val().unit; //Span은 innerhtml로 a 는 textContent로
 
               
 

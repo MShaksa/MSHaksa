@@ -599,7 +599,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="modalUpdate-610" tabindex="-1" role="dialog" aria-labelledby="modalUpdate-610" aria-hidden="true">
+<div class="modal fade" id="modalUpdate-RC" tabindex="-1" role="dialog" aria-labelledby="modalUpdate-RC" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header" style="background-color: #ffd900;">
@@ -614,7 +614,7 @@
 
 
 					<div class="card-body card col-xl-5" style="width: 35%;">
-            <textarea class="form-control w-100" rows="1" name="RoomsCheck" id="RoomsCheck" cols="30" placeholder="RCK">-</textarea></br>
+            <textarea aria-hidden="true" class="form-control w-100" rows="1" name="RoomsCheck" id="RoomsCheck" cols="30" placeholder="RCK">-</textarea></br>
   
 					</div>
  
@@ -2000,7 +2000,6 @@ var key = data.key;
     var Data = data.val();
     var createtime = Data.createtime;
     var name = Data.name;
-    var RoomCODE = Data.unit;
   
     var name1_404 = Data.name1_404;
     var name2_404 = Data.name2_404;
