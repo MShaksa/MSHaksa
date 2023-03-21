@@ -1,0 +1,2363 @@
+ <!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>학사존</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="https://samuelgalaxys.github.io/reusemapvendors/vendors/iconfonts/mdi/css/materialdesignicons.css">
+
+  <style>
+
+    .vibrating-button {
+      transform: rotate(-1deg);
+      animation: vibrate 0.1s linear infinite;
+    }
+    
+    
+    
+    .color-change {
+      width: 90%;
+      background-color: rgb(255, 255, 255);
+      animation: color-change 2s infinite;
+    }
+    
+    @keyframes color-change {
+      0% {
+        background-color: rgb(248, 234, 146);
+      }
+      25% {
+        background-color: rgb(170, 251, 201);
+      }
+      50% {
+        background-color: rgb(172, 230, 255);
+      }
+      75% {
+        background-color: rgb(162, 247, 195);
+      }
+      100% {
+        background-color: rgb(247, 237, 174);
+      }
+    }
+    
+    
+    
+      </style>
+
+  <script src="../assets/js/includeHTML.js"></script>
+
+  <!-- Page plugins -->
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
+</head>
+
+<body>
+  
+  
+
+ 
+  <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <div class="sidenav-header  align-items-center">
+        <a class="navbar-brand" href="javascript:void(0)">
+          <img src="../assets/img/brand/logo.png" class="navbar-brand-img" alt="...">
+        </a>
+      </div>
+      <div class="navbar-inner">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Nav items -->
+         
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="mdi mdi-nature text-green"></i>
+                <span class="nav-link-text">홈</span>
+              </a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="scboard.html">
+                <i class="ni ni-circle-08 text-blue"></i>
+                <span class="nav-link-text">익명이존</span>
+              </a>
+            </li>
+
+            <div class="btnz"></div>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="food.html">
+                <i class="ni ni-badge text-blue"></i>
+                <span class="nav-link-text">오늘의 식사</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="dormclean.html">
+                <i class="ni ni-user-run text-blue"></i>
+                <span class="nav-link-text">청소구역</span>
+              </a>
+            </li>
+
+
+            
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="ni ni-zoom-split-in text-blue"></i>
+                <span class="nav-link-text">방보고</span>
+              </a>
+            </li>
+
+
+
+
+ 
+    
+
+          </ul>
+          <!-- Divider -->
+          <hr class="my-3">
+          <!-- Heading -->
+
+ 
+          
+ 
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+<!-- Main content -->
+  <div class="main-content" id="panel">
+<!-- Topnav -->
+  <nav class="navbar navbar-top navbar-expand navbar-dark border-bottom" style="background-color: #5566ff;">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Search form -->
+        <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+          <div class="form-group mb-0">
+
+
+
+ 
+
+
+
+
+          </div>
+          <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </form>
+        <!-- Navbar links -->
+        <ul class="navbar-nav align-items-center  ml-md-auto ">
+         
+          <li class="nav-item d-sm-none">
+            <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+              <i class="ni ni-zoom-split-in"></i>
+            </a>
+          </li>
+  
+  
+           
+  
+  
+          
+  
+        </ul>
+        <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+  
+  
+          <li class="nav-item d-xl-none">
+            <!-- Sidenav toggler -->
+            <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+              <div class="sidenav-toggler-inner">
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+              </div>
+            </div>
+          </li>
+  
+  
+          <li class="nav-item dropdown">
+            
+            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="media align-items-center">
+                <span class="avatar avatar-sm rounded-circle">
+                  <img alt="Image placeholder" src="../assets/img/theme/users.jpg">
+                </span>
+                <div class="media-body  ml-2  d-none d-lg-block">
+                  <span id="joinmenu" class="mb-0 text-sm  font-weight-bold">로그인</span>
+                </div>
+              </div>
+            </a>
+  
+            <div class="dropdown-menu  dropdown-menu-right ">
+              <div class="dropdown-header noti-title">
+                <h6 class="text-overflow m-0">Welcome!</h6>
+              </div>
+               
+              <div class="dropdown-divider"></div>
+              <a href="loginform.html" class="dropdown-item">
+                <i class="ni ni-user-run"></i>
+                <span id="loginmenu">로그인/가입</span>
+              </a>
+            </div>
+  
+  
+  
+  
+  
+  
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Header -->
+
+
+    <!-- Header -->
+
+
+
+
+
+
+    <!-- Header -->
+    <div class="header pb-6" style="background-color: #5566ff;">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <h6 class="h2 text-white d-inline-block mb-0">🧭학사 인원확인시스템</h6><a style="color: aliceblue;">(BoysDorm : 남자애들)</a>
+              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+          
+                
+              </nav>
+            </div>
+             
+          </div>
+          <!-- Card stats -->
+           
+
+
+
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+      
+      
+      
+      <div class="row">
+ 
+        <div class="col-xl-7">
+
+ 
+          
+          
+         <div class="card" style="background-color: #ffffff;">
+
+          <div class="board"></div>
+
+            <div class="card-body">
+              <button type="button" class="vibrating-button color-change button button-contactForm btn_1 boxed-btn btn btn-primary gotochk" id="gotochk" onclick="location.href='RoomsChk.html'" name="gotochk" style="float: left; width: 100%; font-size: 12px; background-color: #101010; color: #000000;">== 보고하러 가기 ==</button> 
+
+               <div class="card-sub">		
+
+                 </div>
+            </div>
+         </div>
+
+          
+ 
+          <div class="card" id="card404">
+            <div class="card-body">
+                <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">404호</h5><br>
+                <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-404" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">404-이름</button>
+                <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-404" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">404-이름</button>
+                <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-404" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">404-이름</button>
+                <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-404" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">404-이름</button>
+                <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button5P-404" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">404-이름</button>
+                <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button6P-404" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">404-이름</button>
+
+                <div class="card-sub">
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="card" id="card405">
+          <div class="card-body">
+              <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">405호</h5><br>
+              <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-405" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">405-이름</button>
+              <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-405" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">405-이름</button>
+              <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-405" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">405-이름</button>
+              <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-405" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">405-이름</button>
+              <div class="card-sub">
+              </div>
+          </div>
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+         <div class="card" id="card601">
+            <div class="card-body">
+                <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">601호</h5><br>
+                <button type="button"  class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-601"  style="float: left; width: 40%; font-size: 12px; background-color: #505050;">601-이름</button> 
+                <button type="button"  class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-601" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">601-이름</button> 
+                <button type="button"  class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-601"  style="float: left; width: 40%; font-size: 12px; background-color: #505050;">601-이름</button> 
+                <button type="button"  class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-601"  style="float: left; width: 40%; font-size: 12px; background-color: #505050;">601-이름</button> 
+               <div class="card-sub">		
+                 </div>
+            </div>
+         </div>
+
+
+         <div class="card" id="card602">
+          <div class="card-body">
+              <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">602호</h5><br>
+              <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-602" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">602-이름</button>
+              <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-602" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">602-이름</button>
+              <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-602" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">602-이름</button>
+              <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-602" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">602-이름</button>
+              <div class="card-sub">
+              </div>
+          </div>
+      </div>
+
+      
+      <div class="card" id="card603">
+        <div class="card-body">
+            <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">603호</h5><br>
+            <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-603" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">603-이름</button>
+            <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-603" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">603-이름</button>
+            <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-603" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">603-이름</button>
+            <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-603" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">603-이름</button>
+            <div class="card-sub">
+            </div>
+        </div>
+    </div>
+
+    <div class="card" id="card604">
+      <div class="card-body">
+          <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">604호</h5><br>
+          <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-604" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">604-이름</button>
+          <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-604" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">604-이름</button>
+          <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-604" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">604-이름</button>
+          <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-604" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">604-이름</button>
+          <div class="card-sub">
+          </div>
+      </div>
+  </div>
+
+  <div class="card" id="card605">
+    <div class="card-body">
+        <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">605호</h5><br>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-605" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">605-이름</button>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-605" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">605-이름</button>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-605" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">605-이름</button>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-605" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">605-이름</button>
+        <div class="card-sub">
+        </div>
+    </div>
+</div>
+
+  <div class="card" id="card606">
+    <div class="card-body">
+        <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">606호</h5><br>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-606" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">606-이름</button>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-606" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">606-이름</button>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-606" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">606-이름</button>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-606" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">606-이름</button>
+        <div class="card-sub">
+        </div>
+    </div>
+</div>
+
+<div class="card" id="card607">
+  <div class="card-body">
+      <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">607호</h5><br>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-607" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">607-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-607" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">607-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-607" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">607-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-607" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">607-이름</button>
+      <div class="card-sub">
+      </div>
+  </div>
+</div>
+
+<div class="card" id="card608">
+  <div class="card-body">
+      <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">608호</h5><br>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-608" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">608-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-608" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">608-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-608" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">608-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-608" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">608-이름</button>
+      <div class="card-sub">
+      </div>
+  </div>
+</div>
+
+<div class="card" id="card609">
+  <div class="card-body">
+      <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">609호</h5><br>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-609" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">609-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-609" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">609-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-609" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">609-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-609" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">609-이름</button>
+      <div class="card-sub">
+      </div>
+  </div>
+</div>
+
+<div class="card" id="card610">
+  <div class="card-body">
+      <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">610호</h5><br>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-610" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">610-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-610" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">610-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-610" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">610-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-610" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">610-이름</button>
+      <div class="card-sub">
+      </div>
+  </div>
+</div>
+
+           
+   
+
+
+
+
+         
+           
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="col-xl-4 scrollh" id="scrollz" style="overflow:scroll;width:auto; height:1000px;">
+
+ 
+
+
+
+          <div class="card" style="background-color: #353535;">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h5 style="color: #ffffff; font-size: 22px" class="h3 mb-0">보고로그</h5>
+                  <h6 class="text-light text-uppercase ls-1 mb-1">당일의 재실여부 기록입니다.</h6>
+                </div>
+
+                <div class="col">
+                  <ul class="nav nav-pills justify-content-end">
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+
+              <textarea class="form-control w-100" rows="20" name="boyroomlog" id="boyroomlog" cols="30" style="color: #000000;" placeholder="boyroomlog">-</textarea></br>
+              <button type="button" onclick="copyToClipboard()" margin="right" class="button button-contactForm btn_1 boxed-btn btn btn-primary edittable" id="copyX" name="copyX" style="background-color: #f0f5ff; color: #262626; float: right;">복사하기</button> 
+
+            </div>
+          </div>
+
+
+          <div class="card" style="background-color: #00ff80;">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h5 style="color: #000000; font-size: 22px" class="h3 mb-0">여기는 광고 또는 공지판!.</h5>
+                  <h6 class="text-light text-uppercase ls-1 mb-1">Overview</h6>
+                </div>
+
+                <div class="col">
+                  <ul class="nav nav-pills justify-content-end">
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a style="color: rgb(0, 0, 0);">학사존 학생에게만 표시되는 게시판입니다.
+                대놓고는 말 할수 없었던 것,
+                또는 자유로운 질문으로 이용해주세요! </br> 완전한 익명성이 보장되며 관리자도 정상적인 경로로 익명을 확인할 수 없습니다.</a>
+            </div>
+          </div>
+
+
+
+
+
+
+          
+        </div>
+
+         
+
+ 
+
+
+        
+      </div>
+      <div class="row">
+
+
+
+
+
+
+
+        
+         
+      </div>
+      <!-- Footer -->
+
+      <footer class="footer pt-0">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6">
+            <div class="copyright text-center  text-lg-left  text-muted">
+              &copy; 2023 <a href="#" class="font-weight-bold ml-1" target="_blank">학사존 All rights reserved.</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+      
+              
+              
+              <li class="nav-item">
+                <a id="doact" href="https://www.google.com" class="nav-link" target="_blank">-</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.google.com" class="nav-link" target="_blank">-</a>
+
+
+
+                <input id="cmtcountin" style="color: gray; font-size: 1px; float: right;"></input>
+
+
+
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+       
+    </div>
+  </div>
+
+
+
+
+
+<!-- Modal -->
+ 
+
+ 
+
+
+
+
+
+ <!-- Core -->
+ <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+ <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+ <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+ <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+ <!-- Optional JS -->
+ <script src="../assets/vendor/chart.js/dist/Chart.min.js"></script>
+ <script src="../assets/vendor/chart.js/dist/Chart.extension.js"></script>
+ <!-- Argon JS -->
+ <script src="../assets/js/argon.js?v=1.2.0"></script>
+
+<script src="../assets/js/time.js"></script>
+<!--login유무 session js 파일 -->
+<script src="../assets/js/sessionCheck.js"></script>
+<!--스크립트 부분. 자신의 스크립트 코드로 변경하세요! -->
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
+<script src="../modal.js"></script>
+
+
+
+
+
+
+<script>
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  includeHTML();
+</script>
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<script>
+	
+	
+ 
+ 
+
+function copyToClipboard() {
+  var copyText = document.getElementById("boyroomlog");
+  copyText.select();
+  document.execCommand("copy");
+}
+
+
+
+
+
+
+
+  var firebaseEmailAuth; //파이어베이스 email 인증 모듈 전역변수
+  var firebaseDatabase; //파이어베이스 db 모듈 전역변수
+  var name; //유저 이름
+  var loginUserKey; //로그인한 유저의 부모 key
+  var userInfo; //로그인한 유저의 정보 object type
+  var brdno;
+  
+  
+  
+  
+  
+  
+  //파이어 베이스 초기화 코드
+  var config = {
+
+    apiKey: "AIzaSyAC3N6RCdv7sQMOZ6_cPE1guR62h_am-tA",
+            databaseURL: "https://ms-haksa-default-rtdb.firebaseio.com/",
+    authDomain: "ms-haksa.firebaseapp.com",
+    projectId: "ms-haksa",
+    storageBucket: "ms-haksa.appspot.com",
+    messagingSenderId: "669674701477",
+    appId: "1:669674701477:web:4c988804396ff9e6ac434c",
+    measurementId: "G-B5PMZS32Q4"
+   
+  };
+  //파이어베이스 초기화
+  firebase.initializeApp(config);
+  //인증모듈 객체 가져오기
+  firebaseEmailAuth = firebase.auth();
+  //데이터베이스 모듈객체 가져오기
+  firebaseDatabase = firebase.database();
+  
+  
+  
+  //세션 체크 함수
+  userSessionCheck();
+  
+  
+  
+  $(document).ready(function () {
+  
+    //메인화면 쓰기버튼 눌렀을 때
+    $(document).on('click', '.savechange', function () {
+  
+      //네비게이션 메뉴의 text값 가져오기 - 자바스크립트 dom 방식으로 가져왔다.
+      var seseionCheck = document.getElementById("loginmenu").textContent;
+  
+  
+  
+  
+      name1_404 = $('#name1-404').val(); // 사용자 이름
+      name2_404 = $('#name2-404').val(); // 사용자 이름
+      name3_404 = $('#name3-404').val(); // 사용자 이름
+      name4_404 = $('#name4-404').val(); // 사용자 이름
+      name5_404 = $('#name5-404').val(); // 사용자 이름
+      name6_404 = $('#name6-404').val(); // 사용자 이름
+  
+      
+  
+      name1_405 = $('#name1-405').val(); // 사용자 이름
+      name2_405 = $('#name2-405').val(); // 사용자 이름
+      name3_405 = $('#name3-405').val(); // 사용자 이름
+      name4_405 = $('#name4-405').val(); // 사용자 이름
+      
+  
+  
+  
+  
+  
+  
+  
+      name1_601 = $('#name1-601').val(); // 사용자 이름
+      name2_601 = $('#name2-601').val(); // 사용자 이름
+      name3_601 = $('#name3-601').val(); // 사용자 이름
+      name4_601 = $('#name4-601').val(); // 사용자 이름
+  
+      name1_602 = $('#name1-602').val(); // 사용자 이름
+      name2_602 = $('#name2-602').val(); // 사용자 이름
+      name3_602 = $('#name3-602').val(); // 사용자 이름
+      name4_602 = $('#name4-602').val(); // 사용자 이름
+  
+      name1_603 = $('#name1-603').val(); // 사용자 이름
+      name2_603 = $('#name2-603').val(); // 사용자 이름
+      name3_603 = $('#name3-603').val(); // 사용자 이름
+      name4_603 = $('#name4-603').val(); // 사용자 이름
+  
+      name1_604 = $('#name1-604').val(); // 사용자 이름
+      name2_604 = $('#name2-604').val(); // 사용자 이름
+      name3_604 = $('#name3-604').val(); // 사용자 이름
+      name4_604 = $('#name4-604').val(); // 사용자 이름
+  
+      name1_605 = $('#name1-605').val(); // 사용자 이름
+      name2_605 = $('#name2-605').val(); // 사용자 이름
+      name3_605 = $('#name3-605').val(); // 사용자 이름
+      name4_605 = $('#name4-605').val(); // 사용자 이름
+  
+      name1_606 = $('#name1-606').val(); // 사용자 이름
+      name2_606 = $('#name2-606').val(); // 사용자 이름
+      name3_606 = $('#name3-606').val(); // 사용자 이름
+      name4_606 = $('#name4-606').val(); // 사용자 이름
+  
+      name1_607 = $('#name1-607').val(); // 사용자 이름
+      name2_607 = $('#name2-607').val(); // 사용자 이름
+      name3_607 = $('#name3-607').val(); // 사용자 이름
+      name4_607 = $('#name4-607').val(); // 사용자 이름
+  
+      name1_608 = $('#name1-608').val(); // 사용자 이름
+      name2_608 = $('#name2-608').val(); // 사용자 이름
+      name3_608 = $('#name3-608').val(); // 사용자 이름
+      name4_608 = $('#name4-608').val(); // 사용자 이름
+  
+      name1_609 = $('#name1-609').val(); // 사용자 이름
+      name2_609 = $('#name2-609').val(); // 사용자 이름
+      name3_609 = $('#name3-609').val(); // 사용자 이름
+      name4_609 = $('#name4-609').val(); // 사용자 이름
+  
+      name1_610 = $('#name1-610').val(); // 사용자 이름
+      name2_610 = $('#name2-610').val(); // 사용자 이름
+      name3_610 = $('#name3-610').val(); // 사용자 이름
+      name4_610 = $('#name4-610').val(); // 사용자 이름
+  
+  
+  
+  
+  
+      if (seseionCheck == "로그아웃") {
+        //저장하기
+        saveThanks();
+      } else {
+        alert("명성장학시스템 로그인해 주세요.")
+        window.location.href = "loginform.html"
+  
+      }
+    });
+  
+  
+    $(document).on('click', '.create', function () {
+  
+      var seseionCheck = document.getElementById("loginmenu").textContent;
+  
+       if (seseionCheck == "로그아웃") {
+        window.location.href = "create.html"
+  
+      } else {
+        alert("명성장학시스템 로그인해 주세요.")
+        window.location.href = "loginform.html"
+  
+      }
+      
+  
+  
+    });
+  
+  
+  });
+  
+  
+  
+  //쓰기 버튼 눌렀을 때 호출 되는 함수
+  function saveThanks() {
+  
+    //anounymous 라는 테이블을 만들고 하위 데이터에 유저 아이디를 넣어준다. 그곳에 push로 가상의 키를 넣고, 객체를 넣어준다.!!!!
+    var thankRef = firebaseDatabase.ref("boydormCHK");
+    var thank = thankRef.push(); // 해당 객체의 key 값이 자동으로 생성된다.
+    var boardno = thank.key; //이 보드의 키값
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  //글 목록가져와서 뿌려주기
+  function boardList() {
+    //alert("보드 로드 완료")
+  
+    //로그인한 유저라면
+    if (loginUserKey) {
+      //alert(loginUserKey)
+      //글이 저장된 레퍼런스 값 가져오기
+      var thanksRef = firebaseDatabase.ref('boydormCHK');
+      //on 함수로 글 목록가져오기
+      //thanksRef.on('child_added', on_thasnks_list)
+      thanksRef.on('value', on_thanks_list)
+      thanksRef.on('value', buttonadd)
+
+      
+      var thanksRefZ = firebaseDatabase.ref('boydormLOG');
+        thanksRefZ.on('child_added', on_log_list)
+  
+  
+  
+      var thanksRef = firebaseDatabase.ref('boydormname');
+      thanksRef.on('value', on_notice_list)
+  
+    } else {
+      alert("비 로그인 유저에게는 게시물이 표시되지 않습니다. ");
+      window.location.href = "loginform.html"
+  
+    }
+  
+  }
+  
+  //게시판 리스트 thanks 테이블의 thanks 키 들을 연속적으로 가져옴...ㅋㅋㅋㅋㅋ
+  function on_thanks_list(data) {
+  
+  
+    
+  
+  
+    console.log("on_thanks_list() 함수안으로 들어왔습니다 리스트를 가져오겠습니다")
+    var key = data.key;
+    
+  
+    var Data = data.val();
+    var createtime = Data.createtime;
+    var name = Data.name;
+
+
+    
+  
+    var name1_404 = Data.name1_404;
+    var name2_404 = Data.name2_404;
+    var name3_404 = Data.name3_404;
+    var name4_404 = Data.name4_404;
+    var name5_404 = Data.name5_404;
+    var name6_404 = Data.name6_404;
+  
+    
+    var name1_405 = Data.name1_405;
+    var name2_405 = Data.name2_405;
+    var name3_405 = Data.name3_405;
+    var name4_405 = Data.name4_405;
+  
+  
+    var name1_601 = Data.name1_601;
+    var name2_601 = Data.name2_601;
+    var name3_601 = Data.name3_601;
+    var name4_601 = Data.name4_601;
+  
+    var name1_602 = Data.name1_602;
+  var name2_602 = Data.name2_602;
+  var name3_602 = Data.name3_602;
+  var name4_602 = Data.name4_602;
+  
+  var name1_603 = Data.name1_603;
+  var name2_603 = Data.name2_603;
+  var name3_603 = Data.name3_603;
+  var name4_603 = Data.name4_603;
+  
+  var name1_604 = Data.name1_604;
+  var name2_604 = Data.name2_604;
+  var name3_604 = Data.name3_604;
+  var name4_604 = Data.name4_604;
+  
+  var name1_605 = Data.name1_605;
+  var name2_605 = Data.name2_605;
+  var name3_605 = Data.name3_605;
+  var name4_605 = Data.name4_605;
+  
+  var name1_606 = Data.name1_606;
+  var name2_606 = Data.name2_606;
+  var name3_606 = Data.name3_606;
+  var name4_606 = Data.name4_606;
+  
+  var name1_607 = Data.name1_607;
+  var name2_607 = Data.name2_607;
+  var name3_607 = Data.name3_607;
+  var name4_607 = Data.name4_607;
+  
+  var name1_608 = Data.name1_608;
+  var name2_608 = Data.name2_608;
+  var name3_608 = Data.name3_608;
+  var name4_608 = Data.name4_608;
+  
+  var name1_609 = Data.name1_609;
+  var name2_609 = Data.name2_609;
+  var name3_609 = Data.name3_609;
+  var name4_609 = Data.name4_609;
+  
+  var name1_610 = Data.name1_610;
+  var name2_610 = Data.name2_610;
+  var name3_610 = Data.name3_610;
+  var name4_610 = Data.name4_610;
+
+
+  
+
+    //사유영역
+
+    
+    var sayou1_404 = Data.sayou1_404;
+    var sayou2_404 = Data.sayou2_404;
+    var sayou3_404 = Data.sayou3_404;
+    var sayou4_404 = Data.sayou4_404;
+    var sayou5_404 = Data.sayou5_404;
+    var sayou6_404 = Data.sayou6_404;
+
+
+    var sayou1_405 = Data.sayou1_405;
+    var sayou2_405 = Data.sayou2_405;
+    var sayou3_405 = Data.sayou3_405;
+    var sayou4_405 = Data.sayou4_405;
+
+
+    var sayou1_601 = Data.sayou1_601;
+    var sayou2_601 = Data.sayou2_601;
+    var sayou3_601 = Data.sayou3_601;
+    var sayou4_601 = Data.sayou4_601;
+
+    var sayou1_602 = Data.sayou1_602;
+    var sayou2_602 = Data.sayou2_602;
+    var sayou3_602 = Data.sayou3_602;
+    var sayou4_602 = Data.sayou4_602;
+
+    var sayou1_603 = Data.sayou1_603;
+    var sayou2_603 = Data.sayou2_603;
+    var sayou3_603 = Data.sayou3_603;
+    var sayou4_603 = Data.sayou4_603;
+
+    var sayou1_604 = Data.sayou1_604;
+    var sayou2_604 = Data.sayou2_604;
+    var sayou3_604 = Data.sayou3_604;
+    var sayou4_604 = Data.sayou4_604;
+
+    var sayou1_605 = Data.sayou1_605;
+    var sayou2_605 = Data.sayou2_605;
+    var sayou3_605 = Data.sayou3_605;
+    var sayou4_605 = Data.sayou4_605;
+
+    var sayou1_606 = Data.sayou1_606;
+    var sayou2_606 = Data.sayou2_606;
+    var sayou3_606 = Data.sayou3_606;
+    var sayou4_606 = Data.sayou4_606;
+
+    var sayou1_607 = Data.sayou1_607;
+    var sayou2_607 = Data.sayou2_607;
+    var sayou3_607 = Data.sayou3_607;
+    var sayou4_607 = Data.sayou4_607;
+
+    var sayou1_608 = Data.sayou1_608;
+    var sayou2_608 = Data.sayou2_608;
+    var sayou3_608 = Data.sayou3_608;
+    var sayou4_608 = Data.sayou4_608;
+
+    var sayou1_609 = Data.sayou1_609;
+    var sayou2_609 = Data.sayou2_609;
+    var sayou3_609 = Data.sayou3_609;
+    var sayou4_609 = Data.sayou4_609;
+
+    var sayou1_610 = Data.sayou1_610;
+    var sayou2_610 = Data.sayou2_610;
+    var sayou3_610 = Data.sayou3_610;
+    var sayou4_610 = Data.sayou4_610;
+
+
+
+
+  //재실체크영역
+  
+  
+  var CHK404_1 = Data.CHK404_1;
+  var CHK404_2 = Data.CHK404_2;
+  var CHK404_3 = Data.CHK404_3;
+  var CHK404_4 = Data.CHK404_4;
+  var CHK404_5 = Data.CHK404_5;
+  var CHK404_6 = Data.CHK404_6;
+  
+  var CHK405_1 = Data.CHK405_1;
+  var CHK405_2 = Data.CHK405_2;
+  var CHK405_3 = Data.CHK405_3;
+  var CHK405_4 = Data.CHK405_4;
+  var CHK405_5 = Data.CHK405_5;
+  var CHK405_6 = Data.CHK405_6;
+  
+  
+  
+  
+  var CHK601_1 = Data.CHK601_1;
+  var CHK601_2 = Data.CHK601_2;
+  var CHK601_3 = Data.CHK601_3;
+  var CHK601_4 = Data.CHK601_4;
+  
+  var CHK602_1 = Data.CHK602_1;
+  var CHK602_2 = Data.CHK602_2;
+  var CHK602_3 = Data.CHK602_3;
+  var CHK602_4 = Data.CHK602_4;
+  
+  var CHK603_1 = Data.CHK603_1;
+  var CHK603_2 = Data.CHK603_2;
+  var CHK603_3 = Data.CHK603_3;
+  var CHK603_4 = Data.CHK603_4;
+  
+  var CHK604_1 = Data.CHK604_1;
+  var CHK604_2 = Data.CHK604_2;
+  var CHK604_3 = Data.CHK604_3;
+  var CHK604_4 = Data.CHK604_4;
+  
+  var CHK605_1 = Data.CHK605_1;
+  var CHK605_2 = Data.CHK605_2;
+  var CHK605_3 = Data.CHK605_3;
+  var CHK605_4 = Data.CHK605_4;
+  
+  var CHK606_1 = Data.CHK606_1;
+  var CHK606_2 = Data.CHK606_2;
+  var CHK606_3 = Data.CHK606_3;
+  var CHK606_4 = Data.CHK606_4;
+  
+  var CHK607_1 = Data.CHK607_1;
+  var CHK607_2 = Data.CHK607_2;
+  var CHK607_3 = Data.CHK607_3;
+  var CHK607_4 = Data.CHK607_4;
+  
+  var CHK608_1 = Data.CHK608_1;
+  var CHK608_2 = Data.CHK608_2;
+  var CHK608_3 = Data.CHK608_3;
+  var CHK608_4 = Data.CHK608_4;
+  
+  var CHK609_1 = Data.CHK609_1;
+  var CHK609_2 = Data.CHK609_2;
+  var CHK609_3 = Data.CHK609_3;
+  var CHK609_4 = Data.CHK609_4;
+  
+  var CHK610_1 = Data.CHK610_1;
+  var CHK610_2 = Data.CHK610_2;
+  var CHK610_3 = Data.CHK610_3;
+  var CHK610_4 = Data.CHK610_4;
+  
+    var userkey = Data.userkey;
+    var brdnm = Data.boardno;
+  
+    
+    var boardno = Data.key; //이 보드의 키값
+  
+   
+
+
+
+
+
+
+var Green = "#57bd5c"
+var Red = "#db3d3d"
+var Yellow = "#e88802"
+var White = "#FFFFFF"
+
+var ISHERE = " (재실)"
+var ISOUT = " (외박)"
+var ISLATE = " (지각)"
+
+
+
+
+
+
+setInterval(function() { 
+  
+
+
+
+
+
+  
+
+
+
+// 404호 1P
+if (CHK404_1 == "here") {
+  document.getElementById('Button1P-404').style.backgroundColor = Green;
+  document.getElementById('Button1P-404').innerText = name1_404 + ISHERE;
+}
+else if (CHK404_1 == "out") {
+  document.getElementById('Button1P-404').style.backgroundColor = Red;
+    document.getElementById('Button1P-404').innerText = name1_404 + ISOUT + "사유 : " + sayou1_404;
+}
+else if (CHK404_1 == "late") {
+  document.getElementById('Button1P-404').style.backgroundColor = Yellow;
+  document.getElementById('Button1P-404').innerText = name1_404 + ISLATE + "사유 : " + sayou1_404;
+};
+
+// 404호 2P
+if (CHK404_2 == "here") {
+  document.getElementById('Button2P-404').style.backgroundColor = Green;
+  document.getElementById('Button2P-404').innerText = name2_404 + ISHERE;
+}
+else if (CHK404_2 == "out") {
+  document.getElementById('Button2P-404').style.backgroundColor = Red;
+  document.getElementById('Button2P-404').innerText = name2_404 + ISOUT + "사유 : " + sayou2_404;
+}
+else if (CHK404_2 == "late") {
+  document.getElementById('Button2P-404').style.backgroundColor = Yellow;
+  document.getElementById('Button2P-404').innerText = name2_404 + ISLATE + "사유 : " + sayou2_404;
+};
+
+// 404호 3P
+if (CHK404_3 == "here") {
+  document.getElementById('Button3P-404').style.backgroundColor = Green;
+  document.getElementById('Button3P-404').innerText = name3_404 + ISHERE;
+}
+else if (CHK404_3 == "out") {
+  document.getElementById('Button3P-404').style.backgroundColor = Red;
+  document.getElementById('Button3P-404').innerText = name3_404 + ISOUT + "사유 : " + sayou3_404;
+}
+else if (CHK404_3 == "late") {
+  document.getElementById('Button3P-404').style.backgroundColor = Yellow;
+  document.getElementById('Button3P-404').innerText = name3_404 + ISLATE + "사유 : " + sayou3_404;
+};
+ 
+// 404호 4P
+if (CHK404_4 == "here") {
+  document.getElementById('Button4P-404').style.backgroundColor = Green;
+  document.getElementById('Button4P-404').innerText = name4_404 + ISHERE;
+}
+else if (CHK404_4 == "out") {
+  document.getElementById('Button4P-404').style.backgroundColor = Red;
+  document.getElementById('Button4P-404').innerText = name4_404 + ISOUT + "사유 : " + sayou4_404;
+}
+else if (CHK404_4 == "late") {
+  document.getElementById('Button4P-404').style.backgroundColor = Yellow;
+  document.getElementById('Button4P-404').innerText = name4_404 + ISLATE + "사유 : " + sayou4_404;
+};
+
+// 404호 5P
+if (CHK404_5 == "here") {
+  document.getElementById('Button5P-404').style.backgroundColor = Green;
+  document.getElementById('Button5P-404').innerText = name5_404 + ISHERE;
+}
+else if (CHK404_5 == "out") {
+  document.getElementById('Button5P-404').style.backgroundColor = Red;
+  document.getElementById('Button5P-404').innerText = name5_404 + ISOUT + "사유 : " + sayou5_404;
+}
+else if (CHK404_5 == "late") {
+  document.getElementById('Button5P-404').style.backgroundColor = Yellow;
+  document.getElementById('Button5P-404').innerText = name5_404 + ISLATE + "사유 : " + sayou5_404;
+};
+
+// 404호 6P
+if (CHK404_6 == "here") {
+  document.getElementById('Button6P-404').style.backgroundColor = Green;
+  document.getElementById('Button6P-404').innerText = name6_404 + ISHERE;
+}
+else if (CHK404_6 == "out") {
+  document.getElementById('Button6P-404').style.backgroundColor = Red;
+  document.getElementById('Button6P-404').innerText = name6_404 + ISOUT + "사유 : " + sayou6_404;
+}
+else if (CHK404_6 == "late") {
+  document.getElementById('Button6P-404').style.backgroundColor = Yellow;
+  document.getElementById('Button6P-404').innerText = name6_404 + ISLATE + "사유 : " + sayou6_404;
+};
+
+
+
+
+
+
+
+// 405호 1P
+if (CHK405_1 == "here") {
+  document.getElementById('Button1P-405').style.backgroundColor = Green;
+  document.getElementById('Button1P-405').innerText = name1_405 + ISHERE;
+}
+else if (CHK405_1 == "out") {
+  document.getElementById('Button1P-405').style.backgroundColor = Red;
+    document.getElementById('Button1P-405').innerText = name1_405 + ISOUT + "사유 : " + sayou1_405;
+}
+else if (CHK405_1 == "late") {
+  document.getElementById('Button1P-405').style.backgroundColor = Yellow;
+  document.getElementById('Button1P-405').innerText = name1_405 + ISLATE + "사유 : " + sayou1_405;
+};
+
+// 405호 2P
+if (CHK405_2 == "here") {
+  document.getElementById('Button2P-405').style.backgroundColor = Green;
+  document.getElementById('Button2P-405').innerText = name2_405 + ISHERE;
+}
+else if (CHK405_2 == "out") {
+  document.getElementById('Button2P-405').style.backgroundColor = Red;
+  document.getElementById('Button2P-405').innerText = name2_405 + ISOUT + "사유 : " + sayou2_405;
+}
+else if (CHK405_2 == "late") {
+  document.getElementById('Button2P-405').style.backgroundColor = Yellow;
+  document.getElementById('Button2P-405').innerText = name2_405 + ISLATE + "사유 : " + sayou2_405;
+};
+
+// 405호 3P
+if (CHK405_3 == "here") {
+  document.getElementById('Button3P-405').style.backgroundColor = Green;
+  document.getElementById('Button3P-405').innerText = name3_405 + ISHERE;
+}
+else if (CHK405_3 == "out") {
+  document.getElementById('Button3P-405').style.backgroundColor = Red;
+  document.getElementById('Button3P-405').innerText = name3_405 + ISOUT + "사유 : " + sayou3_405;
+}
+else if (CHK405_3 == "late") {
+  document.getElementById('Button3P-405').style.backgroundColor = Yellow;
+  document.getElementById('Button3P-405').innerText = name3_405 + ISLATE + "사유 : " + sayou3_405;
+};
+ 
+// 405호 4P
+if (CHK405_4 == "here") {
+  document.getElementById('Button4P-405').style.backgroundColor = Green;
+  document.getElementById('Button4P-405').innerText = name4_405 + ISHERE;
+}
+else if (CHK405_4 == "out") {
+  document.getElementById('Button4P-405').style.backgroundColor = Red;
+  document.getElementById('Button4P-405').innerText = name4_405 + ISOUT + "사유 : " + sayou4_405;
+}
+else if (CHK405_4 == "late") {
+  document.getElementById('Button4P-405').style.backgroundColor = Yellow;
+  document.getElementById('Button4P-405').innerText = name4_405 + ISLATE + "사유 : " + sayou4_405;
+};
+
+
+
+
+
+
+
+// 601호 1P
+if (CHK601_1 == "here") {
+  document.getElementById('Button1P-601').style.backgroundColor = Green;
+  document.getElementById('Button1P-601').innerText = name1_601 + ISHERE;
+}
+else if (CHK601_1 == "out") {
+  document.getElementById('Button1P-601').style.backgroundColor = Red;
+    document.getElementById('Button1P-601').innerText = name1_601 + ISOUT + "사유 : " + sayou1_601;
+}
+else if (CHK601_1 == "late") {
+  document.getElementById('Button1P-601').style.backgroundColor = Yellow;
+  document.getElementById('Button1P-601').innerText = name1_601 + ISLATE + "사유 : " + sayou1_601;
+};
+
+// 601호 2P
+if (CHK601_2 == "here") {
+  document.getElementById('Button2P-601').style.backgroundColor = Green;
+  document.getElementById('Button2P-601').innerText = name2_601 + ISHERE;
+}
+else if (CHK601_2 == "out") {
+  document.getElementById('Button2P-601').style.backgroundColor = Red;
+  document.getElementById('Button2P-601').innerText = name2_601 + ISOUT + "사유 : " + sayou2_601;
+}
+else if (CHK601_2 == "late") {
+  document.getElementById('Button2P-601').style.backgroundColor = Yellow;
+  document.getElementById('Button2P-601').innerText = name2_601 + ISLATE + "사유 : " + sayou2_601;
+};
+
+// 601호 3P
+if (CHK601_3 == "here") {
+  document.getElementById('Button3P-601').style.backgroundColor = Green;
+  document.getElementById('Button3P-601').innerText = name3_601 + ISHERE;
+}
+else if (CHK601_3 == "out") {
+  document.getElementById('Button3P-601').style.backgroundColor = Red;
+  document.getElementById('Button3P-601').innerText = name3_601 + ISOUT + "사유 : " + sayou3_601;
+}
+else if (CHK601_3 == "late") {
+  document.getElementById('Button3P-601').style.backgroundColor = Yellow;
+  document.getElementById('Button3P-601').innerText = name3_601 + ISLATE + "사유 : " + sayou3_601;
+};
+ 
+// 601호 4P
+if (CHK601_4 == "here") {
+  document.getElementById('Button4P-601').style.backgroundColor = Green;
+  document.getElementById('Button4P-601').innerText = name4_601 + ISHERE;
+}
+else if (CHK601_4 == "out") {
+  document.getElementById('Button4P-601').style.backgroundColor = Red;
+  document.getElementById('Button4P-601').innerText = name4_601 + ISOUT + "사유 : " + sayou4_601;
+}
+else if (CHK601_4 == "late") {
+  document.getElementById('Button4P-601').style.backgroundColor = Yellow;
+  document.getElementById('Button4P-601').innerText = name4_601 + ISLATE + "사유 : " + sayou4_601;
+};
+
+
+
+
+
+// 602호 1P
+if (CHK602_1 == "here") {
+  document.getElementById('Button1P-602').style.backgroundColor = Green;
+  document.getElementById('Button1P-602').innerText = name1_602 + ISHERE;
+}
+else if (CHK602_1 == "out") {
+  document.getElementById('Button1P-602').style.backgroundColor = Red;
+    document.getElementById('Button1P-602').innerText = name1_602 + ISOUT + "사유 : " + sayou1_602;
+}
+else if (CHK602_1 == "late") {
+  document.getElementById('Button1P-602').style.backgroundColor = Yellow;
+  document.getElementById('Button1P-602').innerText = name1_602 + ISLATE + "사유 : " + sayou1_602;
+};
+
+// 602호 2P
+if (CHK602_2 == "here") {
+  document.getElementById('Button2P-602').style.backgroundColor = Green;
+  document.getElementById('Button2P-602').innerText = name2_602 + ISHERE;
+}
+else if (CHK602_2 == "out") {
+  document.getElementById('Button2P-602').style.backgroundColor = Red;
+  document.getElementById('Button2P-602').innerText = name2_602 + ISOUT + "사유 : " + sayou2_602;
+}
+else if (CHK602_2 == "late") {
+  document.getElementById('Button2P-602').style.backgroundColor = Yellow;
+  document.getElementById('Button2P-602').innerText = name2_602 + ISLATE + "사유 : " + sayou2_602;
+};
+
+// 602호 3P
+if (CHK602_3 == "here") {
+  document.getElementById('Button3P-602').style.backgroundColor = Green;
+  document.getElementById('Button3P-602').innerText = name3_602 + ISHERE;
+}
+else if (CHK602_3 == "out") {
+  document.getElementById('Button3P-602').style.backgroundColor = Red;
+  document.getElementById('Button3P-602').innerText = name3_602 + ISOUT + "사유 : " + sayou3_602;
+}
+else if (CHK602_3 == "late") {
+  document.getElementById('Button3P-602').style.backgroundColor = Yellow;
+  document.getElementById('Button3P-602').innerText = name3_602 + ISLATE + "사유 : " + sayou3_602;
+};
+ 
+// 602호 4P
+if (CHK602_4 == "here") {
+  document.getElementById('Button4P-602').style.backgroundColor = Green;
+  document.getElementById('Button4P-602').innerText = name4_602 + ISHERE;
+}
+else if (CHK602_4 == "out") {
+  document.getElementById('Button4P-602').style.backgroundColor = Red;
+  document.getElementById('Button4P-602').innerText = name4_602 + ISOUT + "사유 : " + sayou4_602;
+}
+else if (CHK602_4 == "late") {
+  document.getElementById('Button4P-602').style.backgroundColor = Yellow;
+  document.getElementById('Button4P-602').innerText = name4_602 + ISLATE + "사유 : " + sayou4_602;
+};
+
+
+
+
+
+// 603호 1P
+if (CHK603_1 == "here") {
+  document.getElementById('Button1P-603').style.backgroundColor = Green;
+  document.getElementById('Button1P-603').innerText = name1_603 + ISHERE;
+}
+else if (CHK603_1 == "out") {
+  document.getElementById('Button1P-603').style.backgroundColor = Red;
+    document.getElementById('Button1P-603').innerText = name1_603 + ISOUT + "사유 : " + sayou1_603;
+}
+else if (CHK603_1 == "late") {
+  document.getElementById('Button1P-603').style.backgroundColor = Yellow;
+  document.getElementById('Button1P-603').innerText = name1_603 + ISLATE + "사유 : " + sayou1_603;
+};
+
+// 603호 2P
+if (CHK603_2 == "here") {
+  document.getElementById('Button2P-603').style.backgroundColor = Green;
+  document.getElementById('Button2P-603').innerText = name2_603 + ISHERE;
+}
+else if (CHK603_2 == "out") {
+  document.getElementById('Button2P-603').style.backgroundColor = Red;
+  document.getElementById('Button2P-603').innerText = name2_603 + ISOUT + "사유 : " + sayou2_603;
+}
+else if (CHK603_2 == "late") {
+  document.getElementById('Button2P-603').style.backgroundColor = Yellow;
+  document.getElementById('Button2P-603').innerText = name2_603 + ISLATE + "사유 : " + sayou2_603;
+};
+
+// 603호 3P
+if (CHK603_3 == "here") {
+  document.getElementById('Button3P-603').style.backgroundColor = Green;
+  document.getElementById('Button3P-603').innerText = name3_603 + ISHERE;
+}
+else if (CHK603_3 == "out") {
+  document.getElementById('Button3P-603').style.backgroundColor = Red;
+  document.getElementById('Button3P-603').innerText = name3_603 + ISOUT + "사유 : " + sayou3_603;
+}
+else if (CHK603_3 == "late") {
+  document.getElementById('Button3P-603').style.backgroundColor = Yellow;
+  document.getElementById('Button3P-603').innerText = name3_603 + ISLATE + "사유 : " + sayou3_603;
+};
+ 
+// 603호 4P
+if (CHK603_4 == "here") {
+  document.getElementById('Button4P-603').style.backgroundColor = Green;
+  document.getElementById('Button4P-603').innerText = name4_603 + ISHERE;
+}
+else if (CHK603_4 == "out") {
+  document.getElementById('Button4P-603').style.backgroundColor = Red;
+  document.getElementById('Button4P-603').innerText = name4_603 + ISOUT + "사유 : " + sayou4_603;
+}
+else if (CHK603_4 == "late") {
+  document.getElementById('Button4P-603').style.backgroundColor = Yellow;
+  document.getElementById('Button4P-603').innerText = name4_603 + ISLATE + "사유 : " + sayou4_603;
+};
+
+
+
+
+
+// 604호 1P
+if (CHK604_1 == "here") {
+  document.getElementById('Button1P-604').style.backgroundColor = Green;
+  document.getElementById('Button1P-604').innerText = name1_604 + ISHERE;
+}
+else if (CHK604_1 == "out") {
+  document.getElementById('Button1P-604').style.backgroundColor = Red;
+    document.getElementById('Button1P-604').innerText = name1_604 + ISOUT + "사유 : " + sayou1_604;
+}
+else if (CHK604_1 == "late") {
+  document.getElementById('Button1P-604').style.backgroundColor = Yellow;
+  document.getElementById('Button1P-604').innerText = name1_604 + ISLATE + "사유 : " + sayou1_604;
+};
+
+// 604호 2P
+if (CHK604_2 == "here") {
+  document.getElementById('Button2P-604').style.backgroundColor = Green;
+  document.getElementById('Button2P-604').innerText = name2_604 + ISHERE;
+}
+else if (CHK604_2 == "out") {
+  document.getElementById('Button2P-604').style.backgroundColor = Red;
+  document.getElementById('Button2P-604').innerText = name2_604 + ISOUT + "사유 : " + sayou2_604;
+}
+else if (CHK604_2 == "late") {
+  document.getElementById('Button2P-604').style.backgroundColor = Yellow;
+  document.getElementById('Button2P-604').innerText = name2_604 + ISLATE + "사유 : " + sayou2_604;
+};
+
+// 604호 3P
+if (CHK604_3 == "here") {
+  document.getElementById('Button3P-604').style.backgroundColor = Green;
+  document.getElementById('Button3P-604').innerText = name3_604 + ISHERE;
+}
+else if (CHK604_3 == "out") {
+  document.getElementById('Button3P-604').style.backgroundColor = Red;
+  document.getElementById('Button3P-604').innerText = name3_604 + ISOUT + "사유 : " + sayou3_604;
+}
+else if (CHK604_3 == "late") {
+  document.getElementById('Button3P-604').style.backgroundColor = Yellow;
+  document.getElementById('Button3P-604').innerText = name3_604 + ISLATE + "사유 : " + sayou3_604;
+};
+ 
+// 604호 4P
+if (CHK604_4 == "here") {
+  document.getElementById('Button4P-604').style.backgroundColor = Green;
+  document.getElementById('Button4P-604').innerText = name4_604 + ISHERE;
+}
+else if (CHK604_4 == "out") {
+  document.getElementById('Button4P-604').style.backgroundColor = Red;
+  document.getElementById('Button4P-604').innerText = name4_604 + ISOUT + "사유 : " + sayou4_604;
+}
+else if (CHK604_4 == "late") {
+  document.getElementById('Button4P-604').style.backgroundColor = Yellow;
+  document.getElementById('Button4P-604').innerText = name4_604 + ISLATE + "사유 : " + sayou4_604;
+};
+
+
+
+
+
+// 605호 1P
+if (CHK605_1 == "here") {
+  document.getElementById('Button1P-605').style.backgroundColor = Green;
+  document.getElementById('Button1P-605').innerText = name1_605 + ISHERE;
+}
+else if (CHK605_1 == "out") {
+  document.getElementById('Button1P-605').style.backgroundColor = Red;
+    document.getElementById('Button1P-605').innerText = name1_605 + ISOUT + "사유 : " + sayou1_605;
+}
+else if (CHK605_1 == "late") {
+  document.getElementById('Button1P-605').style.backgroundColor = Yellow;
+  document.getElementById('Button1P-605').innerText = name1_605 + ISLATE + "사유 : " + sayou1_605;
+};
+
+// 605호 2P
+if (CHK605_2 == "here") {
+  document.getElementById('Button2P-605').style.backgroundColor = Green;
+  document.getElementById('Button2P-605').innerText = name2_605 + ISHERE;
+}
+else if (CHK605_2 == "out") {
+  document.getElementById('Button2P-605').style.backgroundColor = Red;
+  document.getElementById('Button2P-605').innerText = name2_605 + ISOUT + "사유 : " + sayou2_605;
+}
+else if (CHK605_2 == "late") {
+  document.getElementById('Button2P-605').style.backgroundColor = Yellow;
+  document.getElementById('Button2P-605').innerText = name2_605 + ISLATE + "사유 : " + sayou2_605;
+};
+
+// 605호 3P
+if (CHK605_3 == "here") {
+  document.getElementById('Button3P-605').style.backgroundColor = Green;
+  document.getElementById('Button3P-605').innerText = name3_605 + ISHERE;
+}
+else if (CHK605_3 == "out") {
+  document.getElementById('Button3P-605').style.backgroundColor = Red;
+  document.getElementById('Button3P-605').innerText = name3_605 + ISOUT + "사유 : " + sayou3_605;
+}
+else if (CHK605_3 == "late") {
+  document.getElementById('Button3P-605').style.backgroundColor = Yellow;
+  document.getElementById('Button3P-605').innerText = name3_605 + ISLATE + "사유 : " + sayou3_605;
+};
+ 
+// 605호 4P
+if (CHK605_4 == "here") {
+  document.getElementById('Button4P-605').style.backgroundColor = Green;
+  document.getElementById('Button4P-605').innerText = name4_605 + ISHERE;
+}
+else if (CHK605_4 == "out") {
+  document.getElementById('Button4P-605').style.backgroundColor = Red;
+  document.getElementById('Button4P-605').innerText = name4_605 + ISOUT + "사유 : " + sayou4_605;
+}
+else if (CHK605_4 == "late") {
+  document.getElementById('Button4P-605').style.backgroundColor = Yellow;
+  document.getElementById('Button4P-605').innerText = name4_605 + ISLATE + "사유 : " + sayou4_605;
+};
+
+
+
+
+
+// 606호 1P
+if (CHK606_1 == "here") {
+  document.getElementById('Button1P-606').style.backgroundColor = Green;
+  document.getElementById('Button1P-606').innerText = name1_606 + ISHERE;
+}
+else if (CHK606_1 == "out") {
+  document.getElementById('Button1P-606').style.backgroundColor = Red;
+    document.getElementById('Button1P-606').innerText = name1_606 + ISOUT + "사유 : " + sayou1_606;
+}
+else if (CHK606_1 == "late") {
+  document.getElementById('Button1P-606').style.backgroundColor = Yellow;
+  document.getElementById('Button1P-606').innerText = name1_606 + ISLATE + "사유 : " + sayou1_606;
+};
+
+// 606호 2P
+if (CHK606_2 == "here") {
+  document.getElementById('Button2P-606').style.backgroundColor = Green;
+  document.getElementById('Button2P-606').innerText = name2_606 + ISHERE;
+}
+else if (CHK606_2 == "out") {
+  document.getElementById('Button2P-606').style.backgroundColor = Red;
+  document.getElementById('Button2P-606').innerText = name2_606 + ISOUT + "사유 : " + sayou2_606;
+}
+else if (CHK606_2 == "late") {
+  document.getElementById('Button2P-606').style.backgroundColor = Yellow;
+  document.getElementById('Button2P-606').innerText = name2_606 + ISLATE + "사유 : " + sayou2_606;
+};
+
+// 606호 3P
+if (CHK606_3 == "here") {
+  document.getElementById('Button3P-606').style.backgroundColor = Green;
+  document.getElementById('Button3P-606').innerText = name3_606 + ISHERE;
+}
+else if (CHK606_3 == "out") {
+  document.getElementById('Button3P-606').style.backgroundColor = Red;
+  document.getElementById('Button3P-606').innerText = name3_606 + ISOUT + "사유 : " + sayou3_606;
+}
+else if (CHK606_3 == "late") {
+  document.getElementById('Button3P-606').style.backgroundColor = Yellow;
+  document.getElementById('Button3P-606').innerText = name3_606 + ISLATE + "사유 : " + sayou3_606;
+};
+ 
+// 606호 4P
+if (CHK606_4 == "here") {
+  document.getElementById('Button4P-606').style.backgroundColor = Green;
+  document.getElementById('Button4P-606').innerText = name4_606 + ISHERE;
+}
+else if (CHK606_4 == "out") {
+  document.getElementById('Button4P-606').style.backgroundColor = Red;
+  document.getElementById('Button4P-606').innerText = name4_606 + ISOUT + "사유 : " + sayou4_606;
+}
+else if (CHK606_4 == "late") {
+  document.getElementById('Button4P-606').style.backgroundColor = Yellow;
+  document.getElementById('Button4P-606').innerText = name4_606 + ISLATE + "사유 : " + sayou4_606;
+};
+
+
+
+
+
+// 607호 1P
+if (CHK607_1 == "here") {
+  document.getElementById('Button1P-607').style.backgroundColor = Green;
+  document.getElementById('Button1P-607').innerText = name1_607 + ISHERE;
+}
+else if (CHK607_1 == "out") {
+  document.getElementById('Button1P-607').style.backgroundColor = Red;
+    document.getElementById('Button1P-607').innerText = name1_607 + ISOUT + "사유 : " + sayou1_607;
+}
+else if (CHK607_1 == "late") {
+  document.getElementById('Button1P-607').style.backgroundColor = Yellow;
+  document.getElementById('Button1P-607').innerText = name1_607 + ISLATE + "사유 : " + sayou1_607;
+};
+
+// 607호 2P
+if (CHK607_2 == "here") {
+  document.getElementById('Button2P-607').style.backgroundColor = Green;
+  document.getElementById('Button2P-607').innerText = name2_607 + ISHERE;
+}
+else if (CHK607_2 == "out") {
+  document.getElementById('Button2P-607').style.backgroundColor = Red;
+  document.getElementById('Button2P-607').innerText = name2_607 + ISOUT + "사유 : " + sayou2_607;
+}
+else if (CHK607_2 == "late") {
+  document.getElementById('Button2P-607').style.backgroundColor = Yellow;
+  document.getElementById('Button2P-607').innerText = name2_607 + ISLATE + "사유 : " + sayou2_607;
+};
+
+// 607호 3P
+if (CHK607_3 == "here") {
+  document.getElementById('Button3P-607').style.backgroundColor = Green;
+  document.getElementById('Button3P-607').innerText = name3_607 + ISHERE;
+}
+else if (CHK607_3 == "out") {
+  document.getElementById('Button3P-607').style.backgroundColor = Red;
+  document.getElementById('Button3P-607').innerText = name3_607 + ISOUT + "사유 : " + sayou3_607;
+}
+else if (CHK607_3 == "late") {
+  document.getElementById('Button3P-607').style.backgroundColor = Yellow;
+  document.getElementById('Button3P-607').innerText = name3_607 + ISLATE + "사유 : " + sayou3_607;
+};
+ 
+// 607호 4P
+if (CHK607_4 == "here") {
+  document.getElementById('Button4P-607').style.backgroundColor = Green;
+  document.getElementById('Button4P-607').innerText = name4_607 + ISHERE;
+}
+else if (CHK607_4 == "out") {
+  document.getElementById('Button4P-607').style.backgroundColor = Red;
+  document.getElementById('Button4P-607').innerText = name4_607 + ISOUT + "사유 : " + sayou4_607;
+}
+else if (CHK607_4 == "late") {
+  document.getElementById('Button4P-607').style.backgroundColor = Yellow;
+  document.getElementById('Button4P-607').innerText = name4_607 + ISLATE + "사유 : " + sayou4_607;
+};
+
+
+
+
+
+// 608호 1P
+if (CHK608_1 == "here") {
+  document.getElementById('Button1P-608').style.backgroundColor = Green;
+  document.getElementById('Button1P-608').innerText = name1_608 + ISHERE;
+}
+else if (CHK608_1 == "out") {
+  document.getElementById('Button1P-608').style.backgroundColor = Red;
+    document.getElementById('Button1P-608').innerText = name1_608 + ISOUT + "사유 : " + sayou1_608;
+}
+else if (CHK608_1 == "late") {
+  document.getElementById('Button1P-608').style.backgroundColor = Yellow;
+  document.getElementById('Button1P-608').innerText = name1_608 + ISLATE + "사유 : " + sayou1_608;
+};
+
+// 608호 2P
+if (CHK608_2 == "here") {
+  document.getElementById('Button2P-608').style.backgroundColor = Green;
+  document.getElementById('Button2P-608').innerText = name2_608 + ISHERE;
+}
+else if (CHK608_2 == "out") {
+  document.getElementById('Button2P-608').style.backgroundColor = Red;
+  document.getElementById('Button2P-608').innerText = name2_608 + ISOUT + "사유 : " + sayou2_608;
+}
+else if (CHK608_2 == "late") {
+  document.getElementById('Button2P-608').style.backgroundColor = Yellow;
+  document.getElementById('Button2P-608').innerText = name2_608 + ISLATE + "사유 : " + sayou2_608;
+};
+
+// 608호 3P
+if (CHK608_3 == "here") {
+  document.getElementById('Button3P-608').style.backgroundColor = Green;
+  document.getElementById('Button3P-608').innerText = name3_608 + ISHERE;
+}
+else if (CHK608_3 == "out") {
+  document.getElementById('Button3P-608').style.backgroundColor = Red;
+  document.getElementById('Button3P-608').innerText = name3_608 + ISOUT + "사유 : " + sayou3_608;
+}
+else if (CHK608_3 == "late") {
+  document.getElementById('Button3P-608').style.backgroundColor = Yellow;
+  document.getElementById('Button3P-608').innerText = name3_608 + ISLATE + "사유 : " + sayou3_608;
+};
+ 
+// 608호 4P
+if (CHK608_4 == "here") {
+  document.getElementById('Button4P-608').style.backgroundColor = Green;
+  document.getElementById('Button4P-608').innerText = name4_608 + ISHERE;
+}
+else if (CHK608_4 == "out") {
+  document.getElementById('Button4P-608').style.backgroundColor = Red;
+  document.getElementById('Button4P-608').innerText = name4_608 + ISOUT + "사유 : " + sayou4_608;
+}
+else if (CHK608_4 == "late") {
+  document.getElementById('Button4P-608').style.backgroundColor = Yellow;
+  document.getElementById('Button4P-608').innerText = name4_608 + ISLATE + "사유 : " + sayou4_608;
+};
+
+
+
+
+
+// 609호 1P
+if (CHK609_1 == "here") {
+  document.getElementById('Button1P-609').style.backgroundColor = Green;
+  document.getElementById('Button1P-609').innerText = name1_609 + ISHERE;
+}
+else if (CHK609_1 == "out") {
+  document.getElementById('Button1P-609').style.backgroundColor = Red;
+    document.getElementById('Button1P-609').innerText = name1_609 + ISOUT + "사유 : " + sayou1_609;
+}
+else if (CHK609_1 == "late") {
+  document.getElementById('Button1P-609').style.backgroundColor = Yellow;
+  document.getElementById('Button1P-609').innerText = name1_609 + ISLATE + "사유 : " + sayou1_609;
+};
+
+// 609호 2P
+if (CHK609_2 == "here") {
+  document.getElementById('Button2P-609').style.backgroundColor = Green;
+  document.getElementById('Button2P-609').innerText = name2_609 + ISHERE;
+}
+else if (CHK609_2 == "out") {
+  document.getElementById('Button2P-609').style.backgroundColor = Red;
+  document.getElementById('Button2P-609').innerText = name2_609 + ISOUT + "사유 : " + sayou2_609;
+}
+else if (CHK609_2 == "late") {
+  document.getElementById('Button2P-609').style.backgroundColor = Yellow;
+  document.getElementById('Button2P-609').innerText = name2_609 + ISLATE + "사유 : " + sayou2_609;
+};
+
+// 609호 3P
+if (CHK609_3 == "here") {
+  document.getElementById('Button3P-609').style.backgroundColor = Green;
+  document.getElementById('Button3P-609').innerText = name3_609 + ISHERE;
+}
+else if (CHK609_3 == "out") {
+  document.getElementById('Button3P-609').style.backgroundColor = Red;
+  document.getElementById('Button3P-609').innerText = name3_609 + ISOUT + "사유 : " + sayou3_609;
+}
+else if (CHK609_3 == "late") {
+  document.getElementById('Button3P-609').style.backgroundColor = Yellow;
+  document.getElementById('Button3P-609').innerText = name3_609 + ISLATE + "사유 : " + sayou3_609;
+};
+ 
+// 609호 4P
+if (CHK609_4 == "here") {
+  document.getElementById('Button4P-609').style.backgroundColor = Green;
+  document.getElementById('Button4P-609').innerText = name4_609 + ISHERE;
+}
+else if (CHK609_4 == "out") {
+  document.getElementById('Button4P-609').style.backgroundColor = Red;
+  document.getElementById('Button4P-609').innerText = name4_609 + ISOUT + "사유 : " + sayou4_609;
+}
+else if (CHK609_4 == "late") {
+  document.getElementById('Button4P-609').style.backgroundColor = Yellow;
+  document.getElementById('Button4P-609').innerText = name4_609 + ISLATE + "사유 : " + sayou4_609;
+};
+
+
+
+
+
+
+// 610호 1P
+if (CHK610_1 == "here") {
+  document.getElementById('Button1P-610').style.backgroundColor = Green;
+  document.getElementById('Button1P-610').innerText = name1_610 + ISHERE;
+}
+else if (CHK610_1 == "out") {
+  document.getElementById('Button1P-610').style.backgroundColor = Red;
+    document.getElementById('Button1P-610').innerText = name1_610 + ISOUT + "사유 : " + sayou1_610;
+}
+else if (CHK610_1 == "late") {
+  document.getElementById('Button1P-610').style.backgroundColor = Yellow;
+  document.getElementById('Button1P-610').innerText = name1_610 + ISLATE + "사유 : " + sayou1_610;
+};
+
+// 610호 2P
+if (CHK610_2 == "here") {
+  document.getElementById('Button2P-610').style.backgroundColor = Green;
+  document.getElementById('Button2P-610').innerText = name2_610 + ISHERE;
+}
+else if (CHK610_2 == "out") {
+  document.getElementById('Button2P-610').style.backgroundColor = Red;
+  document.getElementById('Button2P-610').innerText = name2_610 + ISOUT + "사유 : " + sayou2_610;
+}
+else if (CHK610_2 == "late") {
+  document.getElementById('Button2P-610').style.backgroundColor = Yellow;
+  document.getElementById('Button2P-610').innerText = name2_610 + ISLATE + "사유 : " + sayou2_610;
+};
+
+// 610호 3P
+if (CHK610_3 == "here") {
+  document.getElementById('Button3P-610').style.backgroundColor = Green;
+  document.getElementById('Button3P-610').innerText = name3_610 + ISHERE;
+}
+else if (CHK610_3 == "out") {
+  document.getElementById('Button3P-610').style.backgroundColor = Red;
+  document.getElementById('Button3P-610').innerText = name3_610 + ISOUT + "사유 : " + sayou3_610;
+}
+else if (CHK610_3 == "late") {
+  document.getElementById('Button3P-610').style.backgroundColor = Yellow;
+  document.getElementById('Button3P-610').innerText = name3_610 + ISLATE + "사유 : " + sayou3_610;
+};
+ 
+// 610호 4P
+if (CHK610_4 == "here") {
+  document.getElementById('Button4P-610').style.backgroundColor = Green;
+  document.getElementById('Button4P-610').innerText = name4_610 + ISHERE;
+}
+else if (CHK610_4 == "out") {
+  document.getElementById('Button4P-610').style.backgroundColor = Red;
+  document.getElementById('Button4P-610').innerText = name4_610 + ISOUT + "사유 : " + sayou4_610;
+}
+else if (CHK610_4 == "late") {
+  document.getElementById('Button4P-610').style.backgroundColor = Yellow;
+  document.getElementById('Button4P-610').innerText = name4_610 + ISLATE + "사유 : " + sayou4_610;
+};
+
+
+
+
+
+
+
+
+
+
+
+  
+}, 100); //=1 재실 , =2 외박 , =3 지각
+
+
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+function on_log_list(data) {
+
+
+
+var key = data.key;
+
+
+  var Data = data.val();
+  var createtime = Data.createtime;
+  var name = Data.name;
+
+  var BOYROOMLOG = Data.BOYROOMLOG;
+
+
+  document.getElementById('boyroomlog').value = BOYROOMLOG;
+
+
+
+
+}
+  
+  
+  
+  
+  
+  
+  function on_notice_list(data) {
+ 
+    console.log("on_thanks_list() 함수안으로 들어왔습니다 리스트를 가져오겠습니다")
+    var key = data.key;
+    
+  
+    var Data = data.val();
+    var createtime = Data.createtime;
+    var name = Data.name;
+  
+    var name1_404 = Data.name1_404;
+    var name2_404 = Data.name2_404;
+    var name3_404 = Data.name3_404;
+    var name4_404 = Data.name4_404;
+    var name5_404 = Data.name5_404;
+    var name6_404 = Data.name6_404;
+  
+    
+    var name1_405 = Data.name1_405;
+    var name2_405 = Data.name2_405;
+    var name3_405 = Data.name3_405;
+    var name4_405 = Data.name4_405;
+  
+  
+    var name1_601 = Data.name1_601;
+    var name2_601 = Data.name2_601;
+    var name3_601 = Data.name3_601;
+    var name4_601 = Data.name4_601;
+  
+    var name1_602 = Data.name1_602;
+  var name2_602 = Data.name2_602;
+  var name3_602 = Data.name3_602;
+  var name4_602 = Data.name4_602;
+  
+  var name1_603 = Data.name1_603;
+  var name2_603 = Data.name2_603;
+  var name3_603 = Data.name3_603;
+  var name4_603 = Data.name4_603;
+  
+  var name1_604 = Data.name1_604;
+  var name2_604 = Data.name2_604;
+  var name3_604 = Data.name3_604;
+  var name4_604 = Data.name4_604;
+  
+  var name1_605 = Data.name1_605;
+  var name2_605 = Data.name2_605;
+  var name3_605 = Data.name3_605;
+  var name4_605 = Data.name4_605;
+  
+  var name1_606 = Data.name1_606;
+  var name2_606 = Data.name2_606;
+  var name3_606 = Data.name3_606;
+  var name4_606 = Data.name4_606;
+  
+  var name1_607 = Data.name1_607;
+  var name2_607 = Data.name2_607;
+  var name3_607 = Data.name3_607;
+  var name4_607 = Data.name4_607;
+  
+  var name1_608 = Data.name1_608;
+  var name2_608 = Data.name2_608;
+  var name3_608 = Data.name3_608;
+  var name4_608 = Data.name4_608;
+  
+  var name1_609 = Data.name1_609;
+  var name2_609 = Data.name2_609;
+  var name3_609 = Data.name3_609;
+  var name4_609 = Data.name4_609;
+  
+  var name1_610 = Data.name1_610;
+  var name2_610 = Data.name2_610;
+  var name3_610 = Data.name3_610;
+  var name4_610 = Data.name4_610;
+
+    var userkey = Data.userkey;
+    var brdnm = Data.boardno;
+  
+    
+    var boardno = Data.key; //이 보드의 키값
+  
+    
+  
+   
+   
+
+  document.getElementById('Button1P-404').innerText = name1_404;
+    document.getElementById('Button2P-404').innerText = name2_404;
+    document.getElementById('Button3P-404').innerText = name3_404;
+    document.getElementById('Button4P-404').innerText = name4_404;
+    document.getElementById('Button5P-404').innerText = name5_404;
+    document.getElementById('Button6P-404').innerText = name6_404;
+
+    document.getElementById('Button1P-405').innerText = name1_405;
+document.getElementById('Button2P-405').innerText = name2_405;
+document.getElementById('Button3P-405').innerText = name3_405;
+document.getElementById('Button4P-405').innerText = name4_405;
+
+document.getElementById('Button1P-601').innerText = name1_601;
+document.getElementById('Button2P-601').innerText = name2_601;
+document.getElementById('Button3P-601').innerText = name3_601;
+document.getElementById('Button4P-601').innerText = name4_601;
+
+document.getElementById('Button1P-602').innerText = name1_602;
+document.getElementById('Button2P-602').innerText = name2_602;
+document.getElementById('Button3P-602').innerText = name3_602;
+document.getElementById('Button4P-602').innerText = name4_602;
+
+document.getElementById('Button1P-603').innerText = name1_603;
+document.getElementById('Button2P-603').innerText = name2_603;
+document.getElementById('Button3P-603').innerText = name3_603;
+document.getElementById('Button4P-603').innerText = name4_603;
+
+// 604
+document.getElementById('Button1P-604').innerText = name1_604;
+document.getElementById('Button2P-604').innerText = name2_604;
+document.getElementById('Button3P-604').innerText = name3_604;
+document.getElementById('Button4P-604').innerText = name4_604;
+
+// 605
+document.getElementById('Button1P-605').innerText = name1_605;
+document.getElementById('Button2P-605').innerText = name2_605;
+document.getElementById('Button3P-605').innerText = name3_605;
+document.getElementById('Button4P-605').innerText = name4_605;
+
+// 606
+document.getElementById('Button1P-606').innerText = name1_606;
+document.getElementById('Button2P-606').innerText = name2_606;
+document.getElementById('Button3P-606').innerText = name3_606;
+document.getElementById('Button4P-606').innerText = name4_606;
+
+// 607
+document.getElementById('Button1P-607').innerText = name1_607;
+document.getElementById('Button2P-607').innerText = name2_607;
+document.getElementById('Button3P-607').innerText = name3_607;
+document.getElementById('Button4P-607').innerText = name4_607;
+
+// 608
+document.getElementById('Button1P-608').innerText = name1_608;
+document.getElementById('Button2P-608').innerText = name2_608;
+document.getElementById('Button3P-608').innerText = name3_608;
+document.getElementById('Button4P-608').innerText = name4_608;
+
+// 609
+document.getElementById('Button1P-609').innerText = name1_609;
+document.getElementById('Button2P-609').innerText = name2_609;
+document.getElementById('Button3P-609').innerText = name3_609;
+document.getElementById('Button4P-609').innerText = name4_609;
+
+// 610
+document.getElementById('Button1P-610').innerText = name1_610;
+document.getElementById('Button2P-610').innerText = name2_610;
+document.getElementById('Button3P-610').innerText = name3_610;
+document.getElementById('Button4P-610').innerText = name4_610;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (name1_404 == "-"){
+  document.getElementById('Button1P-404').style.display = 'none';
+}
+if (name2_404 == "-"){
+  document.getElementById('Button2P-404').style.display = 'none';
+}
+if (name3_404 == "-"){
+  document.getElementById('Button3P-404').style.display = 'none';
+}
+if (name4_404 == "-"){
+  document.getElementById('Button4P-404').style.display = 'none';
+}
+if (name5_404 == "-"){
+  document.getElementById('Button5P-404').style.display = 'none';
+}
+if (name6_404 == "-"){
+  document.getElementById('Button6P-404').style.display = 'none';
+}
+
+
+if (name1_405 == "-"){
+  document.getElementById('Button1P-405').style.display = 'none';
+}
+if (name2_405 == "-"){
+  document.getElementById('Button2P-405').style.display = 'none';
+}
+if (name3_405 == "-"){
+  document.getElementById('Button3P-405').style.display = 'none';
+}
+if (name4_405 == "-"){
+  document.getElementById('Button4P-405').style.display = 'none';
+}
+
+
+
+
+if (name1_601 == "-"){
+  document.getElementById('Button1P-601').style.display = 'none';
+}
+if (name2_601 == "-"){
+  document.getElementById('Button2P-601').style.display = 'none';
+}
+if (name3_601 == "-"){
+  document.getElementById('Button3P-601').style.display = 'none';
+}
+if (name4_601 == "-"){
+  document.getElementById('Button4P-601').style.display = 'none';
+}
+
+
+if (name1_602 == "-"){
+  document.getElementById('Button1P-602').style.display = 'none';
+}
+if (name2_602 == "-"){
+  document.getElementById('Button2P-602').style.display = 'none';
+}
+if (name3_602 == "-"){
+  document.getElementById('Button3P-602').style.display = 'none';
+}
+if (name4_602 == "-"){
+  document.getElementById('Button4P-602').style.display = 'none';
+}
+
+if (name1_603 == "-"){
+  document.getElementById('Button1P-603').style.display = 'none';
+}
+if (name2_603 == "-"){
+  document.getElementById('Button2P-603').style.display = 'none';
+}
+if (name3_603 == "-"){
+  document.getElementById('Button3P-603').style.display = 'none';
+}
+if (name4_603 == "-"){
+  document.getElementById('Button4P-603').style.display = 'none';
+}
+
+if (name1_604 == "-"){
+  document.getElementById('Button1P-604').style.display = 'none';
+}
+if (name2_604 == "-"){
+  document.getElementById('Button2P-604').style.display = 'none';
+}
+if (name3_604 == "-"){
+  document.getElementById('Button3P-604').style.display = 'none';
+}
+if (name4_604 == "-"){
+  document.getElementById('Button4P-604').style.display = 'none';
+}
+
+if (name1_605 == "-"){
+  document.getElementById('Button1P-605').style.display = 'none';
+}
+if (name2_605 == "-"){
+  document.getElementById('Button2P-605').style.display = 'none';
+}
+if (name3_605 == "-"){
+  document.getElementById('Button3P-605').style.display = 'none';
+}
+if (name4_605 == "-"){
+  document.getElementById('Button4P-605').style.display = 'none';
+}
+
+if (name1_606 == "-"){
+  document.getElementById('Button1P-606').style.display = 'none';
+}
+if (name2_606 == "-"){
+  document.getElementById('Button2P-606').style.display = 'none';
+}
+if (name3_606 == "-"){
+  document.getElementById('Button3P-606').style.display = 'none';
+}
+if (name4_606 == "-"){
+  document.getElementById('Button4P-606').style.display = 'none';
+}
+
+if (name1_607 == "-"){
+  document.getElementById('Button1P-607').style.display = 'none';
+}
+if (name2_607 == "-"){
+  document.getElementById('Button2P-607').style.display = 'none';
+}
+if (name3_607 == "-"){
+  document.getElementById('Button3P-607').style.display = 'none';
+}
+if (name4_607 == "-"){
+  document.getElementById('Button4P-607').style.display = 'none';
+}
+
+if (name1_608 == "-"){
+  document.getElementById('Button1P-608').style.display = 'none';
+}
+if (name2_608 == "-"){
+  document.getElementById('Button2P-608').style.display = 'none';
+}
+if (name3_608 == "-"){
+  document.getElementById('Button3P-608').style.display = 'none';
+}
+if (name4_608 == "-"){
+  document.getElementById('Button4P-608').style.display = 'none';
+}
+
+if (name1_609 == "-"){
+  document.getElementById('Button1P-609').style.display = 'none';
+}
+if (name2_609 == "-"){
+  document.getElementById('Button2P-609').style.display = 'none';
+}
+if (name3_609 == "-"){
+  document.getElementById('Button3P-609').style.display = 'none';
+}
+if (name4_609 == "-"){
+  document.getElementById('Button4P-609').style.display = 'none';
+}
+
+
+if (name1_610 == "-"){
+  document.getElementById('Button1P-610').style.display = 'none';
+}
+if (name2_610 == "-"){
+  document.getElementById('Button2P-610').style.display = 'none';
+}
+if (name3_610 == "-"){
+  document.getElementById('Button3P-610').style.display = 'none';
+}
+if (name4_610 == "-"){
+  document.getElementById('Button4P-610').style.display = 'none';
+}
+
+
+
+
+
+    
+  
+    
+  
+  }
+  
+  
+ 
+
+
+  function buttonadd(data){
+    var key = data.key; //@Hㅁ1 없ㄴ
+    var Data = data.val();
+  
+    var createtime = Data.createtime;
+    var name = Data.name;
+    var subject = Data.subject;
+    var userkey = Data.userkey;
+      //리스트 동적으로 붙이기
+      var btnside =
+  
+  "<li class=\"nav-item\">" +"<a class=\"nav-link\" id='" + loginUserKey + "' onclick=\"chat(this.id)\">" +
+  "<i class=\"ni ni-send text-blue\">"+"</i>" +
+  "<span class=\"nav-link-text\">"+ "전체채팅" +"</span></a>"+ "</li>";
+  
+  //   $(".thanksList").append(html);   //아래로 붙이기
+  $(".btnz").prepend(btnside);   //위로 붙이기
+  buttonadd.executed = false;
+
+  }
+  buttonadd.executed = false;
+
+  
+  //채팅으로UID전달하는함수
+  function chat(key){ 
+  location.href="chatting/chat.html?" + key ;
+  
+  }
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </script>
+  
+  
+     
+  
+   
+  
+   
+
+ 
+
+
+
+</body>
+
+</html>
