@@ -18,11 +18,11 @@
 
               
  
-              if(snapshot.val().name == "Haksa" | "이선희"){
+              if(snapshot.val().unit == "ADMIN" | "HAKSA_2023audtjdwkdgkrrhks"){
 
                 document.getElementById("doact").textContent = "총관리자 바로가기"; //Span은 innerhtml로 a 는 textContent로
-                document.getElementById("doact").href = "Admin.html";
-                window.location.href = "Admin.html"
+                document.getElementById("doact").href = "boyadmin.html";
+                window.location.href = "boyadmin.html"
               }
 
               if(snapshot.val().grd == "KIHOON" | "김기훈"){
@@ -47,6 +47,7 @@
                 document.getElementById("doact").href = "CenterCoreGirl.html";
                 window.location.href = "CenterCoreGirl.html"
               }
+
 
 
 
