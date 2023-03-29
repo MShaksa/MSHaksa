@@ -1644,6 +1644,66 @@
 
 
 
+self.addEventListener('push', function(event) {
+  console.log('Push Notification Received', event);
+  const options = {
+    body: 'This is a push notification!',
+    icon: 'path/to/icon.png'
+  };
+
+  event.waitUntil(self.registration.showNotification('Push Notification', options));
+});
+
+function scheduleNotification() {
+  const now = new Date();
+  const eleven = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 5, 0);
+
+  if (now > eleven) {
+    eleven.setDate(eleven.getDate() + 1);
+  }
+
+  const timeUntilEleven = eleven.getTime() - now.getTime();
+
+  setTimeout(() => {
+    self.registration.showNotification('Scheduled Notification', {
+      body: 'This notification was scheduled at 11:05 PM',
+      icon: 'path/to/icon.png'
+    });
+  }, timeUntilEleven);
+}
+
+self.addEventListener('install', function(event) {
+  console.log('Service worker installed');
+  event.waitUntil(scheduleNotification());
+});
+
+self.addEventListener('activate', function(event) {
+  console.log('Service worker activated');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function copyToClipboard() {
   var copyText = document.getElementById("boyroomlog");

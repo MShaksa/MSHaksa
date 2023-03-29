@@ -1,0 +1,54 @@
+
+
+
+
+<a>Notification Test by 44.</a>
+
+
+
+<script>
+new Notification("✅실시간 수업이 있습니다 :: ")
+
+self.addEventListener('install', function(event) {
+  console.log('Service worker installed');
+});
+
+self.addEventListener('activate', function(event) {
+  console.log('Service worker activated');
+});
+
+function showNotification() {
+  const title = 'Notification Title';
+  const options = {
+    body: 'Notification Body',
+    icon: 'path/to/icon.png'
+  };
+
+  self.registration.showNotification(title, options);
+}
+
+function scheduleNotification() {
+  const now = new Date();
+  const targetTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 15, 34, 0);
+
+  if (now > targetTime) {
+    targetTime.setDate(targetTime.getDate() + 1);
+  }
+
+  const timeUntilTarget = targetTime.getTime() - now.getTime();
+
+  setTimeout(() => {
+    showNotification();
+  }, timeUntilTarget);
+}
+
+self.addEventListener('push', function(event) {
+  console.log('Push Notification Received', event);
+  event.waitUntil(scheduleNotification());
+});
+
+
+
+
+
+</script>
