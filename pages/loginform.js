@@ -15,6 +15,8 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     }
 
+
+
   } else {
     // No user is signed in.
 
