@@ -709,6 +709,46 @@
 	
 	
  
+
+
+  var card404 = document.getElementById("card404");
+  var card405 = document.getElementById("card405");
+  var card601 = document.getElementById("card601");
+  var card602 = document.getElementById("card602");
+  var card603 = document.getElementById("card603");
+  var card604 = document.getElementById("card604");
+  var card605 = document.getElementById("card605");
+  var card606 = document.getElementById("card606");
+  var card607 = document.getElementById("card607");
+  var card608 = document.getElementById("card608");
+  var card609 = document.getElementById("card609");
+  var card610 = document.getElementById("card610");
+
+
+
+  card404.style.display = "none";
+  card405.style.display = "none";
+  card601.style.display = "none";
+  card602.style.display = "none";
+  card603.style.display = "none";
+  card604.style.display = "none";
+  card605.style.display = "none";
+  card606.style.display = "none";
+  card607.style.display = "none";
+  card608.style.display = "none";
+  card609.style.display = "none";
+  card610.style.display = "none";
+
+ 
+
+
+
+
+
+
+
+
+
  
 
 function copyToClipboard() {
@@ -2000,6 +2040,8 @@ var key = data.key;
     var Data = data.val();
     var createtime = Data.createtime;
     var name = Data.name;
+    var unit = Data.unit;
+
   
     var name1_404 = Data.name1_404;
     var name2_404 = Data.name2_404;
@@ -2329,15 +2371,124 @@ if (name4_610 == "-"){
 
 
 
+    
 
 
-    
-  
-    
+
+
+
   
   }
+
   
+
+
+
+
+  //관리자 아니면 숨가기
+
+  firebaseEmailAuth.onAuthStateChanged(function (user) {
+          
+          if (user) {
+            //조회 - 데이터 베이스에 저장된 닉네임을 현재 접속되어 있는 user의 pk key 값을 이용해서 가져오기
+            firebaseDatabase.ref("users/" + user.uid).once('value').then(function (snapshot) {
+              
+              //자바스크립트 dom 선택자를 통해서 네비게이션 메뉴의 엘리먼트 변경해주기
+              document.getElementById("loginmenu").innerHTML = "로그아웃";
+              document.getElementById("loginmenu").href = "loginform.html";
+
+              document.getElementById("joinmenu").innerHTML = snapshot.val().name + " 님"; //Span은 innerhtml로 a 는 textContent로
+              document.getElementById("joinmenu").href = "#";
+
+
+              
+ 
+              if(snapshot.val().unit == "ADMIN" | "HAKSA_2023audtjdwkdgkrrhks"){
+
+                card404.style.display = "flex";
+
+                card405.style.display = "flex";
+
+                card601.style.display = "flex";
+
+                card602.style.display = "flex";
+
+                card603.style.display = "flex";
+
+                card604.style.display = "flex";
+
+                card605.style.display = "flex";
+
+                card606.style.display = "flex";
+
+                card607.style.display = "flex";
+
+                card608.style.display = "flex";
+
+                card609.style.display = "flex";
+
+                card610.style.display = "flex";
+
+              }else if(snapshot.val().unit == "404"){
+                card404.style.display = "flex";
+
+              }else if(snapshot.val().unit == "405"){
+                card405.style.display = "flex";
+
+              }else if(snapshot.val().unit == "601"){
+                card601.style.display = "flex";
+
+              }else if(snapshot.val().unit == "602"){
+                card602.style.display = "flex";
+
+              }else if(snapshot.val().unit == "603"){
+                card603.style.display = "flex";
+
+              }else if(snapshot.val().unit == "604"){
+                card604.style.display = "flex";
+
+              }else if(snapshot.val().unit == "605"){
+                card605.style.display = "flex";
+
+              }else if(snapshot.val().unit == "606"){
+                card606.style.display = "flex";
+
+              }else if(snapshot.val().unit == "607"){
+                card607.style.display = "flex";
+
+              }else if(snapshot.val().unit == "608"){
+                card608.style.display = "flex";
+
+              }else if(snapshot.val().unit == "609"){
+                card609.style.display = "flex";
+
+              }else if(snapshot.val().unit == "610"){
+                card610.style.display = "flex";
+
+              }
+
+
+ 
+
+            });
   
+          } else {
+        
+            
+
+          }
+        });
+
+
+ 
+
+
+
+
+
+
+
+
  
 
 
