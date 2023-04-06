@@ -2403,7 +2403,7 @@ if (name4_610 == "-"){
 
               
  
-              if(snapshot.val().unit == "ADMIN" | "HAKSA_2023audtjdwkdgkrrhks"){
+              if(snapshot.val().unit == "AD2MIN" | "HAKSA_2023audtjdwkdgkrrhks"){
 
                 card404.style.display = "flex";
 
@@ -2464,6 +2464,42 @@ if (name4_610 == "-"){
 
               }else if(snapshot.val().unit == "610"){
                 card610.style.display = "flex";
+
+              }else{
+                
+                var outmsgq = prompt("권한이 없습니다! 마스터 키를 사용해 주세요.");
+    if (outmsgq === "ADMIN" | outmsgq === "HAKSA_2023audtjdwkdgkrrhks") {
+
+
+      card404.style.display = "flex";
+
+card405.style.display = "flex";
+
+card601.style.display = "flex";
+
+card602.style.display = "flex";
+
+card603.style.display = "flex";
+
+card604.style.display = "flex";
+
+card605.style.display = "flex";
+
+card606.style.display = "flex";
+
+card607.style.display = "flex";
+
+card608.style.display = "flex";
+
+card609.style.display = "flex";
+
+card610.style.display = "flex";
+  
+    } else {
+      alert("권한이 없습니다.");
+
+    }
+
 
               }
 
