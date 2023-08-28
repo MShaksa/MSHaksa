@@ -18,19 +18,34 @@
 
               
  
-              if(snapshot.val().unit == "ADMIN" | "HAKSA_2023audtjdwkdgkrrhks"){
+              if(snapshot.val().unit == "ADMIN"){
 
                 document.getElementById("doact").textContent = "총관리자 바로가기"; //Span은 innerhtml로 a 는 textContent로
-                document.getElementById("doact").href = "boyadmin.html";
-                window.location.href = "boyadmin.html"
+                document.getElementById("doact").href = "admin.html";
+                window.location.href = "admin.html"
               }
 
               if(snapshot.val().grd == "KIHOON" | "김기훈"){
 
                 document.getElementById("doact").textContent = snapshot.val().name + " KIHOON"; //Span은 innerhtml로 a 는 textContent로
-                document.getElementById("doact").href = "Admin.html";
-                window.location.href = "Admin.html"
+                document.getElementById("doact").href = "admin.html";
+                window.location.href = "admin.html"
                 
+              }
+
+                          
+              if(snapshot.val().unit == "ADMIN_BOY"){
+
+                document.getElementById("doact").textContent = "총관리자 바로가기"; //Span은 innerhtml로 a 는 textContent로
+                document.getElementById("doact").href = "RoomsChk.html";
+                window.location.href = "RoomsChk.html"
+              }
+
+              if(snapshot.val().unit == "ADMIN_GIRL"){
+
+                document.getElementById("doact").textContent = "총관리자 바로가기"; //Span은 innerhtml로 a 는 textContent로
+                document.getElementById("doact").href = "RoomsChkGirl.html";
+                window.location.href = "RoomsChkGirl.html"
               }
                
               if(snapshot.val().sex == "boy"){
@@ -44,8 +59,8 @@
               if(snapshot.val().sex == "girl"){
 
                 document.getElementById("doact").textContent = "여장 바로가기"; //Span은 innerhtml로 a 는 textContent로
-                document.getElementById("doact").href = "CenterCoreGirl.html";
-                window.location.href = "CenterCoreGirl.html"
+                document.getElementById("doact").href = "RoomsChkGirl.html";
+                window.location.href = "RoomsChkGirl.html"
               }
 
 
