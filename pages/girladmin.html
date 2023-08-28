@@ -1,0 +1,2641 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>서울학사</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="https://samuelgalaxys.github.io/reusemapvendors/vendors/iconfonts/mdi/css/materialdesignicons.css">
+
+  <style>
+
+    .vibrating-button {
+      transform: rotate(-1deg);
+      animation: vibrate 0.1s linear infinite;
+    }
+    
+    
+    
+    .color-change {
+      width: 90%;
+      background-color: rgb(255, 255, 255);
+      animation: color-change 2s infinite;
+    }
+    
+    @keyframes color-change {
+      0% {
+        background-color: rgb(248, 234, 146);
+      }
+      25% {
+        background-color: rgb(170, 251, 201);
+      }
+      50% {
+        background-color: rgb(172, 230, 255);
+      }
+      75% {
+        background-color: rgb(162, 247, 195);
+      }
+      100% {
+        background-color: rgb(247, 237, 174);
+      }
+    }
+    
+    
+    
+      </style>
+
+  <script src="../assets/js/includeHTML.js"></script>
+
+  <!-- Page plugins -->
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
+</head>
+
+<body>
+  
+  
+
+ 
+  <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <div class="sidenav-header  align-items-center">
+        <a class="navbar-brand" href="javascript:void(0)">
+          <img src="mschlogo.jpeg" class="navbar-brand-img" alt="...">
+        </a>
+      </div>
+      <div class="navbar-inner">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Nav items -->
+         
+          <ul class="navbar-nav">
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+
+                <span class="nav-link-text">홈페이지</span>
+              </a>
+            </li>
+
+            
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.msch.or.kr/xe/?mid=mission01_04">
+
+                <span class="nav-link-text">명성복지재단</span>
+              </a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://mswf.co.kr/business03">
+
+                <span class="nav-link-text">명성 장학관 소개</span>
+              </a>
+            </li>
+
+            <div class="btnz"></div>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="food.html">
+
+                <span class="nav-link-text">명성장학 오늘의 식사</span>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+
+                <span class="nav-link-text">방보고 DMS</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">
+
+                <span class="nav-link-text">관리자 DMS 콘솔</span>
+              </a>
+            </li>
+ 
+    
+
+          </ul>
+          <!-- Divider -->
+          <hr class="my-3">
+          <!-- Heading -->
+
+ 
+          
+ 
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+<!-- Main content -->
+  <div class="main-content" id="panel">
+<!-- Topnav -->
+  <nav class="navbar navbar-top navbar-expand navbar-dark border-bottom" style="background-color: #1e1e1e;">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Search form -->
+        <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+          <div class="form-group mb-0">
+
+
+
+ 
+
+
+
+
+          </div>
+          <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </form>
+        <!-- Navbar links -->
+        <ul class="navbar-nav align-items-center  ml-md-auto ">
+         
+          <li class="nav-item d-sm-none">
+            <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+              <i class="ni ni-zoom-split-in"></i>
+            </a>
+          </li>
+  
+  
+           
+  
+  
+          
+  
+        </ul>
+        <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+  
+  
+          <li class="nav-item d-xl-none">
+            <!-- Sidenav toggler -->
+            <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+              <div class="sidenav-toggler-inner">
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+                <i class="sidenav-toggler-line"></i>
+              </div>
+            </div>
+          </li>
+  
+  
+          <li class="nav-item dropdown">
+            
+            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="media align-items-center">
+                <span class="avatar avatar-sm rounded-circle">
+                  <img alt="Image placeholder" src="../assets/img/theme/users.jpg">
+                </span>
+                <div class="media-body  ml-2  d-none d-lg-block">
+                  <span id="joinmenu" class="mb-0 text-sm  font-weight-bold">로그인</span>
+                </div>
+              </div>
+            </a>
+  
+            <div class="dropdown-menu  dropdown-menu-right ">
+              <div class="dropdown-header noti-title">
+                <h6 class="text-overflow m-0">Welcome!</h6>
+              </div>
+               
+              <div class="dropdown-divider"></div>
+              <a href="loginform.html" class="dropdown-item">
+                <i class="ni ni-user-run"></i>
+                <span id="loginmenu">로그인/가입</span>
+              </a>
+            </div>
+  
+  
+  
+  
+  
+  
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Header -->
+
+
+    <!-- Header -->
+
+
+
+
+
+
+    <!-- Header -->
+    <div class="header pb-6" style="background-color: #1e1e1e;">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <h6 class="h2 text-white d-inline-block mb-0">🧭학사 인원확인시스템</h6><a style="color: aliceblue;">(GirlsDorm : 관리자)</a>
+              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+          
+                
+              </nav>
+            </div>
+             
+          </div>
+          <!-- Card stats -->
+           
+
+
+
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+      
+      
+      
+      <div class="row">
+ 
+        <div class="col-xl-7">
+
+ 
+          
+          
+         <div class="card" style="background-color: #ffffff;">
+
+          <div class="board"></div>
+
+            <div class="card-body">
+              <button type="button" class="vibrating-button color-changeX button button-contactForm btn_1 boxed-btn btn btn-primary gotochk" id="gotochk" onclick="location.href='RoomsChk.html'" name="gotochk" style="float: left; width: 100%; font-size: 12px; background-color: #85e185; color: #000000;">호실인원 보고</button> 
+
+               <div class="card-sub">		
+
+                 </div>
+            </div>
+         </div>
+
+            
+
+  
+         <div class="card" id="card501">
+            <div class="card-body">
+                <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">501호</h5><br>
+                <button type="button"  class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-501"  style="float: left; width: 40%; font-size: 12px; background-color: #505050;">501-이름</button> 
+                <button type="button"  class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-501" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">501-이름</button> 
+                <button type="button"  class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-501"  style="float: left; width: 40%; font-size: 12px; background-color: #505050;">501-이름</button> 
+                <button type="button"  class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-501"  style="float: left; width: 40%; font-size: 12px; background-color: #505050;">501-이름</button> 
+               <div class="card-sub">		
+                 </div>
+            </div>
+         </div>
+
+
+         <div class="card" id="card502">
+          <div class="card-body">
+              <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">502호</h5><br>
+              <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-502" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">502-이름</button>
+              <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-502" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">502-이름</button>
+              <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-502" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">502-이름</button>
+              <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-502" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">502-이름</button>
+              <div class="card-sub">
+              </div>
+          </div>
+      </div>
+
+      
+      <div class="card" id="card503">
+        <div class="card-body">
+            <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">503호</h5><br>
+            <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-503" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">503-이름</button>
+            <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-503" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">503-이름</button>
+            <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-503" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">503-이름</button>
+            <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-503" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">503-이름</button>
+            <div class="card-sub">
+            </div>
+        </div>
+    </div>
+
+    <div class="card" id="card504">
+      <div class="card-body">
+          <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">504호</h5><br>
+          <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-504" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">504-이름</button>
+          <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-504" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">504-이름</button>
+          <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-504" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">504-이름</button>
+          <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-504" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">504-이름</button>
+          <div class="card-sub">
+          </div>
+      </div>
+  </div>
+
+  <div class="card" id="card505">
+    <div class="card-body">
+        <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">505호</h5><br>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-505" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">505-이름</button>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-505" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">505-이름</button>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-505" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">505-이름</button>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-505" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">505-이름</button>
+        <div class="card-sub">
+        </div>
+    </div>
+</div>
+
+  <div class="card" id="card506">
+    <div class="card-body">
+        <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">506호</h5><br>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-506" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">506-이름</button>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-506" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">506-이름</button>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-506" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">506-이름</button>
+        <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-506" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">506-이름</button>
+        <div class="card-sub">
+        </div>
+    </div>
+</div>
+
+<div class="card" id="card507">
+  <div class="card-body">
+      <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">507호</h5><br>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-507" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">507-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-507" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">507-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-507" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">507-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-507" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">507-이름</button>
+      <div class="card-sub">
+      </div>
+  </div>
+</div>
+
+<div class="card" id="card508">
+  <div class="card-body">
+      <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">508호</h5><br>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-508" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">508-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-508" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">508-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-508" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">508-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-508" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">508-이름</button>
+      <div class="card-sub">
+      </div>
+  </div>
+</div>
+
+<div class="card" id="card509">
+  <div class="card-body">
+      <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">509호</h5><br>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-509" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">509-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-509" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">509-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-509" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">509-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-509" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">509-이름</button>
+      <div class="card-sub">
+      </div>
+  </div>
+</div>
+
+<div class="card" id="card510">
+  <div class="card-body">
+      <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">510호</h5><br>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-510" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">510-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-510" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">510-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-510" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">510-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-510" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">510-이름</button>
+      <div class="card-sub">
+      </div>
+  </div>
+</div>
+
+<div class="card" id="card511">
+  <div class="card-body">
+      <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">511호</h5><br>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-511" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">511-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-511" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">511-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-511" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">511-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-511" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">511-이름</button>
+      <div class="card-sub">
+      </div>
+  </div>
+</div>
+
+<div class="card" id="card512">
+  <div class="card-body">
+      <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">512호</h5><br>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-512" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">512-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-512" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">512-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-512" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">512-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-512" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">512-이름</button>
+      <div class="card-sub">
+      </div>
+  </div>
+</div>
+
+<div class="card" id="card513">
+  <div class="card-body">
+      <h5 style="color: #000000; font-size: 18px" class="h3 mb-0">513호</h5><br>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button1P-513" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">513-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button2P-513" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">513-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button3P-513" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">513-이름</button>
+      <button type="button" class="button button-contactForm btn_1 boxed-btn btn btn-primary write col-xl-4" id="Button4P-513" style="float: left; width: 40%; font-size: 12px; background-color: #505050;">513-이름</button>
+      <div class="card-sub">
+      </div>
+  </div>
+</div>
+
+           
+   
+
+
+
+
+         
+           
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="col-xl-4 scrollh" id="scrollz" style="overflow:scroll;width:auto; height:1000px;">
+
+ 
+
+
+
+          <div class="card" style="background-color: #353535;">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h5 style="color: #ffffff; font-size: 22px" class="h3 mb-0">보고로그</h5>
+                  <h6 class="text-light text-uppercase ls-1 mb-1">당일의 재실여부 기록입니다.</h6>
+                </div>
+
+                <div class="col">
+                  <ul class="nav nav-pills justify-content-end">
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+
+              <textarea class="form-control w-100" rows="20" name="girlroomlog" id="girlroomlog" cols="30" style="color: #000000;" placeholder="girlroomlog">-</textarea></br>
+              <button type="button" onclick="copyToClipboard()" margin="right" class="button button-contactForm btn_1 boxed-btn btn btn-primary edittable" id="copyX" name="copyX" style="background-color: #f0f5ff; color: #262626; float: right;">복사하기</button> 
+
+            </div>
+          </div>
+
+
+
+
+          <!----
+
+
+          <div class="card" style="background-color: #00ff80;">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h5 style="color: #000000; font-size: 22px" class="h3 mb-0">여기는 광고 또는 공지판!.</h5>
+                  <h6 class="text-light text-uppercase ls-1 mb-1">Overview</h6>
+                </div>
+
+                <div class="col">
+                  <ul class="nav nav-pills justify-content-end">
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a style="color: rgb(0, 0, 0);">학사존 학생에게만 표시되는 게시판입니다.
+                대놓고는 말 할수 없었던 것,
+                또는 자유로운 질문으로 이용해주세요! </br> 완전한 익명성이 보장되며 관리자도 정상적인 경로로 익명을 확인할 수 없습니다.</a>
+            </div>
+          </div>
+
+
+        -->
+
+
+
+
+
+          
+        </div>
+
+         
+
+ 
+
+
+        
+      </div>
+      <div class="row">
+
+
+
+
+
+
+
+        
+         
+      </div>
+      <!-- Footer -->
+
+      <footer class="footer pt-0">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6">
+            <div class="copyright text-center  text-lg-left  text-muted">
+              &copy; 2023 <a href="#" class="font-weight-bold ml-1" target="_blank">학사존 All rights reserved.</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+      
+              
+              
+              <li class="nav-item">
+                <a id="doact" href="https://www.google.com" class="nav-link" target="_blank">-</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.google.com" class="nav-link" target="_blank">-</a>
+
+
+
+                <input id="cmtcountin" style="color: gray; font-size: 1px; float: right;"></input>
+
+
+
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+       
+    </div>
+  </div>
+
+
+
+
+
+<!-- Modal -->
+ 
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalUpdate-RC" tabindex="-1" role="dialog" aria-labelledby="modalUpdate-RC" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color: #ffd900;">
+				<h6 class="modal-title"><i class="la la-info-circle"></i>510호</h6>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body text-center">	
+        <div class="row">
+
+
+
+					<div class="card-body card col-xl-5" style="width: 35%;">
+            <textarea aria-hidden="true" class="form-control w-100" rows="1" name="RoomsCheck" id="RoomsCheck" cols="30" placeholder="RCK">-</textarea></br>
+  
+					</div>
+ 
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary savechange" data-dismiss="modal">저장</button>
+
+
+<textarea class="form-control w-100" rows="1" name="nameallchk-510" id="nameallchk-510" cols="30" placeholder="체크콘솔ALL">-</textarea></br>
+
+
+
+        </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+ 
+
+
+
+
+
+ <!-- Core -->
+ <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+ <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+ <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+ <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+ <!-- Optional JS -->
+ <script src="../assets/vendor/chart.js/dist/Chart.min.js"></script>
+ <script src="../assets/vendor/chart.js/dist/Chart.extension.js"></script>
+ <!-- Argon JS -->
+ <script src="../assets/js/argon.js?v=1.2.0"></script>
+
+<script src="../assets/js/time.js"></script>
+<!--login유무 session js 파일 -->
+<script src="../assets/js/sessionCheck.js"></script>
+<!--스크립트 부분. 자신의 스크립트 코드로 변경하세요! -->
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
+<script src="../modal.js"></script>
+
+
+
+
+
+
+<script>
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  includeHTML();
+</script>
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<script>
+	
+	
+ 
+
+
+  var card501 = document.getElementById("card501");
+  var card502 = document.getElementById("card502");
+  var card503 = document.getElementById("card503");
+  var card504 = document.getElementById("card504");
+  var card505 = document.getElementById("card505");
+  var card506 = document.getElementById("card506");
+  var card507 = document.getElementById("card507");
+  var card508 = document.getElementById("card508");
+  var card509 = document.getElementById("card509");
+  var card510 = document.getElementById("card510");
+  var card511 = document.getElementById("card511");
+  var card512 = document.getElementById("card512");
+  var card513 = document.getElementById("card513");
+
+
+ 
+  card501.style.display = "none";
+  card502.style.display = "none";
+  card503.style.display = "none";
+  card504.style.display = "none";
+  card505.style.display = "none";
+  card506.style.display = "none";
+  card507.style.display = "none";
+  card508.style.display = "none";
+  card509.style.display = "none";
+  card510.style.display = "none";
+  card511.style.display = "none";
+  card512.style.display = "none";
+  card513.style.display = "none";
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+function copyToClipboard() {
+  var copyText = document.getElementById("girlroomlog");
+  copyText.select();
+  document.execCommand("copy");
+}
+
+
+
+
+
+
+
+  var firebaseEmailAuth; //파이어베이스 email 인증 모듈 전역변수
+  var firebaseDatabase; //파이어베이스 db 모듈 전역변수
+  var name; //유저 이름
+  var loginUserKey; //로그인한 유저의 부모 key
+  var userInfo; //로그인한 유저의 정보 object type
+  var brdno;
+  
+  
+  
+  
+  
+  
+  //파이어 베이스 초기화 코드
+  var config = {
+
+    apiKey: "AIzaSyAC3N6RCdv7sQMOZ6_cPE1guR62h_am-tA",
+            databaseURL: "https://ms-haksa-default-rtdb.firebaseio.com/",
+    authDomain: "ms-haksa.firebaseapp.com",
+    projectId: "ms-haksa",
+    storageBucket: "ms-haksa.appspot.com",
+    messagingSenderId: "669674701477",
+    appId: "1:669674701477:web:4c988804396ff9e6ac434c",
+    measurementId: "G-B5PMZS32Q4"
+   
+  };
+  //파이어베이스 초기화
+  firebase.initializeApp(config);
+  //인증모듈 객체 가져오기
+  firebaseEmailAuth = firebase.auth();
+  //데이터베이스 모듈객체 가져오기
+  firebaseDatabase = firebase.database();
+  
+  
+  
+  //세션 체크 함수
+  userSessionCheck();
+  
+  
+  
+  $(document).ready(function () {
+  
+    //메인화면 쓰기버튼 눌렀을 때
+    $(document).on('click', '.savechange', function () {
+  
+      //네비게이션 메뉴의 text값 가져오기 - 자바스크립트 dom 방식으로 가져왔다.
+      var seseionCheck = document.getElementById("loginmenu").textContent;
+  
+  
+    
+  
+  
+      name1_501 = $('#name1-501').val(); // 사용자 이름
+      name2_501 = $('#name2-501').val(); // 사용자 이름
+      name3_501 = $('#name3-501').val(); // 사용자 이름
+      name4_501 = $('#name4-501').val(); // 사용자 이름
+  
+      name1_502 = $('#name1-502').val(); // 사용자 이름
+      name2_502 = $('#name2-502').val(); // 사용자 이름
+      name3_502 = $('#name3-502').val(); // 사용자 이름
+      name4_502 = $('#name4-502').val(); // 사용자 이름
+  
+      name1_503 = $('#name1-503').val(); // 사용자 이름
+      name2_503 = $('#name2-503').val(); // 사용자 이름
+      name3_503 = $('#name3-503').val(); // 사용자 이름
+      name4_503 = $('#name4-503').val(); // 사용자 이름
+  
+      name1_504 = $('#name1-504').val(); // 사용자 이름
+      name2_504 = $('#name2-504').val(); // 사용자 이름
+      name3_504 = $('#name3-504').val(); // 사용자 이름
+      name4_504 = $('#name4-504').val(); // 사용자 이름
+  
+      name1_505 = $('#name1-505').val(); // 사용자 이름
+      name2_505 = $('#name2-505').val(); // 사용자 이름
+      name3_505 = $('#name3-505').val(); // 사용자 이름
+      name4_505 = $('#name4-505').val(); // 사용자 이름
+  
+      name1_506 = $('#name1-506').val(); // 사용자 이름
+      name2_506 = $('#name2-506').val(); // 사용자 이름
+      name3_506 = $('#name3-506').val(); // 사용자 이름
+      name4_506 = $('#name4-506').val(); // 사용자 이름
+  
+      name1_507 = $('#name1-507').val(); // 사용자 이름
+      name2_507 = $('#name2-507').val(); // 사용자 이름
+      name3_507 = $('#name3-507').val(); // 사용자 이름
+      name4_507 = $('#name4-507').val(); // 사용자 이름
+  
+      name1_508 = $('#name1-508').val(); // 사용자 이름
+      name2_508 = $('#name2-508').val(); // 사용자 이름
+      name3_508 = $('#name3-508').val(); // 사용자 이름
+      name4_508 = $('#name4-508').val(); // 사용자 이름
+  
+      name1_509 = $('#name1-509').val(); // 사용자 이름
+      name2_509 = $('#name2-509').val(); // 사용자 이름
+      name3_509 = $('#name3-509').val(); // 사용자 이름
+      name4_509 = $('#name4-509').val(); // 사용자 이름
+  
+      name1_510 = $('#name1-510').val(); // 사용자 이름
+      name2_510 = $('#name2-510').val(); // 사용자 이름
+      name3_510 = $('#name3-510').val(); // 사용자 이름
+      name4_510 = $('#name4-510').val(); // 사용자 이름
+  
+      name1_511 = $('#name1-511').val(); // 사용자 이름
+      name2_511 = $('#name2-511').val(); // 사용자 이름
+      name3_511 = $('#name3-511').val(); // 사용자 이름
+      name4_511 = $('#name4-511').val(); // 사용자 이름
+  
+      name1_512 = $('#name1-512').val(); // 사용자 이름
+      name2_512 = $('#name2-512').val(); // 사용자 이름
+      name3_512 = $('#name3-512').val(); // 사용자 이름
+      name4_512 = $('#name4-512').val(); // 사용자 이름
+  
+      name1_513 = $('#name1-513').val(); // 사용자 이름
+      name2_513 = $('#name2-513').val(); // 사용자 이름
+      name3_513 = $('#name3-513').val(); // 사용자 이름
+      name4_513 = $('#name4-513').val(); // 사용자 이름
+  
+  
+  
+      if (seseionCheck == "로그아웃") {
+        //저장하기
+        saveThanks();
+      } else {
+        alert("명성장학시스템 로그인해 주세요.")
+        window.location.href = "loginform.html"
+  
+      }
+    });
+  
+  
+    $(document).on('click', '.create', function () {
+  
+      var seseionCheck = document.getElementById("loginmenu").textContent;
+  
+       if (seseionCheck == "로그아웃") {
+        window.location.href = "create.html"
+  
+      } else {
+        alert("명성장학시스템 로그인해 주세요.")
+        window.location.href = "loginform.html"
+  
+      }
+      
+  
+  
+    });
+  
+  
+  });
+  
+  
+  
+  //쓰기 버튼 눌렀을 때 호출 되는 함수
+  function saveThanks() {
+  
+    //anounymous 라는 테이블을 만들고 하위 데이터에 유저 아이디를 넣어준다. 그곳에 push로 가상의 키를 넣고, 객체를 넣어준다.!!!!
+    var thankRef = firebaseDatabase.ref("girldormCHK");
+    var thank = thankRef.push(); // 해당 객체의 key 값이 자동으로 생성된다.
+    var boardno = thank.key; //이 보드의 키값
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  //글 목록가져와서 뿌려주기
+  function boardList() {
+    //alert("보드 로드 완료")
+  
+    //로그인한 유저라면
+    if (loginUserKey) {
+      //alert(loginUserKey)
+      //글이 저장된 레퍼런스 값 가져오기
+      var thanksRef = firebaseDatabase.ref('girldormCHK');
+      //on 함수로 글 목록가져오기
+      //thanksRef.on('child_added', on_thasnks_list)
+      thanksRef.on('value', on_thanks_list)
+      //thanksRef.on('value', buttonadd)
+
+      
+      var thanksRefZ = firebaseDatabase.ref('girldormLOG');
+        thanksRefZ.on('child_added', on_log_list)
+  
+  
+  
+      var thanksRef = firebaseDatabase.ref('girldormname');
+      thanksRef.on('value', on_notice_list)
+  
+    } else {
+      alert("비 로그인 유저에게는 게시물이 표시되지 않습니다. ");
+      window.location.href = "loginform.html"
+  
+    }
+  
+  }
+  
+  //게시판 리스트 thanks 테이블의 thanks 키 들을 연속적으로 가져옴...ㅋㅋㅋㅋㅋ
+  function on_thanks_list(data) {
+  
+  
+    
+  
+  
+    console.log("on_thanks_list() 함수안으로 들어왔습니다 리스트를 가져오겠습니다")
+    var key = data.key;
+    
+  
+    var Data = data.val();
+    var createtime = Data.createtime;
+    var name = Data.name;
+
+
+     
+  
+    var name1_501 = Data.name1_501;
+    var name2_501 = Data.name2_501;
+    var name3_501 = Data.name3_501;
+    var name4_501 = Data.name4_501;
+  
+    var name1_502 = Data.name1_502;
+  var name2_502 = Data.name2_502;
+  var name3_502 = Data.name3_502;
+  var name4_502 = Data.name4_502;
+  
+  var name1_503 = Data.name1_503;
+  var name2_503 = Data.name2_503;
+  var name3_503 = Data.name3_503;
+  var name4_503 = Data.name4_503;
+  
+  var name1_504 = Data.name1_504;
+  var name2_504 = Data.name2_504;
+  var name3_504 = Data.name3_504;
+  var name4_504 = Data.name4_504;
+  
+  var name1_505 = Data.name1_505;
+  var name2_505 = Data.name2_505;
+  var name3_505 = Data.name3_505;
+  var name4_505 = Data.name4_505;
+  
+  var name1_506 = Data.name1_506;
+  var name2_506 = Data.name2_506;
+  var name3_506 = Data.name3_506;
+  var name4_506 = Data.name4_506;
+  
+  var name1_507 = Data.name1_507;
+  var name2_507 = Data.name2_507;
+  var name3_507 = Data.name3_507;
+  var name4_507 = Data.name4_507;
+  
+  var name1_508 = Data.name1_508;
+  var name2_508 = Data.name2_508;
+  var name3_508 = Data.name3_508;
+  var name4_508 = Data.name4_508;
+  
+  var name1_509 = Data.name1_509;
+  var name2_509 = Data.name2_509;
+  var name3_509 = Data.name3_509;
+  var name4_509 = Data.name4_509;
+  
+  var name1_510 = Data.name1_510;
+  var name2_510 = Data.name2_510;
+  var name3_510 = Data.name3_510;
+  var name4_510 = Data.name4_510;
+
+    
+  var name1_511 = Data.name1_511;
+  var name2_511 = Data.name2_511;
+  var name3_511 = Data.name3_511;
+  var name4_511 = Data.name4_511;
+    
+  var name1_512 = Data.name1_512;
+  var name2_512 = Data.name2_512;
+  var name3_512 = Data.name3_512;
+  var name4_512 = Data.name4_512;
+    
+  var name1_513 = Data.name1_513;
+  var name2_513 = Data.name2_513;
+  var name3_513 = Data.name3_513;
+  var name4_513 = Data.name4_513;
+
+  
+
+    //사유영역
+ 
+
+    var sayou1_501 = Data.sayou1_501;
+    var sayou2_501 = Data.sayou2_501;
+    var sayou3_501 = Data.sayou3_501;
+    var sayou4_501 = Data.sayou4_501;
+
+    var sayou1_502 = Data.sayou1_502;
+    var sayou2_502 = Data.sayou2_502;
+    var sayou3_502 = Data.sayou3_502;
+    var sayou4_502 = Data.sayou4_502;
+
+    var sayou1_503 = Data.sayou1_503;
+    var sayou2_503 = Data.sayou2_503;
+    var sayou3_503 = Data.sayou3_503;
+    var sayou4_503 = Data.sayou4_503;
+
+    var sayou1_504 = Data.sayou1_504;
+    var sayou2_504 = Data.sayou2_504;
+    var sayou3_504 = Data.sayou3_504;
+    var sayou4_504 = Data.sayou4_504;
+
+    var sayou1_505 = Data.sayou1_505;
+    var sayou2_505 = Data.sayou2_505;
+    var sayou3_505 = Data.sayou3_505;
+    var sayou4_505 = Data.sayou4_505;
+
+    var sayou1_506 = Data.sayou1_506;
+    var sayou2_506 = Data.sayou2_506;
+    var sayou3_506 = Data.sayou3_506;
+    var sayou4_506 = Data.sayou4_506;
+
+    var sayou1_507 = Data.sayou1_507;
+    var sayou2_507 = Data.sayou2_507;
+    var sayou3_507 = Data.sayou3_507;
+    var sayou4_507 = Data.sayou4_507;
+
+    var sayou1_508 = Data.sayou1_508;
+    var sayou2_508 = Data.sayou2_508;
+    var sayou3_508 = Data.sayou3_508;
+    var sayou4_508 = Data.sayou4_508;
+
+    var sayou1_509 = Data.sayou1_509;
+    var sayou2_509 = Data.sayou2_509;
+    var sayou3_509 = Data.sayou3_509;
+    var sayou4_509 = Data.sayou4_509;
+
+    var sayou1_510 = Data.sayou1_510;
+    var sayou2_510 = Data.sayou2_510;
+    var sayou3_510 = Data.sayou3_510;
+    var sayou4_510 = Data.sayou4_510;
+
+    var sayou1_511 = Data.sayou1_511;
+    var sayou2_511 = Data.sayou2_511;
+    var sayou3_511 = Data.sayou3_511;
+    var sayou4_511 = Data.sayou4_511;
+
+    var sayou1_512 = Data.sayou1_512;
+    var sayou2_512 = Data.sayou2_512;
+    var sayou3_512 = Data.sayou3_512;
+    var sayou4_512 = Data.sayou4_512;
+
+    var sayou1_513 = Data.sayou1_513;
+    var sayou2_513 = Data.sayou2_513;
+    var sayou3_513 = Data.sayou3_513;
+    var sayou4_513 = Data.sayou4_513;
+
+
+
+
+  //재실체크영역
+   
+  
+  
+  
+  var CHK501_1 = Data.CHK501_1;
+  var CHK501_2 = Data.CHK501_2;
+  var CHK501_3 = Data.CHK501_3;
+  var CHK501_4 = Data.CHK501_4;
+  
+  var CHK502_1 = Data.CHK502_1;
+  var CHK502_2 = Data.CHK502_2;
+  var CHK502_3 = Data.CHK502_3;
+  var CHK502_4 = Data.CHK502_4;
+  
+  var CHK503_1 = Data.CHK503_1;
+  var CHK503_2 = Data.CHK503_2;
+  var CHK503_3 = Data.CHK503_3;
+  var CHK503_4 = Data.CHK503_4;
+  
+  var CHK504_1 = Data.CHK504_1;
+  var CHK504_2 = Data.CHK504_2;
+  var CHK504_3 = Data.CHK504_3;
+  var CHK504_4 = Data.CHK504_4;
+  
+  var CHK505_1 = Data.CHK505_1;
+  var CHK505_2 = Data.CHK505_2;
+  var CHK505_3 = Data.CHK505_3;
+  var CHK505_4 = Data.CHK505_4;
+  
+  var CHK506_1 = Data.CHK506_1;
+  var CHK506_2 = Data.CHK506_2;
+  var CHK506_3 = Data.CHK506_3;
+  var CHK506_4 = Data.CHK506_4;
+  
+  var CHK507_1 = Data.CHK507_1;
+  var CHK507_2 = Data.CHK507_2;
+  var CHK507_3 = Data.CHK507_3;
+  var CHK507_4 = Data.CHK507_4;
+  
+  var CHK508_1 = Data.CHK508_1;
+  var CHK508_2 = Data.CHK508_2;
+  var CHK508_3 = Data.CHK508_3;
+  var CHK508_4 = Data.CHK508_4;
+  
+  var CHK509_1 = Data.CHK509_1;
+  var CHK509_2 = Data.CHK509_2;
+  var CHK509_3 = Data.CHK509_3;
+  var CHK509_4 = Data.CHK509_4;
+  
+  var CHK510_1 = Data.CHK510_1;
+  var CHK510_2 = Data.CHK510_2;
+  var CHK510_3 = Data.CHK510_3;
+  var CHK510_4 = Data.CHK510_4;
+
+  var CHK511_1 = Data.CHK511_1;
+  var CHK511_2 = Data.CHK511_2;
+  var CHK511_3 = Data.CHK511_3;
+  var CHK511_4 = Data.CHK511_4;
+
+  var CHK512_1 = Data.CHK512_1;
+  var CHK512_2 = Data.CHK512_2;
+  var CHK512_3 = Data.CHK512_3;
+  var CHK512_4 = Data.CHK512_4;
+
+  var CHK513_1 = Data.CHK513_1;
+  var CHK513_2 = Data.CHK513_2;
+  var CHK513_3 = Data.CHK513_3;
+  var CHK513_4 = Data.CHK513_4;
+  
+    var userkey = Data.userkey;
+    var brdnm = Data.boardno;
+  
+    
+    var boardno = Data.key; //이 보드의 키값
+  
+   
+
+
+
+
+
+
+var Green = "#57bd5c"
+var Red = "#db3d3d"
+var Yellow = "#e88802"
+var White = "#FFFFFF"
+
+var ISHERE = " (재실)"
+var ISOUT = " (외박)"
+var ISLATE = " (지각)"
+var plusmsg = " : "
+
+
+
+
+
+
+setInterval(function() { 
+  
+
+
+
+
+
+  
+ 
+  
+  
+  
+  
+  
+  // 501호 1P
+  if (CHK501_1 == "here") {
+    document.getElementById('Button1P-501').style.backgroundColor = Green;
+    document.getElementById('Button1P-501').innerText = name1_501 + ISHERE;
+  }
+  else if (CHK501_1 == "out") {
+    document.getElementById('Button1P-501').style.backgroundColor = Red;
+      document.getElementById('Button1P-501').innerText = name1_501 + ISOUT + plusmsg + sayou1_501;
+  }
+  else if (CHK501_1 == "late") {
+    document.getElementById('Button1P-501').style.backgroundColor = Yellow;
+    document.getElementById('Button1P-501').innerText = name1_501 + ISLATE + plusmsg + sayou1_501;
+  };
+  
+  // 501호 2P
+  if (CHK501_2 == "here") {
+    document.getElementById('Button2P-501').style.backgroundColor = Green;
+    document.getElementById('Button2P-501').innerText = name2_501 + ISHERE;
+  }
+  else if (CHK501_2 == "out") {
+    document.getElementById('Button2P-501').style.backgroundColor = Red;
+    document.getElementById('Button2P-501').innerText = name2_501 + ISOUT + plusmsg + sayou2_501;
+  }
+  else if (CHK501_2 == "late") {
+    document.getElementById('Button2P-501').style.backgroundColor = Yellow;
+    document.getElementById('Button2P-501').innerText = name2_501 + ISLATE + plusmsg + sayou2_501;
+  };
+  
+  // 501호 3P
+  if (CHK501_3 == "here") {
+    document.getElementById('Button3P-501').style.backgroundColor = Green;
+    document.getElementById('Button3P-501').innerText = name3_501 + ISHERE;
+  }
+  else if (CHK501_3 == "out") {
+    document.getElementById('Button3P-501').style.backgroundColor = Red;
+    document.getElementById('Button3P-501').innerText = name3_501 + ISOUT + plusmsg + sayou3_501;
+  }
+  else if (CHK501_3 == "late") {
+    document.getElementById('Button3P-501').style.backgroundColor = Yellow;
+    document.getElementById('Button3P-501').innerText = name3_501 + ISLATE + plusmsg + sayou3_501;
+  };
+   
+  // 501호 4P
+  if (CHK501_4 == "here") {
+    document.getElementById('Button4P-501').style.backgroundColor = Green;
+    document.getElementById('Button4P-501').innerText = name4_501 + ISHERE;
+  }
+  else if (CHK501_4 == "out") {
+    document.getElementById('Button4P-501').style.backgroundColor = Red;
+    document.getElementById('Button4P-501').innerText = name4_501 + ISOUT + plusmsg + sayou4_501;
+  }
+  else if (CHK501_4 == "late") {
+    document.getElementById('Button4P-501').style.backgroundColor = Yellow;
+    document.getElementById('Button4P-501').innerText = name4_501 + ISLATE + plusmsg + sayou4_501;
+  };
+  
+  
+  
+  
+  
+  // 502호 1P
+  if (CHK502_1 == "here") {
+    document.getElementById('Button1P-502').style.backgroundColor = Green;
+    document.getElementById('Button1P-502').innerText = name1_502 + ISHERE;
+  }
+  else if (CHK502_1 == "out") {
+    document.getElementById('Button1P-502').style.backgroundColor = Red;
+      document.getElementById('Button1P-502').innerText = name1_502 + ISOUT + plusmsg + sayou1_502;
+  }
+  else if (CHK502_1 == "late") {
+    document.getElementById('Button1P-502').style.backgroundColor = Yellow;
+    document.getElementById('Button1P-502').innerText = name1_502 + ISLATE + plusmsg + sayou1_502;
+  };
+  
+  // 502호 2P
+  if (CHK502_2 == "here") {
+    document.getElementById('Button2P-502').style.backgroundColor = Green;
+    document.getElementById('Button2P-502').innerText = name2_502 + ISHERE;
+  }
+  else if (CHK502_2 == "out") {
+    document.getElementById('Button2P-502').style.backgroundColor = Red;
+    document.getElementById('Button2P-502').innerText = name2_502 + ISOUT + plusmsg + sayou2_502;
+  }
+  else if (CHK502_2 == "late") {
+    document.getElementById('Button2P-502').style.backgroundColor = Yellow;
+    document.getElementById('Button2P-502').innerText = name2_502 + ISLATE + plusmsg + sayou2_502;
+  };
+  
+  // 502호 3P
+  if (CHK502_3 == "here") {
+    document.getElementById('Button3P-502').style.backgroundColor = Green;
+    document.getElementById('Button3P-502').innerText = name3_502 + ISHERE;
+  }
+  else if (CHK502_3 == "out") {
+    document.getElementById('Button3P-502').style.backgroundColor = Red;
+    document.getElementById('Button3P-502').innerText = name3_502 + ISOUT + plusmsg + sayou3_502;
+  }
+  else if (CHK502_3 == "late") {
+    document.getElementById('Button3P-502').style.backgroundColor = Yellow;
+    document.getElementById('Button3P-502').innerText = name3_502 + ISLATE + plusmsg + sayou3_502;
+  };
+   
+  // 502호 4P
+  if (CHK502_4 == "here") {
+    document.getElementById('Button4P-502').style.backgroundColor = Green;
+    document.getElementById('Button4P-502').innerText = name4_502 + ISHERE;
+  }
+  else if (CHK502_4 == "out") {
+    document.getElementById('Button4P-502').style.backgroundColor = Red;
+    document.getElementById('Button4P-502').innerText = name4_502 + ISOUT + plusmsg + sayou4_502;
+  }
+  else if (CHK502_4 == "late") {
+    document.getElementById('Button4P-502').style.backgroundColor = Yellow;
+    document.getElementById('Button4P-502').innerText = name4_502 + ISLATE + plusmsg + sayou4_502;
+  };
+  
+  
+  
+  
+  
+  // 503호 1P
+  if (CHK503_1 == "here") {
+    document.getElementById('Button1P-503').style.backgroundColor = Green;
+    document.getElementById('Button1P-503').innerText = name1_503 + ISHERE;
+  }
+  else if (CHK503_1 == "out") {
+    document.getElementById('Button1P-503').style.backgroundColor = Red;
+      document.getElementById('Button1P-503').innerText = name1_503 + ISOUT + plusmsg + sayou1_503;
+  }
+  else if (CHK503_1 == "late") {
+    document.getElementById('Button1P-503').style.backgroundColor = Yellow;
+    document.getElementById('Button1P-503').innerText = name1_503 + ISLATE + plusmsg + sayou1_503;
+  };
+  
+  // 503호 2P
+  if (CHK503_2 == "here") {
+    document.getElementById('Button2P-503').style.backgroundColor = Green;
+    document.getElementById('Button2P-503').innerText = name2_503 + ISHERE;
+  }
+  else if (CHK503_2 == "out") {
+    document.getElementById('Button2P-503').style.backgroundColor = Red;
+    document.getElementById('Button2P-503').innerText = name2_503 + ISOUT + plusmsg + sayou2_503;
+  }
+  else if (CHK503_2 == "late") {
+    document.getElementById('Button2P-503').style.backgroundColor = Yellow;
+    document.getElementById('Button2P-503').innerText = name2_503 + ISLATE + plusmsg + sayou2_503;
+  };
+  
+  // 503호 3P
+  if (CHK503_3 == "here") {
+    document.getElementById('Button3P-503').style.backgroundColor = Green;
+    document.getElementById('Button3P-503').innerText = name3_503 + ISHERE;
+  }
+  else if (CHK503_3 == "out") {
+    document.getElementById('Button3P-503').style.backgroundColor = Red;
+    document.getElementById('Button3P-503').innerText = name3_503 + ISOUT + plusmsg + sayou3_503;
+  }
+  else if (CHK503_3 == "late") {
+    document.getElementById('Button3P-503').style.backgroundColor = Yellow;
+    document.getElementById('Button3P-503').innerText = name3_503 + ISLATE + plusmsg + sayou3_503;
+  };
+   
+  // 503호 4P
+  if (CHK503_4 == "here") {
+    document.getElementById('Button4P-503').style.backgroundColor = Green;
+    document.getElementById('Button4P-503').innerText = name4_503 + ISHERE;
+  }
+  else if (CHK503_4 == "out") {
+    document.getElementById('Button4P-503').style.backgroundColor = Red;
+    document.getElementById('Button4P-503').innerText = name4_503 + ISOUT + plusmsg + sayou4_503;
+  }
+  else if (CHK503_4 == "late") {
+    document.getElementById('Button4P-503').style.backgroundColor = Yellow;
+    document.getElementById('Button4P-503').innerText = name4_503 + ISLATE + plusmsg + sayou4_503;
+  };
+  
+  
+  
+  
+  
+  // 504호 1P
+  if (CHK504_1 == "here") {
+    document.getElementById('Button1P-504').style.backgroundColor = Green;
+    document.getElementById('Button1P-504').innerText = name1_504 + ISHERE;
+  }
+  else if (CHK504_1 == "out") {
+    document.getElementById('Button1P-504').style.backgroundColor = Red;
+      document.getElementById('Button1P-504').innerText = name1_504 + ISOUT + plusmsg + sayou1_504;
+  }
+  else if (CHK504_1 == "late") {
+    document.getElementById('Button1P-504').style.backgroundColor = Yellow;
+    document.getElementById('Button1P-504').innerText = name1_504 + ISLATE + plusmsg + sayou1_504;
+  };
+  
+  // 504호 2P
+  if (CHK504_2 == "here") {
+    document.getElementById('Button2P-504').style.backgroundColor = Green;
+    document.getElementById('Button2P-504').innerText = name2_504 + ISHERE;
+  }
+  else if (CHK504_2 == "out") {
+    document.getElementById('Button2P-504').style.backgroundColor = Red;
+    document.getElementById('Button2P-504').innerText = name2_504 + ISOUT + plusmsg + sayou2_504;
+  }
+  else if (CHK504_2 == "late") {
+    document.getElementById('Button2P-504').style.backgroundColor = Yellow;
+    document.getElementById('Button2P-504').innerText = name2_504 + ISLATE + plusmsg + sayou2_504;
+  };
+  
+  // 504호 3P
+  if (CHK504_3 == "here") {
+    document.getElementById('Button3P-504').style.backgroundColor = Green;
+    document.getElementById('Button3P-504').innerText = name3_504 + ISHERE;
+  }
+  else if (CHK504_3 == "out") {
+    document.getElementById('Button3P-504').style.backgroundColor = Red;
+    document.getElementById('Button3P-504').innerText = name3_504 + ISOUT + plusmsg + sayou3_504;
+  }
+  else if (CHK504_3 == "late") {
+    document.getElementById('Button3P-504').style.backgroundColor = Yellow;
+    document.getElementById('Button3P-504').innerText = name3_504 + ISLATE + plusmsg + sayou3_504;
+  };
+   
+  // 504호 4P
+  if (CHK504_4 == "here") {
+    document.getElementById('Button4P-504').style.backgroundColor = Green;
+    document.getElementById('Button4P-504').innerText = name4_504 + ISHERE;
+  }
+  else if (CHK504_4 == "out") {
+    document.getElementById('Button4P-504').style.backgroundColor = Red;
+    document.getElementById('Button4P-504').innerText = name4_504 + ISOUT + plusmsg + sayou4_504;
+  }
+  else if (CHK504_4 == "late") {
+    document.getElementById('Button4P-504').style.backgroundColor = Yellow;
+    document.getElementById('Button4P-504').innerText = name4_504 + ISLATE + plusmsg + sayou4_504;
+  };
+  
+  
+  
+  
+  
+  // 505호 1P
+  if (CHK505_1 == "here") {
+    document.getElementById('Button1P-505').style.backgroundColor = Green;
+    document.getElementById('Button1P-505').innerText = name1_505 + ISHERE;
+  }
+  else if (CHK505_1 == "out") {
+    document.getElementById('Button1P-505').style.backgroundColor = Red;
+      document.getElementById('Button1P-505').innerText = name1_505 + ISOUT + plusmsg + sayou1_505;
+  }
+  else if (CHK505_1 == "late") {
+    document.getElementById('Button1P-505').style.backgroundColor = Yellow;
+    document.getElementById('Button1P-505').innerText = name1_505 + ISLATE + plusmsg + sayou1_505;
+  };
+  
+  // 505호 2P
+  if (CHK505_2 == "here") {
+    document.getElementById('Button2P-505').style.backgroundColor = Green;
+    document.getElementById('Button2P-505').innerText = name2_505 + ISHERE;
+  }
+  else if (CHK505_2 == "out") {
+    document.getElementById('Button2P-505').style.backgroundColor = Red;
+    document.getElementById('Button2P-505').innerText = name2_505 + ISOUT + plusmsg + sayou2_505;
+  }
+  else if (CHK505_2 == "late") {
+    document.getElementById('Button2P-505').style.backgroundColor = Yellow;
+    document.getElementById('Button2P-505').innerText = name2_505 + ISLATE + plusmsg + sayou2_505;
+  };
+  
+  // 505호 3P
+  if (CHK505_3 == "here") {
+    document.getElementById('Button3P-505').style.backgroundColor = Green;
+    document.getElementById('Button3P-505').innerText = name3_505 + ISHERE;
+  }
+  else if (CHK505_3 == "out") {
+    document.getElementById('Button3P-505').style.backgroundColor = Red;
+    document.getElementById('Button3P-505').innerText = name3_505 + ISOUT + plusmsg + sayou3_505;
+  }
+  else if (CHK505_3 == "late") {
+    document.getElementById('Button3P-505').style.backgroundColor = Yellow;
+    document.getElementById('Button3P-505').innerText = name3_505 + ISLATE + plusmsg + sayou3_505;
+  };
+   
+  // 505호 4P
+  if (CHK505_4 == "here") {
+    document.getElementById('Button4P-505').style.backgroundColor = Green;
+    document.getElementById('Button4P-505').innerText = name4_505 + ISHERE;
+  }
+  else if (CHK505_4 == "out") {
+    document.getElementById('Button4P-505').style.backgroundColor = Red;
+    document.getElementById('Button4P-505').innerText = name4_505 + ISOUT + plusmsg + sayou4_505;
+  }
+  else if (CHK505_4 == "late") {
+    document.getElementById('Button4P-505').style.backgroundColor = Yellow;
+    document.getElementById('Button4P-505').innerText = name4_505 + ISLATE + plusmsg + sayou4_505;
+  };
+  
+  
+  
+  
+  
+  // 506호 1P
+  if (CHK506_1 == "here") {
+    document.getElementById('Button1P-506').style.backgroundColor = Green;
+    document.getElementById('Button1P-506').innerText = name1_506 + ISHERE;
+  }
+  else if (CHK506_1 == "out") {
+    document.getElementById('Button1P-506').style.backgroundColor = Red;
+      document.getElementById('Button1P-506').innerText = name1_506 + ISOUT + plusmsg + sayou1_506;
+  }
+  else if (CHK506_1 == "late") {
+    document.getElementById('Button1P-506').style.backgroundColor = Yellow;
+    document.getElementById('Button1P-506').innerText = name1_506 + ISLATE + plusmsg + sayou1_506;
+  };
+  
+  // 506호 2P
+  if (CHK506_2 == "here") {
+    document.getElementById('Button2P-506').style.backgroundColor = Green;
+    document.getElementById('Button2P-506').innerText = name2_506 + ISHERE;
+  }
+  else if (CHK506_2 == "out") {
+    document.getElementById('Button2P-506').style.backgroundColor = Red;
+    document.getElementById('Button2P-506').innerText = name2_506 + ISOUT + plusmsg + sayou2_506;
+  }
+  else if (CHK506_2 == "late") {
+    document.getElementById('Button2P-506').style.backgroundColor = Yellow;
+    document.getElementById('Button2P-506').innerText = name2_506 + ISLATE + plusmsg + sayou2_506;
+  };
+  
+  // 506호 3P
+  if (CHK506_3 == "here") {
+    document.getElementById('Button3P-506').style.backgroundColor = Green;
+    document.getElementById('Button3P-506').innerText = name3_506 + ISHERE;
+  }
+  else if (CHK506_3 == "out") {
+    document.getElementById('Button3P-506').style.backgroundColor = Red;
+    document.getElementById('Button3P-506').innerText = name3_506 + ISOUT + plusmsg + sayou3_506;
+  }
+  else if (CHK506_3 == "late") {
+    document.getElementById('Button3P-506').style.backgroundColor = Yellow;
+    document.getElementById('Button3P-506').innerText = name3_506 + ISLATE + plusmsg + sayou3_506;
+  };
+   
+  // 506호 4P
+  if (CHK506_4 == "here") {
+    document.getElementById('Button4P-506').style.backgroundColor = Green;
+    document.getElementById('Button4P-506').innerText = name4_506 + ISHERE;
+  }
+  else if (CHK506_4 == "out") {
+    document.getElementById('Button4P-506').style.backgroundColor = Red;
+    document.getElementById('Button4P-506').innerText = name4_506 + ISOUT + plusmsg + sayou4_506;
+  }
+  else if (CHK506_4 == "late") {
+    document.getElementById('Button4P-506').style.backgroundColor = Yellow;
+    document.getElementById('Button4P-506').innerText = name4_506 + ISLATE + plusmsg + sayou4_506;
+  };
+  
+  
+  
+  
+  
+  // 507호 1P
+  if (CHK507_1 == "here") {
+    document.getElementById('Button1P-507').style.backgroundColor = Green;
+    document.getElementById('Button1P-507').innerText = name1_507 + ISHERE;
+  }
+  else if (CHK507_1 == "out") {
+    document.getElementById('Button1P-507').style.backgroundColor = Red;
+      document.getElementById('Button1P-507').innerText = name1_507 + ISOUT + plusmsg + sayou1_507;
+  }
+  else if (CHK507_1 == "late") {
+    document.getElementById('Button1P-507').style.backgroundColor = Yellow;
+    document.getElementById('Button1P-507').innerText = name1_507 + ISLATE + plusmsg + sayou1_507;
+  };
+  
+  // 507호 2P
+  if (CHK507_2 == "here") {
+    document.getElementById('Button2P-507').style.backgroundColor = Green;
+    document.getElementById('Button2P-507').innerText = name2_507 + ISHERE;
+  }
+  else if (CHK507_2 == "out") {
+    document.getElementById('Button2P-507').style.backgroundColor = Red;
+    document.getElementById('Button2P-507').innerText = name2_507 + ISOUT + plusmsg + sayou2_507;
+  }
+  else if (CHK507_2 == "late") {
+    document.getElementById('Button2P-507').style.backgroundColor = Yellow;
+    document.getElementById('Button2P-507').innerText = name2_507 + ISLATE + plusmsg + sayou2_507;
+  };
+  
+  // 507호 3P
+  if (CHK507_3 == "here") {
+    document.getElementById('Button3P-507').style.backgroundColor = Green;
+    document.getElementById('Button3P-507').innerText = name3_507 + ISHERE;
+  }
+  else if (CHK507_3 == "out") {
+    document.getElementById('Button3P-507').style.backgroundColor = Red;
+    document.getElementById('Button3P-507').innerText = name3_507 + ISOUT + plusmsg + sayou3_507;
+  }
+  else if (CHK507_3 == "late") {
+    document.getElementById('Button3P-507').style.backgroundColor = Yellow;
+    document.getElementById('Button3P-507').innerText = name3_507 + ISLATE + plusmsg + sayou3_507;
+  };
+   
+  // 507호 4P
+  if (CHK507_4 == "here") {
+    document.getElementById('Button4P-507').style.backgroundColor = Green;
+    document.getElementById('Button4P-507').innerText = name4_507 + ISHERE;
+  }
+  else if (CHK507_4 == "out") {
+    document.getElementById('Button4P-507').style.backgroundColor = Red;
+    document.getElementById('Button4P-507').innerText = name4_507 + ISOUT + plusmsg + sayou4_507;
+  }
+  else if (CHK507_4 == "late") {
+    document.getElementById('Button4P-507').style.backgroundColor = Yellow;
+    document.getElementById('Button4P-507').innerText = name4_507 + ISLATE + plusmsg + sayou4_507;
+  };
+  
+  
+  
+  
+  
+  // 508호 1P
+  if (CHK508_1 == "here") {
+    document.getElementById('Button1P-508').style.backgroundColor = Green;
+    document.getElementById('Button1P-508').innerText = name1_508 + ISHERE;
+  }
+  else if (CHK508_1 == "out") {
+    document.getElementById('Button1P-508').style.backgroundColor = Red;
+      document.getElementById('Button1P-508').innerText = name1_508 + ISOUT + plusmsg + sayou1_508;
+  }
+  else if (CHK508_1 == "late") {
+    document.getElementById('Button1P-508').style.backgroundColor = Yellow;
+    document.getElementById('Button1P-508').innerText = name1_508 + ISLATE + plusmsg + sayou1_508;
+  };
+  
+  // 508호 2P
+  if (CHK508_2 == "here") {
+    document.getElementById('Button2P-508').style.backgroundColor = Green;
+    document.getElementById('Button2P-508').innerText = name2_508 + ISHERE;
+  }
+  else if (CHK508_2 == "out") {
+    document.getElementById('Button2P-508').style.backgroundColor = Red;
+    document.getElementById('Button2P-508').innerText = name2_508 + ISOUT + plusmsg + sayou2_508;
+  }
+  else if (CHK508_2 == "late") {
+    document.getElementById('Button2P-508').style.backgroundColor = Yellow;
+    document.getElementById('Button2P-508').innerText = name2_508 + ISLATE + plusmsg + sayou2_508;
+  };
+  
+  // 508호 3P
+  if (CHK508_3 == "here") {
+    document.getElementById('Button3P-508').style.backgroundColor = Green;
+    document.getElementById('Button3P-508').innerText = name3_508 + ISHERE;
+  }
+  else if (CHK508_3 == "out") {
+    document.getElementById('Button3P-508').style.backgroundColor = Red;
+    document.getElementById('Button3P-508').innerText = name3_508 + ISOUT + plusmsg + sayou3_508;
+  }
+  else if (CHK508_3 == "late") {
+    document.getElementById('Button3P-508').style.backgroundColor = Yellow;
+    document.getElementById('Button3P-508').innerText = name3_508 + ISLATE + plusmsg + sayou3_508;
+  };
+   
+  // 508호 4P
+  if (CHK508_4 == "here") {
+    document.getElementById('Button4P-508').style.backgroundColor = Green;
+    document.getElementById('Button4P-508').innerText = name4_508 + ISHERE;
+  }
+  else if (CHK508_4 == "out") {
+    document.getElementById('Button4P-508').style.backgroundColor = Red;
+    document.getElementById('Button4P-508').innerText = name4_508 + ISOUT + plusmsg + sayou4_508;
+  }
+  else if (CHK508_4 == "late") {
+    document.getElementById('Button4P-508').style.backgroundColor = Yellow;
+    document.getElementById('Button4P-508').innerText = name4_508 + ISLATE + plusmsg + sayou4_508;
+  };
+  
+  
+  
+  
+  
+  // 509호 1P
+  if (CHK509_1 == "here") {
+    document.getElementById('Button1P-509').style.backgroundColor = Green;
+    document.getElementById('Button1P-509').innerText = name1_509 + ISHERE;
+  }
+  else if (CHK509_1 == "out") {
+    document.getElementById('Button1P-509').style.backgroundColor = Red;
+      document.getElementById('Button1P-509').innerText = name1_509 + ISOUT + plusmsg + sayou1_509;
+  }
+  else if (CHK509_1 == "late") {
+    document.getElementById('Button1P-509').style.backgroundColor = Yellow;
+    document.getElementById('Button1P-509').innerText = name1_509 + ISLATE + plusmsg + sayou1_509;
+  };
+  
+  // 509호 2P
+  if (CHK509_2 == "here") {
+    document.getElementById('Button2P-509').style.backgroundColor = Green;
+    document.getElementById('Button2P-509').innerText = name2_509 + ISHERE;
+  }
+  else if (CHK509_2 == "out") {
+    document.getElementById('Button2P-509').style.backgroundColor = Red;
+    document.getElementById('Button2P-509').innerText = name2_509 + ISOUT + plusmsg + sayou2_509;
+  }
+  else if (CHK509_2 == "late") {
+    document.getElementById('Button2P-509').style.backgroundColor = Yellow;
+    document.getElementById('Button2P-509').innerText = name2_509 + ISLATE + plusmsg + sayou2_509;
+  };
+  
+  // 509호 3P
+  if (CHK509_3 == "here") {
+    document.getElementById('Button3P-509').style.backgroundColor = Green;
+    document.getElementById('Button3P-509').innerText = name3_509 + ISHERE;
+  }
+  else if (CHK509_3 == "out") {
+    document.getElementById('Button3P-509').style.backgroundColor = Red;
+    document.getElementById('Button3P-509').innerText = name3_509 + ISOUT + plusmsg + sayou3_509;
+  }
+  else if (CHK509_3 == "late") {
+    document.getElementById('Button3P-509').style.backgroundColor = Yellow;
+    document.getElementById('Button3P-509').innerText = name3_509 + ISLATE + plusmsg + sayou3_509;
+  };
+   
+  // 509호 4P
+  if (CHK509_4 == "here") {
+    document.getElementById('Button4P-509').style.backgroundColor = Green;
+    document.getElementById('Button4P-509').innerText = name4_509 + ISHERE;
+  }
+  else if (CHK509_4 == "out") {
+    document.getElementById('Button4P-509').style.backgroundColor = Red;
+    document.getElementById('Button4P-509').innerText = name4_509 + ISOUT + plusmsg + sayou4_509;
+  }
+  else if (CHK509_4 == "late") {
+    document.getElementById('Button4P-509').style.backgroundColor = Yellow;
+    document.getElementById('Button4P-509').innerText = name4_509 + ISLATE + plusmsg + sayou4_509;
+  };
+  
+  
+  
+  
+  
+  
+  // 510호 1P
+  if (CHK510_1 == "here") {
+    document.getElementById('Button1P-510').style.backgroundColor = Green;
+    document.getElementById('Button1P-510').innerText = name1_510 + ISHERE;
+  }
+  else if (CHK510_1 == "out") {
+    document.getElementById('Button1P-510').style.backgroundColor = Red;
+      document.getElementById('Button1P-510').innerText = name1_510 + ISOUT + plusmsg + sayou1_510;
+  }
+  else if (CHK510_1 == "late") {
+    document.getElementById('Button1P-510').style.backgroundColor = Yellow;
+    document.getElementById('Button1P-510').innerText = name1_510 + ISLATE + plusmsg + sayou1_510;
+  };
+  
+  // 510호 2P
+  if (CHK510_2 == "here") {
+    document.getElementById('Button2P-510').style.backgroundColor = Green;
+    document.getElementById('Button2P-510').innerText = name2_510 + ISHERE;
+  }
+  else if (CHK510_2 == "out") {
+    document.getElementById('Button2P-510').style.backgroundColor = Red;
+    document.getElementById('Button2P-510').innerText = name2_510 + ISOUT + plusmsg + sayou2_510;
+  }
+  else if (CHK510_2 == "late") {
+    document.getElementById('Button2P-510').style.backgroundColor = Yellow;
+    document.getElementById('Button2P-510').innerText = name2_510 + ISLATE + plusmsg + sayou2_510;
+  };
+  
+  // 510호 3P
+  if (CHK510_3 == "here") {
+    document.getElementById('Button3P-510').style.backgroundColor = Green;
+    document.getElementById('Button3P-510').innerText = name3_510 + ISHERE;
+  }
+  else if (CHK510_3 == "out") {
+    document.getElementById('Button3P-510').style.backgroundColor = Red;
+    document.getElementById('Button3P-510').innerText = name3_510 + ISOUT + plusmsg + sayou3_510;
+  }
+  else if (CHK510_3 == "late") {
+    document.getElementById('Button3P-510').style.backgroundColor = Yellow;
+    document.getElementById('Button3P-510').innerText = name3_510 + ISLATE + plusmsg + sayou3_510;
+  };
+   
+  // 510호 4P
+  if (CHK510_4 == "here") {
+    document.getElementById('Button4P-510').style.backgroundColor = Green;
+    document.getElementById('Button4P-510').innerText = name4_510 + ISHERE;
+  }
+  else if (CHK510_4 == "out") {
+    document.getElementById('Button4P-510').style.backgroundColor = Red;
+    document.getElementById('Button4P-510').innerText = name4_510 + ISOUT + plusmsg + sayou4_510;
+  }
+  else if (CHK510_4 == "late") {
+    document.getElementById('Button4P-510').style.backgroundColor = Yellow;
+    document.getElementById('Button4P-510').innerText = name4_510 + ISLATE + plusmsg + sayou4_510;
+  };
+  
+  
+  
+  
+  
+  // 511호 1P
+  if (CHK511_1 == "here") {
+    document.getElementById('Button1P-511').style.backgroundColor = Green;
+    document.getElementById('Button1P-511').innerText = name1_511 + ISHERE;
+  }
+  else if (CHK511_1 == "out") {
+    document.getElementById('Button1P-511').style.backgroundColor = Red;
+      document.getElementById('Button1P-511').innerText = name1_511 + ISOUT + plusmsg + sayou1_511;
+  }
+  else if (CHK511_1 == "late") {
+    document.getElementById('Button1P-511').style.backgroundColor = Yellow;
+    document.getElementById('Button1P-511').innerText = name1_511 + ISLATE + plusmsg + sayou1_511;
+  };
+  
+  // 511호 2P
+  if (CHK511_2 == "here") {
+    document.getElementById('Button2P-511').style.backgroundColor = Green;
+    document.getElementById('Button2P-511').innerText = name2_511 + ISHERE;
+  }
+  else if (CHK511_2 == "out") {
+    document.getElementById('Button2P-511').style.backgroundColor = Red;
+    document.getElementById('Button2P-511').innerText = name2_511 + ISOUT + plusmsg + sayou2_511;
+  }
+  else if (CHK511_2 == "late") {
+    document.getElementById('Button2P-511').style.backgroundColor = Yellow;
+    document.getElementById('Button2P-511').innerText = name2_511 + ISLATE + plusmsg + sayou2_511;
+  };
+  
+  // 511호 3P
+  if (CHK511_3 == "here") {
+    document.getElementById('Button3P-511').style.backgroundColor = Green;
+    document.getElementById('Button3P-511').innerText = name3_511 + ISHERE;
+  }
+  else if (CHK511_3 == "out") {
+    document.getElementById('Button3P-511').style.backgroundColor = Red;
+    document.getElementById('Button3P-511').innerText = name3_511 + ISOUT + plusmsg + sayou3_511;
+  }
+  else if (CHK511_3 == "late") {
+    document.getElementById('Button3P-511').style.backgroundColor = Yellow;
+    document.getElementById('Button3P-511').innerText = name3_511 + ISLATE + plusmsg + sayou3_511;
+  };
+   
+  // 511호 4P
+  if (CHK511_4 == "here") {
+    document.getElementById('Button4P-511').style.backgroundColor = Green;
+    document.getElementById('Button4P-511').innerText = name4_511 + ISHERE;
+  }
+  else if (CHK511_4 == "out") {
+    document.getElementById('Button4P-511').style.backgroundColor = Red;
+    document.getElementById('Button4P-511').innerText = name4_511 + ISOUT + plusmsg + sayou4_511;
+  }
+  else if (CHK511_4 == "late") {
+    document.getElementById('Button4P-511').style.backgroundColor = Yellow;
+    document.getElementById('Button4P-511').innerText = name4_511 + ISLATE + plusmsg + sayou4_511;
+  };
+
+
+
+  
+  // 512호 1P
+  if (CHK512_1 == "here") {
+    document.getElementById('Button1P-512').style.backgroundColor = Green;
+    document.getElementById('Button1P-512').innerText = name1_512 + ISHERE;
+  }
+  else if (CHK512_1 == "out") {
+    document.getElementById('Button1P-512').style.backgroundColor = Red;
+      document.getElementById('Button1P-512').innerText = name1_512 + ISOUT + plusmsg + sayou1_512;
+  }
+  else if (CHK512_1 == "late") {
+    document.getElementById('Button1P-512').style.backgroundColor = Yellow;
+    document.getElementById('Button1P-512').innerText = name1_512 + ISLATE + plusmsg + sayou1_512;
+  };
+  
+  // 512호 2P
+  if (CHK512_2 == "here") {
+    document.getElementById('Button2P-512').style.backgroundColor = Green;
+    document.getElementById('Button2P-512').innerText = name2_512 + ISHERE;
+  }
+  else if (CHK512_2 == "out") {
+    document.getElementById('Button2P-512').style.backgroundColor = Red;
+    document.getElementById('Button2P-512').innerText = name2_512 + ISOUT + plusmsg + sayou2_512;
+  }
+  else if (CHK512_2 == "late") {
+    document.getElementById('Button2P-512').style.backgroundColor = Yellow;
+    document.getElementById('Button2P-512').innerText = name2_512 + ISLATE + plusmsg + sayou2_512;
+  };
+  
+  // 512호 3P
+  if (CHK512_3 == "here") {
+    document.getElementById('Button3P-512').style.backgroundColor = Green;
+    document.getElementById('Button3P-512').innerText = name3_512 + ISHERE;
+  }
+  else if (CHK512_3 == "out") {
+    document.getElementById('Button3P-512').style.backgroundColor = Red;
+    document.getElementById('Button3P-512').innerText = name3_512 + ISOUT + plusmsg + sayou3_512;
+  }
+  else if (CHK512_3 == "late") {
+    document.getElementById('Button3P-512').style.backgroundColor = Yellow;
+    document.getElementById('Button3P-512').innerText = name3_512 + ISLATE + plusmsg + sayou3_512;
+  };
+   
+  // 512호 4P
+  if (CHK512_4 == "here") {
+    document.getElementById('Button4P-512').style.backgroundColor = Green;
+    document.getElementById('Button4P-512').innerText = name4_512 + ISHERE;
+  }
+  else if (CHK512_4 == "out") {
+    document.getElementById('Button4P-512').style.backgroundColor = Red;
+    document.getElementById('Button4P-512').innerText = name4_512 + ISOUT + plusmsg + sayou4_512;
+  }
+  else if (CHK512_4 == "late") {
+    document.getElementById('Button4P-512').style.backgroundColor = Yellow;
+    document.getElementById('Button4P-512').innerText = name4_512 + ISLATE + plusmsg + sayou4_512;
+  };
+
+
+
+  
+  // 513호 1P
+  if (CHK513_1 == "here") {
+    document.getElementById('Button1P-513').style.backgroundColor = Green;
+    document.getElementById('Button1P-513').innerText = name1_513 + ISHERE;
+  }
+  else if (CHK513_1 == "out") {
+    document.getElementById('Button1P-513').style.backgroundColor = Red;
+      document.getElementById('Button1P-513').innerText = name1_513 + ISOUT + plusmsg + sayou1_513;
+  }
+  else if (CHK513_1 == "late") {
+    document.getElementById('Button1P-513').style.backgroundColor = Yellow;
+    document.getElementById('Button1P-513').innerText = name1_513 + ISLATE + plusmsg + sayou1_513;
+  };
+  
+  // 513호 2P
+  if (CHK513_2 == "here") {
+    document.getElementById('Button2P-513').style.backgroundColor = Green;
+    document.getElementById('Button2P-513').innerText = name2_513 + ISHERE;
+  }
+  else if (CHK513_2 == "out") {
+    document.getElementById('Button2P-513').style.backgroundColor = Red;
+    document.getElementById('Button2P-513').innerText = name2_513 + ISOUT + plusmsg + sayou2_513;
+  }
+  else if (CHK513_2 == "late") {
+    document.getElementById('Button2P-513').style.backgroundColor = Yellow;
+    document.getElementById('Button2P-513').innerText = name2_513 + ISLATE + plusmsg + sayou2_513;
+  };
+  
+  // 513호 3P
+  if (CHK513_3 == "here") {
+    document.getElementById('Button3P-513').style.backgroundColor = Green;
+    document.getElementById('Button3P-513').innerText = name3_513 + ISHERE;
+  }
+  else if (CHK513_3 == "out") {
+    document.getElementById('Button3P-513').style.backgroundColor = Red;
+    document.getElementById('Button3P-513').innerText = name3_513 + ISOUT + plusmsg + sayou3_513;
+  }
+  else if (CHK513_3 == "late") {
+    document.getElementById('Button3P-513').style.backgroundColor = Yellow;
+    document.getElementById('Button3P-513').innerText = name3_513 + ISLATE + plusmsg + sayou3_513;
+  };
+   
+  // 513호 4P
+  if (CHK513_4 == "here") {
+    document.getElementById('Button4P-513').style.backgroundColor = Green;
+    document.getElementById('Button4P-513').innerText = name4_513 + ISHERE;
+  }
+  else if (CHK513_4 == "out") {
+    document.getElementById('Button4P-513').style.backgroundColor = Red;
+    document.getElementById('Button4P-513').innerText = name4_513 + ISOUT + plusmsg + sayou4_513;
+  }
+  else if (CHK513_4 == "late") {
+    document.getElementById('Button4P-513').style.backgroundColor = Yellow;
+    document.getElementById('Button4P-513').innerText = name4_513 + ISLATE + plusmsg + sayou4_513;
+  };
+
+
+
+
+
+
+
+  
+}, 100); //=1 재실 , =2 외박 , =3 지각
+
+
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+function on_log_list(data) {
+
+
+
+var key = data.key;
+
+
+  var Data = data.val();
+  var createtime = Data.createtime;
+  var name = Data.name;
+
+  var GIRLROOMLOG = Data.GIRLROOMLOG;
+
+
+  document.getElementById('girlroomlog').value = GIRLROOMLOG;
+
+
+
+
+}
+  
+  
+  
+  
+  
+  
+  function on_notice_list(data) {
+ 
+    console.log("on_thanks_list() 함수안으로 들어왔습니다 리스트를 가져오겠습니다")
+    var key = data.key;
+    
+  
+    var Data = data.val();
+    var createtime = Data.createtime;
+    var name = Data.name;
+    var unit = Data.unit;
+
+   
+  
+  
+    var name1_501 = Data.name1_501;
+    var name2_501 = Data.name2_501;
+    var name3_501 = Data.name3_501;
+    var name4_501 = Data.name4_501;
+  
+    var name1_502 = Data.name1_502;
+  var name2_502 = Data.name2_502;
+  var name3_502 = Data.name3_502;
+  var name4_502 = Data.name4_502;
+  
+  var name1_503 = Data.name1_503;
+  var name2_503 = Data.name2_503;
+  var name3_503 = Data.name3_503;
+  var name4_503 = Data.name4_503;
+  
+  var name1_504 = Data.name1_504;
+  var name2_504 = Data.name2_504;
+  var name3_504 = Data.name3_504;
+  var name4_504 = Data.name4_504;
+  
+  var name1_505 = Data.name1_505;
+  var name2_505 = Data.name2_505;
+  var name3_505 = Data.name3_505;
+  var name4_505 = Data.name4_505;
+  
+  var name1_506 = Data.name1_506;
+  var name2_506 = Data.name2_506;
+  var name3_506 = Data.name3_506;
+  var name4_506 = Data.name4_506;
+  
+  var name1_507 = Data.name1_507;
+  var name2_507 = Data.name2_507;
+  var name3_507 = Data.name3_507;
+  var name4_507 = Data.name4_507;
+  
+  var name1_508 = Data.name1_508;
+  var name2_508 = Data.name2_508;
+  var name3_508 = Data.name3_508;
+  var name4_508 = Data.name4_508;
+  
+  var name1_509 = Data.name1_509;
+  var name2_509 = Data.name2_509;
+  var name3_509 = Data.name3_509;
+  var name4_509 = Data.name4_509;
+  
+  var name1_510 = Data.name1_510;
+  var name2_510 = Data.name2_510;
+  var name3_510 = Data.name3_510;
+  var name4_510 = Data.name4_510;
+
+  var name1_511 = Data.name1_511;
+  var name2_511 = Data.name2_511;
+  var name3_511 = Data.name3_511;
+  var name4_511 = Data.name4_511;
+
+  var name1_512 = Data.name1_512;
+  var name2_512 = Data.name2_512;
+  var name3_512 = Data.name3_512;
+  var name4_512 = Data.name4_512;
+
+  var name1_513 = Data.name1_513;
+  var name2_513 = Data.name2_513;
+  var name3_513 = Data.name3_513;
+  var name4_513 = Data.name4_513;
+
+    var userkey = Data.userkey;
+    var brdnm = Data.boardno;
+  
+    
+    var boardno = Data.key; //이 보드의 키값
+  
+    
+  
+   
+    
+document.getElementById('Button1P-501').innerText = name1_501;
+document.getElementById('Button2P-501').innerText = name2_501;
+document.getElementById('Button3P-501').innerText = name3_501;
+document.getElementById('Button4P-501').innerText = name4_501;
+
+document.getElementById('Button1P-502').innerText = name1_502;
+document.getElementById('Button2P-502').innerText = name2_502;
+document.getElementById('Button3P-502').innerText = name3_502;
+document.getElementById('Button4P-502').innerText = name4_502;
+
+document.getElementById('Button1P-503').innerText = name1_503;
+document.getElementById('Button2P-503').innerText = name2_503;
+document.getElementById('Button3P-503').innerText = name3_503;
+document.getElementById('Button4P-503').innerText = name4_503;
+
+// 504
+document.getElementById('Button1P-504').innerText = name1_504;
+document.getElementById('Button2P-504').innerText = name2_504;
+document.getElementById('Button3P-504').innerText = name3_504;
+document.getElementById('Button4P-504').innerText = name4_504;
+
+// 505
+document.getElementById('Button1P-505').innerText = name1_505;
+document.getElementById('Button2P-505').innerText = name2_505;
+document.getElementById('Button3P-505').innerText = name3_505;
+document.getElementById('Button4P-505').innerText = name4_505;
+
+// 506
+document.getElementById('Button1P-506').innerText = name1_506;
+document.getElementById('Button2P-506').innerText = name2_506;
+document.getElementById('Button3P-506').innerText = name3_506;
+document.getElementById('Button4P-506').innerText = name4_506;
+
+// 507
+document.getElementById('Button1P-507').innerText = name1_507;
+document.getElementById('Button2P-507').innerText = name2_507;
+document.getElementById('Button3P-507').innerText = name3_507;
+document.getElementById('Button4P-507').innerText = name4_507;
+
+// 508
+document.getElementById('Button1P-508').innerText = name1_508;
+document.getElementById('Button2P-508').innerText = name2_508;
+document.getElementById('Button3P-508').innerText = name3_508;
+document.getElementById('Button4P-508').innerText = name4_508;
+
+// 509
+document.getElementById('Button1P-509').innerText = name1_509;
+document.getElementById('Button2P-509').innerText = name2_509;
+document.getElementById('Button3P-509').innerText = name3_509;
+document.getElementById('Button4P-509').innerText = name4_509;
+
+// 510
+document.getElementById('Button1P-510').innerText = name1_510;
+document.getElementById('Button2P-510').innerText = name2_510;
+document.getElementById('Button3P-510').innerText = name3_510;
+document.getElementById('Button4P-510').innerText = name4_510;
+
+// 510
+document.getElementById('Button1P-511').innerText = name1_511;
+document.getElementById('Button2P-511').innerText = name2_511;
+document.getElementById('Button3P-511').innerText = name3_511;
+document.getElementById('Button4P-511').innerText = name4_511;
+
+// 510
+document.getElementById('Button1P-512').innerText = name1_512;
+document.getElementById('Button2P-512').innerText = name2_512;
+document.getElementById('Button3P-512').innerText = name3_512;
+document.getElementById('Button4P-512').innerText = name4_512;
+
+// 510
+document.getElementById('Button1P-513').innerText = name1_513;
+document.getElementById('Button2P-513').innerText = name2_513;
+document.getElementById('Button3P-513').innerText = name3_513;
+document.getElementById('Button4P-513').innerText = name4_513;
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+if (name1_501 == "-"){
+  document.getElementById('Button1P-501').style.display = 'none';
+}
+if (name2_501 == "-"){
+  document.getElementById('Button2P-501').style.display = 'none';
+}
+if (name3_501 == "-"){
+  document.getElementById('Button3P-501').style.display = 'none';
+}
+if (name4_501 == "-"){
+  document.getElementById('Button4P-501').style.display = 'none';
+}
+
+
+if (name1_502 == "-"){
+  document.getElementById('Button1P-502').style.display = 'none';
+}
+if (name2_502 == "-"){
+  document.getElementById('Button2P-502').style.display = 'none';
+}
+if (name3_502 == "-"){
+  document.getElementById('Button3P-502').style.display = 'none';
+}
+if (name4_502 == "-"){
+  document.getElementById('Button4P-502').style.display = 'none';
+}
+
+if (name1_503 == "-"){
+  document.getElementById('Button1P-503').style.display = 'none';
+}
+if (name2_503 == "-"){
+  document.getElementById('Button2P-503').style.display = 'none';
+}
+if (name3_503 == "-"){
+  document.getElementById('Button3P-503').style.display = 'none';
+}
+if (name4_503 == "-"){
+  document.getElementById('Button4P-503').style.display = 'none';
+}
+
+if (name1_504 == "-"){
+  document.getElementById('Button1P-504').style.display = 'none';
+}
+if (name2_504 == "-"){
+  document.getElementById('Button2P-504').style.display = 'none';
+}
+if (name3_504 == "-"){
+  document.getElementById('Button3P-504').style.display = 'none';
+}
+if (name4_504 == "-"){
+  document.getElementById('Button4P-504').style.display = 'none';
+}
+
+if (name1_505 == "-"){
+  document.getElementById('Button1P-505').style.display = 'none';
+}
+if (name2_505 == "-"){
+  document.getElementById('Button2P-505').style.display = 'none';
+}
+if (name3_505 == "-"){
+  document.getElementById('Button3P-505').style.display = 'none';
+}
+if (name4_505 == "-"){
+  document.getElementById('Button4P-505').style.display = 'none';
+}
+
+if (name1_506 == "-"){
+  document.getElementById('Button1P-506').style.display = 'none';
+}
+if (name2_506 == "-"){
+  document.getElementById('Button2P-506').style.display = 'none';
+}
+if (name3_506 == "-"){
+  document.getElementById('Button3P-506').style.display = 'none';
+}
+if (name4_506 == "-"){
+  document.getElementById('Button4P-506').style.display = 'none';
+}
+
+if (name1_507 == "-"){
+  document.getElementById('Button1P-507').style.display = 'none';
+}
+if (name2_507 == "-"){
+  document.getElementById('Button2P-507').style.display = 'none';
+}
+if (name3_507 == "-"){
+  document.getElementById('Button3P-507').style.display = 'none';
+}
+if (name4_507 == "-"){
+  document.getElementById('Button4P-507').style.display = 'none';
+}
+
+if (name1_508 == "-"){
+  document.getElementById('Button1P-508').style.display = 'none';
+}
+if (name2_508 == "-"){
+  document.getElementById('Button2P-508').style.display = 'none';
+}
+if (name3_508 == "-"){
+  document.getElementById('Button3P-508').style.display = 'none';
+}
+if (name4_508 == "-"){
+  document.getElementById('Button4P-508').style.display = 'none';
+}
+
+if (name1_509 == "-"){
+  document.getElementById('Button1P-509').style.display = 'none';
+}
+if (name2_509 == "-"){
+  document.getElementById('Button2P-509').style.display = 'none';
+}
+if (name3_509 == "-"){
+  document.getElementById('Button3P-509').style.display = 'none';
+}
+if (name4_509 == "-"){
+  document.getElementById('Button4P-509').style.display = 'none';
+}
+
+
+if (name1_510 == "-"){
+  document.getElementById('Button1P-510').style.display = 'none';
+}
+if (name2_510 == "-"){
+  document.getElementById('Button2P-510').style.display = 'none';
+}
+if (name3_510 == "-"){
+  document.getElementById('Button3P-510').style.display = 'none';
+}
+if (name4_510 == "-"){
+  document.getElementById('Button4P-510').style.display = 'none';
+}
+
+
+if (name1_511 == "-"){
+  document.getElementById('Button1P-511').style.display = 'none';
+}
+if (name2_511 == "-"){
+  document.getElementById('Button2P-511').style.display = 'none';
+}
+if (name3_511 == "-"){
+  document.getElementById('Button3P-511').style.display = 'none';
+}
+if (name4_511 == "-"){
+  document.getElementById('Button4P-511').style.display = 'none';
+}
+
+
+if (name1_512 == "-"){
+  document.getElementById('Button1P-512').style.display = 'none';
+}
+if (name2_512 == "-"){
+  document.getElementById('Button2P-512').style.display = 'none';
+}
+if (name3_512 == "-"){
+  document.getElementById('Button3P-512').style.display = 'none';
+}
+if (name4_512 == "-"){
+  document.getElementById('Button4P-512').style.display = 'none';
+}
+
+   
+if (name1_513 == "-"){
+  document.getElementById('Button1P-513').style.display = 'none';
+}
+if (name2_513 == "-"){
+  document.getElementById('Button2P-513').style.display = 'none';
+}
+if (name3_513 == "-"){
+  document.getElementById('Button3P-513').style.display = 'none';
+}
+if (name4_513 == "-"){
+  document.getElementById('Button4P-513').style.display = 'none';
+}
+ 
+
+
+
+
+
+  
+  }
+
+  
+
+
+
+
+  //관리자 아니면 숨가기
+
+  firebaseEmailAuth.onAuthStateChanged(function (user) {
+          
+          if (user) {
+            //조회 - 데이터 베이스에 저장된 닉네임을 현재 접속되어 있는 user의 pk key 값을 이용해서 가져오기
+            firebaseDatabase.ref("users/" + user.uid).once('value').then(function (snapshot) {
+              
+              //자바스크립트 dom 선택자를 통해서 네비게이션 메뉴의 엘리먼트 변경해주기
+              document.getElementById("loginmenu").innerHTML = "로그아웃";
+              document.getElementById("loginmenu").href = "loginform.html";
+
+              document.getElementById("joinmenu").innerHTML = snapshot.val().name + " 님"; //Span은 innerhtml로 a 는 textContent로
+              document.getElementById("joinmenu").href = "#";
+
+
+              
+ 
+              if(snapshot.val().unit == "ADMIN" | "HAKSA_2023audtjdwkdgkrrhks"){
+ 
+                card501.style.display = "flex";
+
+                card502.style.display = "flex";
+
+                card503.style.display = "flex";
+
+                card504.style.display = "flex";
+
+                card505.style.display = "flex";
+
+                card506.style.display = "flex";
+
+                card507.style.display = "flex";
+
+                card508.style.display = "flex";
+
+                card509.style.display = "flex";
+
+                card510.style.display = "flex";
+
+       
+              }else if(snapshot.val().unit == "501"){
+                card501.style.display = "flex";
+
+              }else if(snapshot.val().unit == "502"){
+                card502.style.display = "flex";
+
+              }else if(snapshot.val().unit == "503"){
+                card503.style.display = "flex";
+
+              }else if(snapshot.val().unit == "504"){
+                card504.style.display = "flex";
+
+              }else if(snapshot.val().unit == "505"){
+                card505.style.display = "flex";
+
+              }else if(snapshot.val().unit == "506"){
+                card506.style.display = "flex";
+
+              }else if(snapshot.val().unit == "507"){
+                card507.style.display = "flex";
+
+              }else if(snapshot.val().unit == "508"){
+                card508.style.display = "flex";
+
+              }else if(snapshot.val().unit == "509"){
+                card509.style.display = "flex";
+
+              }else if(snapshot.val().unit == "510"){
+                card510.style.display = "flex";
+
+              }else if(snapshot.val().unit == "511"){
+                card511.style.display = "flex";
+              }
+                else if(snapshot.val().unit == "512"){
+                card512.style.display = "flex";
+              }else if(snapshot.val().unit == "513"){
+                card513.style.display = "flex";
+              }else{
+
+
+
+                
+                var outmsgq = prompt("권한이 없습니다! 마스터 키를 사용해 주세요.");
+    if (outmsgq === "ADMIN" | outmsgq === "HAKSA_2023audtjdwkdgkrrhks") {
+
+ 
+
+card501.style.display = "flex";
+
+card502.style.display = "flex";
+
+card503.style.display = "flex";
+
+card504.style.display = "flex";
+
+card505.style.display = "flex";
+
+card506.style.display = "flex";
+
+card507.style.display = "flex";
+
+card508.style.display = "flex";
+
+card509.style.display = "flex";
+
+card510.style.display = "flex";
+
+card511.style.display = "flex";
+
+card512.style.display = "flex";
+
+card513.style.display = "flex";
+
+  
+    } else {
+      alert("권한이 없습니다.");
+
+    }
+
+
+              }
+
+
+ 
+
+            });
+  
+          } else {
+        
+            
+
+          }
+        });
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+  function buttonadd(data){
+    var key = data.key; //@Hㅁ1 없ㄴ
+    var Data = data.val();
+  
+    var createtime = Data.createtime;
+    var name = Data.name;
+    var subject = Data.subject;
+    var userkey = Data.userkey;
+      //리스트 동적으로 붙이기
+      var btnside =
+  
+  "<li class=\"nav-item\">" +"<a class=\"nav-link\" id='" + loginUserKey + "' onclick=\"chat(this.id)\">" +
+  "<i class=\"ni ni-send text-blue\">"+"</i>" +
+  "<span class=\"nav-link-text\">"+ "-" +"</span></a>"+ "</li>";
+  
+  //   $(".thanksList").append(html);   //아래로 붙이기
+  $(".btnz").prepend(btnside);   //위로 붙이기
+  buttonadd.executed = false;
+
+  }
+  buttonadd.executed = false;
+
+  
+  //채팅으로UID전달하는함수
+  function chat(key){ 
+  location.href="chatting/chat.html?" + key ;
+  
+  }
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </script>
+  
+  
+     
+  
+   
+  
+   
+
+ 
+
+
+
+</body>
+
+</html>

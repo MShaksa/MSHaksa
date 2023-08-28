@@ -81,18 +81,27 @@
          
           <ul class="navbar-nav">
 
+
             <li class="nav-item">
               <a class="nav-link" href="index.html">
-                <i class="mdi mdi-nature text-green"></i>
-                <span class="nav-link-text">홈</span>
+
+                <span class="nav-link-text">홈페이지</span>
+              </a>
+            </li>
+
+            
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.msch.or.kr/xe/?mid=mission01_04">
+
+                <span class="nav-link-text">명성복지재단</span>
               </a>
             </li>
 
 
             <li class="nav-item">
-              <a class="nav-link" href="_scboard.html">
-                <i class="ni ni-circle-08 text-blue"></i>
-                <span class="nav-link-text">-</span>
+              <a class="nav-link" href="https://mswf.co.kr/business03">
+
+                <span class="nav-link-text">명성 장학관 소개</span>
               </a>
             </li>
 
@@ -101,27 +110,24 @@
 
             <li class="nav-item">
               <a class="nav-link" href="food.html">
-                <i class="ni ni-badge text-blue"></i>
-                <span class="nav-link-text">오늘의 식사</span>
+
+                <span class="nav-link-text">명성장학 오늘의 식사</span>
               </a>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="dormclean.html">
-                <i class="ni ni-user-run text-blue"></i>
-                <span class="nav-link-text">청소구역</span>
-              </a>
-            </li>
-
-
-            
+  
             <li class="nav-item">
               <a class="nav-link" href="index.html">
-                <i class="ni ni-zoom-split-in text-blue"></i>
-                <span class="nav-link-text">방보고</span>
+
+                <span class="nav-link-text">방보고 DMS</span>
               </a>
             </li>
 
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">
+
+                <span class="nav-link-text">관리자 DMS 콘솔</span>
+              </a>
+            </li>
 
 
 
@@ -284,7 +290,7 @@
           <div class="board"></div>
 
             <div class="card-body">
-              <button type="button" class="vibrating-button color-change button button-contactForm btn_1 boxed-btn btn btn-primary gotochk" id="gotochk" onclick="location.href='RoomsChk.html'" name="gotochk" style="float: left; width: 100%; font-size: 12px; background-color: #101010; color: #000000;">== 보고하러 가기 ==</button> 
+              <button type="button" class="vibrating-button color-changeX button button-contactForm btn_1 boxed-btn btn btn-primary gotochk" id="gotochk" onclick="location.href='RoomsChk.html'" name="gotochk" style="float: left; width: 100%; font-size: 12px; background-color: #85e185; color: #000000;">호실인원 보고</button> 
 
                <div class="card-sub">		
 
@@ -949,7 +955,7 @@ function copyToClipboard() {
       //on 함수로 글 목록가져오기
       //thanksRef.on('child_added', on_thasnks_list)
       thanksRef.on('value', on_thanks_list)
-      thanksRef.on('value', buttonadd)
+      //thanksRef.on('value', buttonadd)
 
       
       var thanksRefZ = firebaseDatabase.ref('boydormLOG');
