@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <!-- Icons -->
     <link rel="stylesheet" href="assets/anim/tree.css" type="text/css">
+    <link rel="stylesheet" href="navbar.css">
+
     <script src="assets/anim/tree.js"></script>
 
     <style>
@@ -66,8 +68,9 @@
   </head>
   
   <body>
-  
-  
+   
+
+
     <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
       <div class="scrollbar-inner">
         <!-- Brand -->
@@ -346,6 +349,55 @@
 
 
 
+  <navx>
+    <div class="nav-boxx">
+      <ul class="nav-containerx">
+        <li class="nav__item active">
+          <a onclick="setTimeout(function() { location.href='index.html'  }, 500);" class="nav__item-link">
+            <div class="nav__item-icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </div>
+            <span class="nav__item-text">홈</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a onclick="setTimeout(function() { location.href='food.html'  }, 500);" class="nav__item-link">
+            <div class="nav__item-icon">
+              <ion-icon name="person-outline"></ion-icon>
+            </div>
+            <span class="nav__item-text">식사</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a onclick="setTimeout(function() { location.href='bogo.html'  }, 500);" class="nav__item-link">
+            <div class="nav__item-icon">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </div>
+            <span class="nav__item-text">보고</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a onclick="setTimeout(function() { location.href='notice.html'  }, 500);" class="nav__item-link">
+            <div class="nav__item-icon">
+              <ion-icon name="chatbubble-outline"></ion-icon>
+            </div>
+            <span class="nav__item-text">공지</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a onclick="setTimeout(function() { location.href='admin.html'  }, 500);" class="nav__item-link">
+            <div class="nav__item-icon">
+              <ion-icon name="settings-outline"></ion-icon>
+            </div>
+            <span class="nav__item-text">Admin</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </navx>
+  <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script>
+  <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+
   
 
 
@@ -363,9 +415,19 @@
   <!-- Argon JS -->
   <script src="../assets/js/argon.js?v=1.2.0"></script>
   <script src="../assets/anim/tree.js"></script>
+  <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script>
+  <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
 
 
-
+<script>
+  const list = document.querySelectorAll(".nav__item");
+list.forEach((item) => {
+  item.addEventListener("click", () => {
+    list.forEach((item) => item.classList.remove("active"));
+    item.classList.add("active");
+  });
+});
+</script>
 
 <script src="../assets/js/time.js"></script>
 <!--login유무 session js 파일 -->
